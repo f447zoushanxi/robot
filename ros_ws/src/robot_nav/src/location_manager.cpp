@@ -16,7 +16,7 @@ bool LocationManager::load_from_yaml(const std::string & file_path)
   // 这里用轻量级正则读取 {name: xxx, x: 0.0, y: 0.0, yaw: 0.0} 行。
   // 真实项目建议用 yaml-cpp 完整解析并做字段校验。
   const std::regex line_pattern(
-    R"(\{name:\s*([^,]+),\s*x:\s*([\-0-9\.]+),\s*y:\s*([\-0-9\.]+),\s*yaw:\s*([\-0-9\.]+)\})");
+    R"(\{name:\s*([^,]+),\s*x:\s*(-?[0-9]+\.?[0-9]*),\s*y:\s*(-?[0-9]+\.?[0-9]*),\s*yaw:\s*(-?[0-9]+\.?[0-9]*)\})");
 
   std::string line;
   std::smatch match;
