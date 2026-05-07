@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robot_bringup</name>
+  <version>0.0.1</version>
+  <description>Launch and config package for home robot skeleton.</description>
+  <maintainer email="dev@example.com">robot-dev</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>robot_base</exec_depend>
+  <exec_depend>robot_safety</exec_depend>
+  <exec_depend>robot_nav</exec_depend>
+  <exec_depend>robot_nlu</exec_depend>
+  <exec_depend>robot_executor</exec_depend>
+  <exec_depend>robot_perception</exec_depend>
+  <exec_depend>robot_identity</exec_depend>
+  <exec_depend>robot_manipulation</exec_depend>
+  <exec_depend>robot_voice</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,16 @@
+# Nav2 参数占位模板，后续按实车调参。
+controller_server:
+  ros__parameters:
+    use_sim_time: false
+    min_x_velocity_threshold: 0.001
+    max_vel_x: 0.35
+    max_vel_theta: 1.0
+
+planner_server:
+  ros__parameters:
+    use_sim_time: false
+    expected_planner_frequency: 5.0
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: false
