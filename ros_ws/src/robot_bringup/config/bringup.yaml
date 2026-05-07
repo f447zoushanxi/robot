@@ -1,0 +1,13 @@
+robot_base:
+  ros__parameters:
+    use_stub: true
+    cmd_timeout_ms: 200
+
+robot_manipulation:
+  ros__parameters:
+    sim_mode: true
+
+robot_identity:
+  ros__parameters:
+    owner_enrolled: false
+    require_button_for_first_enroll: true
