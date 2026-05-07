@@ -56,6 +56,12 @@ public:
 private:
   void tick()
   {
+    if (current_state_ != State::IDLE && current_state_ != State::DONE && current_state_ != State::FAILED) {
+      ++state_ticks_;
+    } else {
+      state_ticks_ = 0;
+    }
+
     switch (current_state_) {
       case State::IDLE:
         break;
@@ -99,7 +105,14 @@ private:
         break;
     }
 
-    // 重试框架占位：超时或失败时增加 retry_count_，超过阈值转 FAILED。
+    // 重试框架：如果一个阶段卡住超时，则累计重试次数。
+    if (state_ticks_ > state_timeout_ticks_) {
+      ++retry_count_;
+      state_ticks_ = 0;
+      current_state_ = State::SEARCH_BOTTLE;
+      RCLCPP_WARN(get_logger(), "state timeout -> retry %d/%d", retry_count_, max_retries_);
+    }
+
     if (retry_count_ > max_retries_) {
       current_state_ = State::FAILED;
     }
@@ -108,6 +121,8 @@ private:
   State current_state_{State::IDLE};
   int retry_count_{0};
   int max_retries_{3};
+  int state_ticks_{0};
+  int state_timeout_ticks_{10};
 
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr command_sub_;
   rclcpp::Client<robot_msgs::srv::DetectObject>::SharedPtr detect_client_;

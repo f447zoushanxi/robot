@@ -57,9 +57,11 @@ class PerceptionNode(Node):
         self.camera_info = msg
 
     def _handle_detect_bottle(self, request: DetectObject.Request, response: DetectObject.Response):
+        # TODO: 用 ONNX Runtime 推理结果替换该占位中心点 (u, v)。
         # 1) ONNX 检测占位：真实项目应返回像素框中心 (u, v)。
         u, v = 320, 240
 
+        # TODO: 从 self.depth_msg 的 (u,v) 邻域提取深度窗口并取中值，替换示例数组。
         # 2) 深度中值滤波（模板）：对 (u,v) 周边窗口取中值，抑制噪声。
         depth_m = self._median_depth_stub([0.72, 0.73, 0.70, 0.71, 0.74])
 
