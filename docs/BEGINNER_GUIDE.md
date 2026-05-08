@@ -11,7 +11,7 @@
 4. 找到人并递过去
 5. 失败时走降级路径（去固定交付点）
 
-代码位置：`/home/runner/work/robot/robot/ros_ws/src`
+代码位置：`ros_ws/src`
 
 ---
 
@@ -38,7 +38,7 @@
 先构建一次：
 
 ```bash
-cd /home/runner/work/robot/robot/ros_ws
+cd ros_ws
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
 source install/setup.bash
@@ -286,7 +286,7 @@ sequenceDiagram
 ### 本地构建与测试
 
 ```bash
-cd /home/runner/work/robot/robot/ros_ws
+cd ros_ws
 source /opt/ros/humble/setup.bash
 colcon build --event-handlers console_direct+
 colcon test --event-handlers console_direct+ --ctest-args -VV --output-on-failure

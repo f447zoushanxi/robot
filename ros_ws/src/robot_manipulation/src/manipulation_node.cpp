@@ -22,7 +22,8 @@
 class ManipulationNode : public rclcpp::Node
 {
 public:
-  ManipulationNode() : Node("manipulation_node")
+  ManipulationNode()
+  : Node("manipulation_node")
   {
     sim_mode_ = declare_parameter<bool>("sim_mode", true);
 
@@ -34,8 +35,8 @@ public:
       {
         resp->success = true;
         resp->message = sim_mode_ ?
-          "pick_bottle simulated" :
-          "pick_bottle sent to arm driver";
+        "pick_bottle simulated" :
+        "pick_bottle sent to arm driver";
       });
 
     handover_srv_ = create_service<std_srvs::srv::Trigger>(
@@ -46,8 +47,8 @@ public:
       {
         resp->success = true;
         resp->message = sim_mode_ ?
-          "hand_over simulated" :
-          "hand_over sent to arm driver";
+        "hand_over simulated" :
+        "hand_over sent to arm driver";
       });
   }
 

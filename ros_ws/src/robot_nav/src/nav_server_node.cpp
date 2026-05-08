@@ -24,7 +24,8 @@
 class NavServerNode : public rclcpp::Node
 {
 public:
-  NavServerNode() : Node("nav_server_node")
+  NavServerNode()
+  : Node("nav_server_node")
   {
     handover_spot_ = declare_parameter<std::string>("handover_spot", "餐桌旁");
     locations_file_ = declare_parameter<std::string>("locations_file", "");
@@ -51,7 +52,7 @@ public:
         const auto loc = manager_.get(handover_spot_);
         resp->success = true;
         resp->message = "Stub nav accepted -> " + loc.name + " (" +
-          std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+        std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
       });
 
     RCLCPP_INFO(

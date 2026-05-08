@@ -93,7 +93,7 @@ private:
         set_state(State::SEARCH_BOTTLE);
         break;
       case State::SEARCH_BOTTLE:
-        // TODO: 调 perception service。当前骨架直接推进流程。
+        // TODO(f447zoushanxi): 调 perception service。当前骨架直接推进流程。
         set_state(State::APPROACH_BOTTLE);
         break;
       case State::APPROACH_BOTTLE:
@@ -103,7 +103,7 @@ private:
         set_state(State::NAV_TO_USER_ROOM);
         break;
       case State::NAV_TO_USER_ROOM:
-        // TODO: 使用 Nav2 action client 发送目标点并等待结果。
+        // TODO(f447zoushanxi): 使用 Nav2 action client 发送目标点并等待结果。
         set_state(State::FIND_PERSON_LOCAL);
         break;
       case State::FIND_PERSON_LOCAL:
