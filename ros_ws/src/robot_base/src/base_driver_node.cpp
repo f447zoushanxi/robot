@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -5,30 +9,31 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/bool.hpp"
 #include "robot_base/safety_utils.hpp"
+#include "std_msgs/msg/bool.hpp"
 
 using namespace std::chrono_literals;
 
 class BaseDriverNode : public rclcpp::Node
 {
 public:
-  BaseDriverNode() : Node("base_driver_node")
+  BaseDriverNode()
+  : Node("base_driver_node")
   {
-    use_stub_ = this->declare_parameter<bool>("use_stub", true);
-    timeout_ms_ = this->declare_parameter<int>("cmd_timeout_ms", 200);
+    use_stub_ = declare_parameter<bool>("use_stub", true);
+    timeout_ms_ = declare_parameter<int>("cmd_timeout_ms", 200);
 
-    cmd_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
+    cmd_sub_ = create_subscription<geometry_msgs::msg::Twist>(
       "/cmd_vel", 10,
       [this](const geometry_msgs::msg::Twist::SharedPtr msg) {
         last_cmd_ = *msg;
-        last_cmd_time_ = this->now();
+        last_cmd_time_ = now();
       });
 
-    odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
-    estop_pub_ = this->create_publisher<std_msgs::msg::Bool>("/estop", 10);
+    odom_pub_ = create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
+    estop_pub_ = create_publisher<std_msgs::msg::Bool>("/estop", 10);
 
-    timer_ = this->create_wall_timer(50ms, std::bind(&BaseDriverNode::on_timer, this));
+    timer_ = create_wall_timer(50ms, std::bind(&BaseDriverNode::on_timer, this));
 
     RCLCPP_INFO(
       get_logger(),
@@ -39,13 +44,14 @@ public:
 private:
   void on_timer()
   {
-    const auto now = this->now();
-    const bool timeout = (now - last_cmd_time_).nanoseconds() > static_cast<int64_t>(timeout_ms_) * 1000000LL;
+    const auto now_time = now();
+    const bool timeout = (now_time - last_cmd_time_).nanoseconds() >
+      (static_cast<int64_t>(timeout_ms_) * 1000000LL);
 
     const geometry_msgs::msg::Twist safe_cmd = robot_base::apply_timeout_brake(last_cmd_, timeout);
 
     nav_msgs::msg::Odometry odom;
-    odom.header.stamp = now;
+    odom.header.stamp = now_time;
     odom.header.frame_id = "odom";
     odom.child_frame_id = "base_link";
     odom.twist.twist = safe_cmd;

@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <algorithm>
 #include <memory>
 
@@ -8,7 +12,8 @@
 class SafetyNode : public rclcpp::Node
 {
 public:
-  SafetyNode() : Node("safety_node")
+  SafetyNode()
+  : Node("safety_node")
   {
     max_linear_ = declare_parameter<double>("max_linear", 0.35);
     max_angular_ = declare_parameter<double>("max_angular", 1.0);

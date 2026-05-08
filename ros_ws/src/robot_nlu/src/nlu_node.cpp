@@ -1,14 +1,19 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <memory>
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
 #include "robot_nlu/nlu_parser.hpp"
+#include "std_msgs/msg/string.hpp"
 
 class NluNode : public rclcpp::Node
 {
 public:
-  NluNode() : Node("nlu_node")
+  NluNode()
+  : Node("nlu_node")
   {
     command_pub_ = create_publisher<std_msgs::msg::String>("/nlu/command_json", 10);
     asr_sub_ = create_subscription<std_msgs::msg::String>(
