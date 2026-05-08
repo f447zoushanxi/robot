@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_safety.cpplint"
+  tests="1"
+  failures="0"
+  errors="0"
+  time="0.031"
+>
+  <testcase
+    name="/ws/ros_ws/src/robot_safety/src/safety_node.cpp"
+    classname="robot_safety.cpplint"/>
+  <system-out>Checked files:
+* /ws/ros_ws/src/robot_safety/src/safety_node.cpp</system-out>
+</testsuite>

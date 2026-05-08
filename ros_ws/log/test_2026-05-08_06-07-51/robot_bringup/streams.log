@@ -1,0 +1,95 @@
+[0.023s] Invoking command in '/ws/ros_ws/build/robot_bringup': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.030s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini
+[0.031s] Parse Config file:/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini
+[0.031s]    Site: a0e3119139a3
+[0.031s]    Build name: (empty)
+[0.031s]  Add coverage exclude regular expressions.
+[0.031s] Create new tag: 20260508-0607 - Experimental
+[0.031s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini
+[0.031s] Parse Config file:/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini
+[0.032s] Test project /ws/ros_ws/build/robot_bringup
+[0.032s] Constructing a list of tests
+[0.032s] Done constructing a list of tests
+[0.032s] Updating test list for fixtures
+[0.032s] Added 0 tests to meet fixture requirements
+[0.032s] Checking test dependency graph...
+[0.032s] Checking test dependency graph end
+[0.032s] test 1
+[0.032s]     Start 1: test_dev_mode.launch.test.py
+[0.032s] 
+[0.032s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name" "robot_bringup" "--output-file" "/ws/ros_ws/build/robot_bringup/launch_test/test_dev_mode.launch.test.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py" "--junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name=robot_bringup"
+[0.032s] 1: Test timeout computed to be: 120
+[0.081s] 1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_bringup':
+[0.081s] 1:  - /usr/bin/python3 -m launch_testing.launch_test /ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py --junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml --package-name=robot_bringup
+[0.591s] 1: [INFO] [launch]: All log files can be found below /root/.ros/log/2026-05-08-06-07-55-825772-d53e02ab67ea-1017
+[0.591s] 1: [INFO] [launch]: Default logging verbosity is set to INFO
+[0.649s] 1: [INFO] [base_driver_node-1]: process started with pid [1029]
+[0.677s] 1: [INFO] [safety_node-2]: process started with pid [1031]
+[0.679s] 1: [INFO] [voice_bridge_node-3]: process started with pid [1033]
+[0.679s] 1: [INFO] [nlu_node-4]: process started with pid [1035]
+[0.679s] 1: [INFO] [identity_node-5]: process started with pid [1037]
+[0.679s] 1: [INFO] [manipulation_node-6]: process started with pid [1054]
+[0.679s] 1: [INFO] [perception_node-7]: process started with pid [1064]
+[0.679s] 1: [INFO] [executor_node-8]: process started with pid [1072]
+[0.684s] 1: [base_driver_node-1] [INFO] [1778220475.943298122] [base_driver_node]: robot_base started (stub=true). Serial protocol and real IO are intentionally placeholders.
+[0.769s] 1: [INFO] [1778220476.054245111] [dev_mode_launch_test_node]: dev_mode launch test node started
+[0.773s] 1: test_core_nodes_started (robot_bringup.TestDevModeBringup) ... [INFO] [1778220476.058449491] [dev_mode_launch_test_node]: [wait:core_nodes_started] visible_nodes=5 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'safety_node']
+[1.076s] 1: [INFO] [1778220476.361854613] [dev_mode_launch_test_node]: core_nodes_started check: missing=[] all=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[1.077s] 1: ok
+[1.110s] 1: test_core_services_available (robot_bringup.TestDevModeBringup) ... [perception_node-7] [INFO] [1778220476.395120578] [perception_node]: robot_perception started (stub ONNX + depth projection pipeline).
+[1.170s] 1: ok
+[1.279s] 1: test_voice_to_nlu_and_executor_progress (robot_bringup.TestDevModeBringup) ... [INFO] [1778220476.564665698] [dev_mode_launch_test_node]: [wait:voice_subscribers] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[1.281s] 1: [INFO] [1778220476.566786045] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=1 text='请给我递水'
+[1.284s] 1: [INFO] [1778220476.569657327] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=2 text='请给我递水'
+[1.286s] 1: [INFO] [1778220476.571828471] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=3 text='请给我递水'
+[1.288s] 1: [INFO] [1778220476.573935367] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=4 text='请给我递水'
+[1.290s] 1: [INFO] [1778220476.575846882] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=5 text='请给我递水'
+[1.293s] 1: [INFO] [1778220476.578182361] [dev_mode_launch_test_node]: [wait:wait_nlu] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[1.294s] 1: [INFO] [1778220476.579884281] [dev_mode_launch_test_node]: received nlu/command_json='{"intent":"deliver_water","slots":{"object":"bottle","deliver_to":"person_nearby"},"auth":{"requested_role":"owner","require_confirmation":true}}'
+[1.396s] 1: [INFO] [1778220476.682044614] [dev_mode_launch_test_node]: [wait:wait_state_change] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[1.397s] 1: ok
+[1.397s] 1: [INFO] [1778220476.683281568] [dev_mode_launch_test_node]: dev_mode launch test node shutting down
+[1.407s] 1: 
+[1.407s] 1: ----------------------------------------------------------------------
+[1.407s] 1: Ran 3 tests in 0.802s
+[1.407s] 1: 
+[1.407s] 1: OK
+[1.411s] 1: [INFO] [executor_node-8]: sending signal 'SIGINT' to process[executor_node-8]
+[1.414s] 1: [INFO] [perception_node-7]: sending signal 'SIGINT' to process[perception_node-7]
+[1.414s] 1: [INFO] [manipulation_node-6]: sending signal 'SIGINT' to process[manipulation_node-6]
+[1.416s] 1: [INFO] [identity_node-5]: sending signal 'SIGINT' to process[identity_node-5]
+[1.416s] 1: [INFO] [nlu_node-4]: sending signal 'SIGINT' to process[nlu_node-4]
+[1.421s] 1: [INFO] [voice_bridge_node-3]: sending signal 'SIGINT' to process[voice_bridge_node-3]
+[1.423s] 1: [INFO] [safety_node-2]: sending signal 'SIGINT' to process[safety_node-2]
+[1.424s] 1: [INFO] [base_driver_node-1]: sending signal 'SIGINT' to process[base_driver_node-1]
+[1.426s] 1: [executor_node-8] [INFO] [1778220476.696638141] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.427s] 1: [manipulation_node-6] [INFO] [1778220476.698784797] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.428s] 1: [identity_node-5] [INFO] [1778220476.700450494] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.430s] 1: [nlu_node-4] [INFO] [1778220476.702447445] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.430s] 1: [safety_node-2] [INFO] [1778220476.705709713] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.432s] 1: [voice_bridge_node-3] [INFO] [1778220476.705795817] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.432s] 1: [base_driver_node-1] [INFO] [1778220476.709110038] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[1.544s] 1: [INFO] [executor_node-8]: process has finished cleanly [pid 1072]
+[1.545s] 1: [INFO] [identity_node-5]: process has finished cleanly [pid 1037]
+[1.546s] 1: [INFO] [voice_bridge_node-3]: process has finished cleanly [pid 1033]
+[1.550s] 1: [INFO] [manipulation_node-6]: process has finished cleanly [pid 1054]
+[1.550s] 1: [INFO] [nlu_node-4]: process has finished cleanly [pid 1035]
+[1.550s] 1: [INFO] [safety_node-2]: process has finished cleanly [pid 1031]
+[1.550s] 1: [INFO] [base_driver_node-1]: process has finished cleanly [pid 1029]
+[1.627s] 1: [INFO] [perception_node-7]: process has finished cleanly [pid 1064]
+[1.627s] 1: 
+[1.627s] 1: ----------------------------------------------------------------------
+[1.628s] 1: Ran 0 tests in 0.000s
+[1.628s] 1: 
+[1.628s] 1: OK
+[1.855s] 1: -- run_test.py: return code 0
+[1.855s] 1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml'
+[1.865s] 1/1 Test #1: test_dev_mode.launch.test.py .....   Passed    1.83 sec
+[1.865s] 
+[1.865s] 100% tests passed, 0 tests failed out of 1
+[1.865s] 
+[1.865s] Label Time Summary:
+[1.865s] launch_test    =   1.83 sec*proc (1 test)
+[1.865s] 
+[1.865s] Total Test time (real) =   1.83 sec
+[1.868s] Invoked command in '/ws/ros_ws/build/robot_bringup' returned '0': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure

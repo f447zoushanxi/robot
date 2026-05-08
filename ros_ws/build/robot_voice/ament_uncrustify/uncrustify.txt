@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml
+
+No code style divergence in file 'src/voice_bridge_node.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml'

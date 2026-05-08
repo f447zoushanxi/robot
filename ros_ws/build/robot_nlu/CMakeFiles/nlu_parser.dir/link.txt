@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnlu_parser.a CMakeFiles/nlu_parser.dir/src/nlu_parser.cpp.o
+/usr/bin/ranlib libnlu_parser.a

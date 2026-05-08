@@ -1,0 +1,27 @@
+[0.579s] Invoking command in '/ws/ros_ws/src/robot_perception': CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/build/robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_perception build --build-base /ws/ros_ws/build/robot_perception/build install --record /ws/ros_ws/build/robot_perception/install.log --single-version-externally-managed install_data
+[0.777s] running egg_info
+[0.778s] writing ../../build/robot_perception/robot_perception.egg-info/PKG-INFO
+[1.040s] writing dependency_links to ../../build/robot_perception/robot_perception.egg-info/dependency_links.txt
+[1.041s] writing entry points to ../../build/robot_perception/robot_perception.egg-info/entry_points.txt
+[1.041s] writing requirements to ../../build/robot_perception/robot_perception.egg-info/requires.txt
+[1.041s] writing top-level names to ../../build/robot_perception/robot_perception.egg-info/top_level.txt
+[1.043s] reading manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'
+[1.046s] writing manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'
+[1.048s] running build
+[1.048s] running build_py
+[1.049s] copying robot_perception/perception_node.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception
+[1.049s] copying robot_perception/__init__.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception
+[1.051s] running install
+[1.052s] running install_lib
+[1.053s] copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/perception_node.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception
+[1.053s] copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/__init__.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception
+[1.054s] byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/perception_node.py to perception_node.cpython-310.pyc
+[1.055s] byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/__init__.py to __init__.cpython-310.pyc
+[1.055s] running install_data
+[1.056s] running install_egg_info
+[1.057s] removing '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception-0.0.1-py3.10.egg-info' (and everything under it)
+[1.058s] Copying ../../build/robot_perception/robot_perception.egg-info to /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception-0.0.1-py3.10.egg-info
+[1.058s] running install_scripts
+[1.079s] Installing perception_node script to /ws/ros_ws/install/robot_perception/lib/robot_perception
+[1.080s] writing list of installed files to '/ws/ros_ws/build/robot_perception/install.log'
+[1.107s] Invoked command in '/ws/ros_ws/src/robot_perception' returned '0': CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/build/robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_perception build --build-base /ws/ros_ws/build/robot_perception/build install --record /ws/ros_ws/build/robot_perception/install.log --single-version-externally-managed install_data

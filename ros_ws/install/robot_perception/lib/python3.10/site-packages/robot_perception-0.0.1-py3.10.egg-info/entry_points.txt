@@ -1,0 +1,3 @@
+[console_scripts]
+perception_node = robot_perception.perception_node:main
+

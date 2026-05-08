@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbase_safety_utils.a CMakeFiles/base_safety_utils.dir/src/safety_utils.cpp.o
+/usr/bin/ranlib libbase_safety_utils.a

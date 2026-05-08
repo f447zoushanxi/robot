@@ -1,0 +1,13 @@
+setup.py
+robot_msgs/__init__.py
+robot_msgs.egg-info/PKG-INFO
+robot_msgs.egg-info/SOURCES.txt
+robot_msgs.egg-info/dependency_links.txt
+robot_msgs.egg-info/top_level.txt
+robot_msgs/action/__init__.py
+robot_msgs/action/_hand_over.py
+robot_msgs/action/_pick_bottle.py
+robot_msgs/srv/__init__.py
+robot_msgs/srv/_detect_object.py
+robot_msgs/srv/_enroll_owner.py
+robot_msgs/srv/_find_person.py

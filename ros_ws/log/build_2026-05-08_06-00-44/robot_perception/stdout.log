@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/robot_perception/robot_perception.egg-info
+writing ../../build/robot_perception/robot_perception.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_perception/robot_perception.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_perception/robot_perception.egg-info/entry_points.txt
+writing requirements to ../../build/robot_perception/robot_perception.egg-info/requires.txt
+writing top-level names to ../../build/robot_perception/robot_perception.egg-info/top_level.txt
+writing manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /ws/ros_ws/build/robot_perception/build
+creating /ws/ros_ws/build/robot_perception/build/lib
+creating /ws/ros_ws/build/robot_perception/build/lib/robot_perception
+copying robot_perception/perception_node.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception
+copying robot_perception/__init__.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception
+running install
+running install_lib
+creating /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception
+copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/perception_node.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception
+copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/__init__.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception
+byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/perception_node.py to perception_node.cpython-310.pyc
+byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /ws/ros_ws/install/robot_perception/share/ament_index
+creating /ws/ros_ws/install/robot_perception/share/ament_index/resource_index
+creating /ws/ros_ws/install/robot_perception/share/ament_index/resource_index/packages
+copying resource/robot_perception -> /ws/ros_ws/install/robot_perception/share/ament_index/resource_index/packages
+copying package.xml -> /ws/ros_ws/install/robot_perception/share/robot_perception
+running install_egg_info
+Copying ../../build/robot_perception/robot_perception.egg-info to /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception-0.0.1-py3.10.egg-info
+running install_scripts
+Installing perception_node script to /ws/ros_ws/install/robot_perception/lib/robot_perception
+writing list of installed files to '/ws/ros_ws/build/robot_perception/install.log'

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libidentity_enroll_policy.a CMakeFiles/identity_enroll_policy.dir/src/enroll_policy.cpp.o
+/usr/bin/ranlib libidentity_enroll_policy.a

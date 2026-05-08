@@ -1,0 +1,164 @@
+[0.029s] Invoking command in '/ws/ros_ws/build/robot_nlu': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nlu:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nlu /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.035s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini
+[0.035s] Parse Config file:/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini
+[0.035s]    Site: a0e3119139a3
+[0.035s]    Build name: (empty)
+[0.035s]  Add coverage exclude regular expressions.
+[0.035s] Create new tag: 20260508-0602 - Experimental
+[0.035s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini
+[0.036s] Parse Config file:/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini
+[0.036s] Test project /ws/ros_ws/build/robot_nlu
+[0.036s] Constructing a list of tests
+[0.036s] Done constructing a list of tests
+[0.036s] Updating test list for fixtures
+[0.036s] Added 0 tests to meet fixture requirements
+[0.040s] Checking test dependency graph...
+[0.040s] Checking test dependency graph end
+[0.040s] test 1
+[0.040s]     Start 1: test_nlu_parser
+[0.040s] 
+[0.040s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cmake_gtest/test_nlu_parser.txt" "--command" "/ws/ros_ws/build/robot_nlu/test_nlu_parser" "--gtest_output=xml:/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml"
+[0.040s] 1: Test timeout computed to be: 60
+[0.161s] 1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_nlu':
+[0.161s] 1:  - /ws/ros_ws/build/robot_nlu/test_nlu_parser --gtest_output=xml:/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml
+[0.163s] 1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[0.163s] 1: [==========] Running 2 tests from 1 test suite.
+[0.164s] 1: [----------] Global test environment set-up.
+[0.165s] 1: [----------] 2 tests from NluParser
+[0.166s] 1: [ RUN      ] NluParser.ParseDeliverWaterIntent
+[0.166s] 1: [       OK ] NluParser.ParseDeliverWaterIntent (0 ms)
+[0.166s] 1: [ RUN      ] NluParser.ParseStopIntent
+[0.167s] 1: [       OK ] NluParser.ParseStopIntent (0 ms)
+[0.167s] 1: [----------] 2 tests from NluParser (0 ms total)
+[0.169s] 1: 
+[0.169s] 1: [----------] Global test environment tear-down
+[0.169s] 1: [==========] 2 tests from 1 test suite ran. (0 ms total)
+[0.169s] 1: [  PASSED  ] 2 tests.
+[0.172s] 1: -- run_test.py: return code 0
+[0.173s] 1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml'
+[0.173s] 1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml'
+[0.181s] 1/7 Test #1: test_nlu_parser ..................   Passed    0.14 sec
+[0.182s] test 2
+[0.183s]     Start 2: copyright
+[0.185s] 
+[0.185s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml"
+[0.186s] 2: Test timeout computed to be: 200
+[0.243s] 2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[0.244s] 2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml
+[0.407s] 2: include/robot_nlu/nlu_parser.hpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.408s] 2: src/nlu_node.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.408s] 2: src/nlu_parser.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.408s] 2: test/test_nlu_parser.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.408s] 2: 4 errors, checked 4 files
+[0.418s] 2: -- run_test.py: return code 1
+[0.419s] 2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml'
+[0.430s] 2/7 Test #2: copyright ........................***Failed    0.25 sec
+[0.431s] -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[0.431s]  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml
+[0.431s] include/robot_nlu/nlu_parser.hpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.431s] src/nlu_node.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.432s] src/nlu_parser.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.432s] test/test_nlu_parser.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.432s] 4 errors, checked 4 files
+[0.433s] -- run_test.py: return code 1
+[0.436s] -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml'
+[0.436s] 
+[0.436s] test 3
+[0.436s]     Start 3: cppcheck
+[0.437s] 
+[0.437s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_nlu/include"
+[0.437s] 3: Test timeout computed to be: 300
+[0.493s] 3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[0.493s] 3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_nlu/include
+[0.568s] 3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.580s] 3: -- run_test.py: return code 0
+[0.580s] 3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml'
+[0.589s] 3/7 Test #3: cppcheck .........................   Passed    0.16 sec
+[0.590s] test 4
+[0.590s]     Start 4: cpplint
+[0.591s] 
+[0.591s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml"
+[0.591s] 4: Test timeout computed to be: 120
+[0.653s] 4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[0.653s] 4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml
+[0.778s] 4: Using '--root=/ws/ros_ws/src/robot_nlu/include' argument
+[0.778s] 4: 
+[0.778s] 4: Done processing /ws/ros_ws/src/robot_nlu/include/robot_nlu/nlu_parser.hpp
+[0.779s] 4: 
+[0.779s] 4: Using '--root=/ws/ros_ws/src/robot_nlu/src' argument
+[0.779s] 4: 
+[0.779s] 4: Done processing /ws/ros_ws/src/robot_nlu/src/nlu_node.cpp
+[0.780s] 4: 
+[0.780s] 4: Done processing /ws/ros_ws/src/robot_nlu/src/nlu_parser.cpp
+[0.780s] 4: 
+[0.780s] 4: Using '--root=/ws/ros_ws/src/robot_nlu/test' argument
+[0.780s] 4: 
+[0.781s] 4: Done processing /ws/ros_ws/src/robot_nlu/test/test_nlu_parser.cpp
+[0.781s] 4: 
+[0.781s] 4: No problems found
+[0.791s] 4: -- run_test.py: return code 0
+[0.791s] 4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml'
+[0.802s] 4/7 Test #4: cpplint ..........................   Passed    0.21 sec
+[0.805s] test 5
+[0.805s]     Start 5: lint_cmake
+[0.805s] 
+[0.805s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml"
+[0.805s] 5: Test timeout computed to be: 60
+[0.865s] 5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[0.865s] 5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml
+[0.934s] 5: 
+[0.934s] 5: No problems found
+[0.945s] 5: -- run_test.py: return code 0
+[0.949s] 5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml'
+[0.960s] 5/7 Test #5: lint_cmake .......................   Passed    0.16 sec
+[0.961s] test 6
+[0.961s]     Start 6: uncrustify
+[0.963s] 
+[0.963s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml"
+[0.963s] 6: Test timeout computed to be: 60
+[1.024s] 6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[1.024s] 6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml
+[1.113s] 6: No code style divergence in file 'include/robot_nlu/nlu_parser.hpp'
+[1.113s] 6: 
+[1.113s] 6: No code style divergence in file 'src/nlu_node.cpp'
+[1.113s] 6: 
+[1.113s] 6: No code style divergence in file 'src/nlu_parser.cpp'
+[1.113s] 6: 
+[1.113s] 6: No code style divergence in file 'test/test_nlu_parser.cpp'
+[1.113s] 6: 
+[1.113s] 6: No problems found
+[1.128s] 6: -- run_test.py: return code 0
+[1.129s] 6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml'
+[1.139s] 6/7 Test #6: uncrustify .......................   Passed    0.18 sec
+[1.140s] test 7
+[1.140s]     Start 7: xmllint
+[1.140s] 
+[1.140s] 7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml"
+[1.140s] 7: Test timeout computed to be: 60
+[1.202s] 7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+[1.202s] 7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml
+[1.280s] 7: File 'package.xml' is valid
+[1.280s] 7: 
+[1.280s] 7: No problems found
+[1.289s] 7: -- run_test.py: return code 0
+[1.290s] 7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml'
+[1.305s] 7/7 Test #7: xmllint ..........................   Passed    0.16 sec
+[1.305s] 
+[1.305s] 86% tests passed, 1 tests failed out of 7
+[1.305s] 
+[1.306s] Label Time Summary:
+[1.306s] copyright     =   0.25 sec*proc (1 test)
+[1.306s] cppcheck      =   0.16 sec*proc (1 test)
+[1.306s] cpplint       =   0.21 sec*proc (1 test)
+[1.306s] gtest         =   0.14 sec*proc (1 test)
+[1.306s] lint_cmake    =   0.16 sec*proc (1 test)
+[1.306s] linter        =   1.11 sec*proc (6 tests)
+[1.306s] uncrustify    =   0.18 sec*proc (1 test)
+[1.306s] xmllint       =   0.16 sec*proc (1 test)
+[1.306s] 
+[1.306s] Total Test time (real) =   1.26 sec
+[1.306s] 
+[1.306s] The following tests FAILED:
+[1.306s] 	  2 - copyright (Failed)
+[1.307s] Errors while running CTest
+[1.307s] Invoked command in '/ws/ros_ws/build/robot_nlu' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nlu:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nlu /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure

@@ -1,0 +1,26 @@
+[0.011s] Invoking command in '/ws/ros_ws/build/robot_manipulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_manipulation -- -j4 -l4
+[0.076s] Consolidate compiler generated dependencies of target manipulation_node
+[0.120s] [ 50%] Building CXX object CMakeFiles/manipulation_node.dir/src/manipulation_node.cpp.o
+[5.402s] [100%] Linking CXX executable manipulation_node
+[5.555s] [100%] Built target manipulation_node
+[5.651s] Invoked command in '/ws/ros_ws/build/robot_manipulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_manipulation -- -j4 -l4
+[5.652s] Invoking command in '/ws/ros_ws/build/robot_manipulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_manipulation
+[5.661s] -- Install configuration: ""
+[5.662s] -- Installing: /ws/ros_ws/install/robot_manipulation/lib/robot_manipulation/manipulation_node
+[5.677s] -- Set runtime path of "/ws/ros_ws/install/robot_manipulation/lib/robot_manipulation/manipulation_node" to ""
+[5.677s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/package_run_dependencies/robot_manipulation
+[5.678s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/parent_prefix_path/robot_manipulation
+[5.678s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.sh
+[5.679s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.dsv
+[5.679s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.sh
+[5.679s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.dsv
+[5.684s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.bash
+[5.685s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.sh
+[5.685s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.zsh
+[5.685s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.dsv
+[5.685s] -- Installing: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.dsv
+[5.685s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/packages/robot_manipulation
+[5.686s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig.cmake
+[5.686s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig-version.cmake
+[5.686s] -- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.xml
+[5.686s] Invoked command in '/ws/ros_ws/build/robot_manipulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_manipulation

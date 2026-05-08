@@ -1,0 +1,6 @@
+Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws/ros_ws/src/robot_nlu -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_nlu
+Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws/ros_ws/src/robot_nlu -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_nlu
+Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu
+Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu

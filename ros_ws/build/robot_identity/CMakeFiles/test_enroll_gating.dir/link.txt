@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_enroll_gating.dir/test/test_enroll_gating.cpp.o -o test_enroll_gating  gtest/libgtest_main.a gtest/libgtest.a libidentity_enroll_policy.a -pthread 

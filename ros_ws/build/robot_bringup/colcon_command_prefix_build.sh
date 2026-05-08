@@ -1,0 +1,11 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/ws/ros_ws/install/robot_base/share/robot_base/package.sh"
+. "/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.sh"
+. "/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.sh"
+. "/ws/ros_ws/install/robot_nav/share/robot_nav/package.sh"
+. "/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.sh"
+. "/ws/ros_ws/install/robot_safety/share/robot_safety/package.sh"
+. "/ws/ros_ws/install/robot_voice/share/robot_voice/package.sh"
+. "/ws/ros_ws/install/robot_executor/share/robot_executor/package.sh"
+. "/ws/ros_ws/install/robot_identity/share/robot_identity/package.sh"
+. "/ws/ros_ws/install/robot_perception/share/robot_perception/package.sh"

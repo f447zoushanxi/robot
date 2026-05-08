@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-05-08T06:07:52" name="AllTests">
+  <testsuite name="LocationManager" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-05-08T06:07:52">
+    <testcase name="LoadValidLocationsYaml" status="run" result="completed" time="0" timestamp="2026-05-08T06:07:52" classname="robot_nav.LocationManager" />
+    <testcase name="IgnoreInvalidEntryAndKeepValidOnes" status="run" result="completed" time="0" timestamp="2026-05-08T06:07:52" classname="robot_nav.LocationManager" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,874 @@
+[0.000000] (-) TimerEvent: {}
+[0.000386] (robot_base) JobQueued: {'identifier': 'robot_base', 'dependencies': OrderedDict()}
+[0.000408] (robot_manipulation) JobQueued: {'identifier': 'robot_manipulation', 'dependencies': OrderedDict()}
+[0.000424] (robot_msgs) JobQueued: {'identifier': 'robot_msgs', 'dependencies': OrderedDict()}
+[0.000437] (robot_nav) JobQueued: {'identifier': 'robot_nav', 'dependencies': OrderedDict()}
+[0.000448] (robot_nlu) JobQueued: {'identifier': 'robot_nlu', 'dependencies': OrderedDict()}
+[0.000460] (robot_safety) JobQueued: {'identifier': 'robot_safety', 'dependencies': OrderedDict()}
+[0.000471] (robot_voice) JobQueued: {'identifier': 'robot_voice', 'dependencies': OrderedDict()}
+[0.000483] (robot_executor) JobQueued: {'identifier': 'robot_executor', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs')])}
+[0.000499] (robot_identity) JobQueued: {'identifier': 'robot_identity', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs')])}
+[0.000511] (robot_perception) JobQueued: {'identifier': 'robot_perception', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs')])}
+[0.000523] (robot_bringup) JobQueued: {'identifier': 'robot_bringup', 'dependencies': OrderedDict([('robot_base', '/ws/ros_ws/install/robot_base'), ('robot_manipulation', '/ws/ros_ws/install/robot_manipulation'), ('robot_msgs', '/ws/ros_ws/install/robot_msgs'), ('robot_nav', '/ws/ros_ws/install/robot_nav'), ('robot_nlu', '/ws/ros_ws/install/robot_nlu'), ('robot_safety', '/ws/ros_ws/install/robot_safety'), ('robot_voice', '/ws/ros_ws/install/robot_voice'), ('robot_executor', '/ws/ros_ws/install/robot_executor'), ('robot_identity', '/ws/ros_ws/install/robot_identity'), ('robot_perception', '/ws/ros_ws/install/robot_perception')])}
+[0.000543] (robot_msgs) JobStarted: {'identifier': 'robot_msgs'}
+[0.005987] (robot_base) JobStarted: {'identifier': 'robot_base'}
+[0.008316] (robot_manipulation) JobStarted: {'identifier': 'robot_manipulation'}
+[0.010800] (robot_nav) JobStarted: {'identifier': 'robot_nav'}
+[0.014064] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'cmake'}
+[0.014592] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'build'}
+[0.015171] (robot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_msgs', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_msgs', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.016370] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'cmake'}
+[0.016587] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'build'}
+[0.016800] (robot_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_base', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_base', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_base'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.018109] (robot_manipulation) JobProgress: {'identifier': 'robot_manipulation', 'progress': 'cmake'}
+[0.018341] (robot_manipulation) JobProgress: {'identifier': 'robot_manipulation', 'progress': 'build'}
+[0.018597] (robot_manipulation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_manipulation', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_manipulation', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_manipulation'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024990] (robot_nav) JobProgress: {'identifier': 'robot_nav', 'progress': 'cmake'}
+[0.025038] (robot_nav) JobProgress: {'identifier': 'robot_nav', 'progress': 'build'}
+[0.025059] (robot_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_nav', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_nav', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nav'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.089369] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target base_safety_utils\n'}
+[0.089672] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target serial_interface_stub\n'}
+[0.089767] (robot_manipulation) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target manipulation_node\n'}
+[0.099678] (-) TimerEvent: {}
+[0.104038] (robot_nav) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target nav_server_node\n'}
+[0.116010] (robot_msgs) StdoutLine: {'line': b'[  1%] Built target robot_msgs__rs\n'}
+[0.116593] (robot_msgs) StdoutLine: {'line': b'[ 12%] Built target robot_msgs__rosidl_generator_c\n'}
+[0.119157] (robot_nav) StdoutLine: {'line': b'[ 20%] Built target gtest_main\n'}
+[0.126288] (robot_base) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o\n'}
+[0.126476] (robot_base) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[0.126604] (robot_base) StdoutLine: {'line': b'[  8%] Building CXX object CMakeFiles/base_safety_utils.dir/src/safety_utils.cpp.o\n'}
+[0.126721] (robot_msgs) StdoutLine: {'line': b'[ 14%] Built target robot_msgs__cpp\n'}
+[0.137266] (robot_manipulation) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/manipulation_node.dir/src/manipulation_node.cpp.o\n'}
+[0.140119] (robot_base) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[0.146181] (robot_msgs) StdoutLine: {'line': b'[ 14%] Built target ament_cmake_python_copy_robot_msgs\n'}
+[0.146404] (robot_nav) StdoutLine: {'line': b'[ 40%] Built target gtest\n'}
+[0.146616] (robot_nav) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/nav_server_node.dir/src/nav_server_node.cpp.o\n'}
+[0.151066] (robot_nav) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/nav_server_node.dir/src/location_manager.cpp.o\n'}
+[0.185377] (robot_nav) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_location_manager\n'}
+[0.185649] (robot_msgs) StdoutLine: {'line': b'[ 25%] Built target robot_msgs__rosidl_typesupport_introspection_c\n'}
+[0.199792] (-) TimerEvent: {}
+[0.200616] (robot_msgs) StdoutLine: {'line': b'[ 35%] Built target robot_msgs__rosidl_typesupport_c\n'}
+[0.208144] (robot_msgs) StdoutLine: {'line': b'[ 46%] Built target robot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.229782] (robot_nav) StdoutLine: {'line': b'[ 70%] Building CXX object CMakeFiles/test_location_manager.dir/test/test_location_manager.cpp.o\n'}
+[0.230141] (robot_nav) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/test_location_manager.dir/src/location_manager.cpp.o\n'}
+[0.233966] (robot_msgs) StdoutLine: {'line': b'[ 57%] Built target robot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.261133] (robot_msgs) StdoutLine: {'line': b'[ 68%] Built target robot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.299907] (-) TimerEvent: {}
+[0.303734] (robot_msgs) StdoutLine: {'line': b'[ 79%] Built target robot_msgs__rosidl_typesupport_cpp\n'}
+[0.365997] (robot_msgs) StdoutLine: {'line': b'[ 79%] Built target robot_msgs\n'}
+[0.400002] (-) TimerEvent: {}
+[0.434521] (robot_msgs) StdoutLine: {'line': b'[ 81%] Built target robot_msgs__py\n'}
+[0.451871] (robot_base) StdoutLine: {'line': b'[ 58%] Linking CXX static library libserial_interface_stub.a\n'}
+[0.494637] (robot_base) StdoutLine: {'line': b'[ 58%] Built target serial_interface_stub\n'}
+[0.500100] (-) TimerEvent: {}
+[0.521499] (robot_msgs) StdoutLine: {'line': b'[ 90%] Built target robot_msgs__rosidl_generator_py\n'}
+[0.583560] (robot_msgs) StdoutLine: {'line': b'[ 93%] Built target robot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.588152] (robot_msgs) StdoutLine: {'line': b'[ 96%] Built target robot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.598165] (robot_msgs) StdoutLine: {'line': b'[100%] Built target robot_msgs__rosidl_typesupport_c__pyext\n'}
+[0.600187] (-) TimerEvent: {}
+[0.703003] (-) TimerEvent: {}
+[0.721843] (robot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.726972] (robot_msgs) StdoutLine: {'line': b'writing robot_msgs.egg-info/PKG-INFO\n'}
+[0.727413] (robot_msgs) StdoutLine: {'line': b'writing dependency_links to robot_msgs.egg-info/dependency_links.txt\n'}
+[0.728955] (robot_msgs) StdoutLine: {'line': b'writing top-level names to robot_msgs.egg-info/top_level.txt\n'}
+[0.734617] (robot_msgs) StdoutLine: {'line': b"reading manifest file 'robot_msgs.egg-info/SOURCES.txt'\n"}
+[0.734975] (robot_msgs) StdoutLine: {'line': b"writing manifest file 'robot_msgs.egg-info/SOURCES.txt'\n"}
+[0.803131] (-) TimerEvent: {}
+[0.808750] (robot_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_msgs_egg\n'}
+[0.841048] (robot_msgs) CommandEnded: {'returncode': 0}
+[0.841399] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'install'}
+[0.861818] (robot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_msgs'], 'cwd': '/ws/ros_ws/build/robot_msgs', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.887390] (robot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.887662] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_msgs\n'}
+[0.887791] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.888291] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[0.888395] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.888487] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.888573] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/find_person.h\n'}
+[0.888657] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detect_object.h\n'}
+[0.888738] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.888821] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.h\n'}
+[0.888905] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__functions.h\n'}
+[0.889031] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__struct.h\n'}
+[0.889419] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__struct.h\n'}
+[0.889534] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__functions.c\n'}
+[0.889597] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__functions.c\n'}
+[0.889865] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__functions.h\n'}
+[0.890271] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__struct.h\n'}
+[0.890368] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__functions.h\n'}
+[0.890439] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.h\n'}
+[0.890578] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.h\n'}
+[0.890684] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__functions.c\n'}
+[0.892165] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/enroll_owner.h\n'}
+[0.893540] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.893771] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/hand_over.h\n'}
+[0.893982] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/pick_bottle.h\n'}
+[0.894212] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.894371] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__functions.h\n'}
+[0.894525] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__struct.h\n'}
+[0.894651] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__functions.h\n'}
+[0.894814] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__struct.h\n'}
+[0.894982] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__functions.c\n'}
+[0.895492] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.h\n'}
+[0.896977] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.h\n'}
+[0.897210] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__functions.c\n'}
+[0.897399] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/library_path.sh\n'}
+[0.897586] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/library_path.dsv\n'}
+[0.897765] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so\n'}
+[0.898058] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.898142] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[0.899968] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.901103] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.901182] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.901241] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_fastrtps_c.h\n'}
+[0.901306] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_fastrtps_c.h\n'}
+[0.901370] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_fastrtps_c.h\n'}
+[0.901425] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.901479] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.901527] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_fastrtps_c.h\n'}
+[0.901576] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_fastrtps_c.h\n'}
+[0.901623] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.901675] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.901724] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[0.901776] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.901829] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.901883] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.901959] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_introspection_c.h\n'}
+[0.902039] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_introspection_c.h\n'}
+[0.906067] (-) TimerEvent: {}
+[0.906184] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.c\n'}
+[0.906296] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.c\n'}
+[0.906477] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.c\n'}
+[0.906582] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_introspection_c.h\n'}
+[0.906663] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.906762] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.906889] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_introspection_c.h\n'}
+[0.907041] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_introspection_c.h\n'}
+[0.907131] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.c\n'}
+[0.907210] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.c\n'}
+[0.910965] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.911123] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so\n'}
+[0.911216] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.911360] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[0.911451] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.911542] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.911624] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/enroll_owner.hpp\n'}
+[0.911707] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detect_object.hpp\n'}
+[0.911789] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/find_person.hpp\n'}
+[0.911870] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.912014] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__builder.hpp\n'}
+[0.912114] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.hpp\n'}
+[0.912192] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__struct.hpp\n'}
+[0.912343] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__struct.hpp\n'}
+[0.912458] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__traits.hpp\n'}
+[0.912564] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.hpp\n'}
+[0.912678] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__struct.hpp\n'}
+[0.912814] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__builder.hpp\n'}
+[0.912935] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.hpp\n'}
+[0.913063] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__traits.hpp\n'}
+[0.913211] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__builder.hpp\n'}
+[0.913283] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__traits.hpp\n'}
+[0.913339] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.913392] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/pick_bottle.hpp\n'}
+[0.913441] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.913492] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__builder.hpp\n'}
+[0.913550] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__struct.hpp\n'}
+[0.913600] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.hpp\n'}
+[0.913651] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__struct.hpp\n'}
+[0.913703] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.hpp\n'}
+[0.913755] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__traits.hpp\n'}
+[0.913808] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__traits.hpp\n'}
+[0.913860] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__builder.hpp\n'}
+[0.913913] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/hand_over.hpp\n'}
+[0.921003] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.921562] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[0.921811] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.921920] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.922038] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.922117] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.922245] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.922338] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/dds_fastrtps\n'}
+[0.922418] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.922503] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.922637] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.922765] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.922894] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.923051] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/dds_fastrtps\n'}
+[0.923175] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.923254] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[0.923417] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[0.923491] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[0.923637] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.923755] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.923844] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.923935] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.cpp\n'}
+[0.924024] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.cpp\n'}
+[0.924096] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.cpp\n'}
+[0.924174] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action\n'}
+[0.924244] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail\n'}
+[0.924324] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.924465] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.924587] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.cpp\n'}
+[0.924708] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.cpp\n'}
+[0.924826] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.924914] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so\n'}
+[0.925075] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.sh\n'}
+[0.925236] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.dsv\n'}
+[0.925304] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info\n'}
+[0.925358] (robot_msgs) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[0.925409] (robot_msgs) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.925459] (robot_msgs) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.925504] (robot_msgs) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[0.925552] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs\n'}
+[0.925602] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.929984] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.930199] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv\n'}
+[0.930300] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_detect_object_s.c\n'}
+[0.930448] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_detect_object.py\n'}
+[0.930542] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_find_person_s.c\n'}
+[0.930651] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_enroll_owner_s.c\n'}
+[0.930736] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_find_person.py\n'}
+[0.932988] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_enroll_owner.py\n'}
+[0.933144] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/__init__.py\n'}
+[0.933236] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.933317] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.933408] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.933538] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action\n'}
+[0.933627] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_pick_bottle_s.c\n'}
+[0.933704] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_pick_bottle.py\n'}
+[0.933798] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_hand_over_s.c\n'}
+[0.933880] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_hand_over.py\n'}
+[0.933969] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/__init__.py\n'}
+[0.934058] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/librobot_msgs__rosidl_generator_py.so\n'}
+[0.934137] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py\n'}
+[0.934212] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.007005] (-) TimerEvent: {}
+[1.007877] (robot_base) StdoutLine: {'line': b'[ 66%] Linking CXX static library libbase_safety_utils.a\n'}
+[1.041247] (robot_msgs) StdoutLine: {'line': b"Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs'...\n"}
+[1.041532] (robot_msgs) StdoutLine: {'line': b"Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action'...\n"}
+[1.041657] (robot_msgs) StdoutLine: {'line': b"Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv'...\n"}
+[1.057230] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.058235] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.061108] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.061326] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so\n'}
+[1.061694] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/rust_packages/robot_msgs\n'}
+[1.062309] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust\n'}
+[1.065138] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src\n'}
+[1.065313] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/lib.rs\n'}
+[1.065422] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv.rs\n'}
+[1.065506] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv\n'}
+[1.065630] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv/rmw.rs\n'}
+[1.065853] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action\n'}
+[1.066227] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action/rmw.rs\n'}
+[1.066548] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action.rs\n'}
+[1.066647] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/build.rs\n'}
+[1.066713] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/Cargo.toml\n'}
+[1.066770] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject.idl\n'}
+[1.066832] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson.idl\n'}
+[1.066885] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner.idl\n'}
+[1.071158] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/PickBottle.idl\n'}
+[1.071428] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/HandOver.idl\n'}
+[1.071549] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject.srv\n'}
+[1.071831] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject_Request.msg\n'}
+[1.072006] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject_Response.msg\n'}
+[1.072282] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson.srv\n'}
+[1.072465] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson_Request.msg\n'}
+[1.072949] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson_Response.msg\n'}
+[1.073379] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner.srv\n'}
+[1.074895] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner_Request.msg\n'}
+[1.075329] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner_Response.msg\n'}
+[1.075665] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/PickBottle.action\n'}
+[1.075750] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/HandOver.action\n'}
+[1.075818] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/package_run_dependencies/robot_msgs\n'}
+[1.075883] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/parent_prefix_path/robot_msgs\n'}
+[1.075973] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.sh\n'}
+[1.076041] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.dsv\n'}
+[1.076096] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/path.sh\n'}
+[1.076149] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/path.dsv\n'}
+[1.076199] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.bash\n'}
+[1.076248] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.sh\n'}
+[1.076298] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.zsh\n'}
+[1.076347] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.dsv\n'}
+[1.076396] (robot_msgs) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_msgs/share/robot_msgs/package.dsv\n'}
+[1.076445] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/packages/robot_msgs\n'}
+[1.076495] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport.cmake\n'}
+[1.076547] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.076604] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.076655] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.078985] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.079371] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.079729] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.083987] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.084487] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.084872] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.085323] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.085867] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.086016] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.086095] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.086156] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.086214] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.086267] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.086325] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.086378] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.086425] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.086477] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.086529] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.086582] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.086633] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.086690] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig.cmake\n'}
+[1.088528] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig-version.cmake\n'}
+[1.089009] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/package.xml\n'}
+[1.091515] (robot_msgs) CommandEnded: {'returncode': 0}
+[1.109070] (-) TimerEvent: {}
+[1.156209] (robot_msgs) JobEnded: {'identifier': 'robot_msgs', 'rc': 0}
+[1.160009] (robot_nlu) JobStarted: {'identifier': 'robot_nlu'}
+[1.166684] (robot_base) StdoutLine: {'line': b'[ 66%] Built target base_safety_utils\n'}
+[1.166916] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_timeout_brake\n'}
+[1.167076] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target base_driver_node\n'}
+[1.171420] (robot_nlu) JobProgress: {'identifier': 'robot_nlu', 'progress': 'cmake'}
+[1.171459] (robot_nlu) JobProgress: {'identifier': 'robot_nlu', 'progress': 'build'}
+[1.171732] (robot_nlu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_nlu', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_nlu', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nlu'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.181574] (robot_base) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/test_timeout_brake.dir/test/test_timeout_brake.cpp.o\n'}
+[1.209215] (robot_base) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/base_driver_node.dir/src/base_driver_node.cpp.o\n'}
+[1.209509] (-) TimerEvent: {}
+[1.305990] (robot_nlu) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target nlu_parser\n'}
+[1.309601] (-) TimerEvent: {}
+[1.326012] (robot_nlu) StdoutLine: {'line': b'[ 20%] Built target gtest_main\n'}
+[1.349064] (robot_nlu) StdoutLine: {'line': b'[ 50%] Built target gtest\n'}
+[1.351274] (robot_nlu) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/nlu_parser.dir/src/nlu_parser.cpp.o\n'}
+[1.412021] (-) TimerEvent: {}
+[1.512259] (-) TimerEvent: {}
+[1.612495] (-) TimerEvent: {}
+[1.712729] (-) TimerEvent: {}
+[1.724194] (robot_nlu) StdoutLine: {'line': b'[ 60%] Linking CXX static library libnlu_parser.a\n'}
+[1.805251] (robot_nlu) StdoutLine: {'line': b'[ 60%] Built target nlu_parser\n'}
+[1.813129] (-) TimerEvent: {}
+[1.852448] (robot_nlu) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target nlu_node\n'}
+[1.860098] (robot_nlu) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_nlu_parser\n'}
+[1.891208] (robot_nlu) StdoutLine: {'line': b'[ 70%] Building CXX object CMakeFiles/test_nlu_parser.dir/test/test_nlu_parser.cpp.o\n'}
+[1.897218] (robot_nlu) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/nlu_node.dir/src/nlu_node.cpp.o\n'}
+[1.915022] (-) TimerEvent: {}
+[2.015254] (-) TimerEvent: {}
+[2.115476] (-) TimerEvent: {}
+[2.215712] (-) TimerEvent: {}
+[2.315956] (-) TimerEvent: {}
+[2.416190] (-) TimerEvent: {}
+[2.519019] (-) TimerEvent: {}
+[2.620999] (robot_nav) StdoutLine: {'line': b'[ 90%] Linking CXX executable test_location_manager\n'}
+[2.621898] (-) TimerEvent: {}
+[2.722082] (-) TimerEvent: {}
+[2.822328] (-) TimerEvent: {}
+[2.886034] (robot_nav) StdoutLine: {'line': b'[ 90%] Built target test_location_manager\n'}
+[2.922463] (-) TimerEvent: {}
+[3.022699] (-) TimerEvent: {}
+[3.122947] (-) TimerEvent: {}
+[3.225025] (-) TimerEvent: {}
+[3.236860] (robot_base) StdoutLine: {'line': b'[ 91%] Linking CXX executable test_timeout_brake\n'}
+[3.325148] (-) TimerEvent: {}
+[3.425389] (-) TimerEvent: {}
+[3.525639] (-) TimerEvent: {}
+[3.625873] (-) TimerEvent: {}
+[3.633291] (robot_nlu) StdoutLine: {'line': b'[ 90%] Linking CXX executable test_nlu_parser\n'}
+[3.636004] (robot_base) StdoutLine: {'line': b'[ 91%] Built target test_timeout_brake\n'}
+[3.726037] (-) TimerEvent: {}
+[3.826281] (-) TimerEvent: {}
+[3.884209] (robot_nlu) StdoutLine: {'line': b'[ 90%] Built target test_nlu_parser\n'}
+[3.926422] (-) TimerEvent: {}
+[4.026671] (-) TimerEvent: {}
+[4.126913] (-) TimerEvent: {}
+[4.227158] (-) TimerEvent: {}
+[4.327405] (-) TimerEvent: {}
+[4.427647] (-) TimerEvent: {}
+[4.527893] (-) TimerEvent: {}
+[4.628152] (-) TimerEvent: {}
+[4.729027] (-) TimerEvent: {}
+[4.829284] (-) TimerEvent: {}
+[4.929530] (-) TimerEvent: {}
+[5.029786] (-) TimerEvent: {}
+[5.130037] (-) TimerEvent: {}
+[5.230286] (-) TimerEvent: {}
+[5.331043] (-) TimerEvent: {}
+[5.410534] (robot_nav) StdoutLine: {'line': b'[100%] Linking CXX executable nav_server_node\n'}
+[5.432019] (-) TimerEvent: {}
+[5.532246] (-) TimerEvent: {}
+[5.595029] (robot_nav) StdoutLine: {'line': b'[100%] Built target nav_server_node\n'}
+[5.596012] (robot_manipulation) StdoutLine: {'line': b'[100%] Linking CXX executable manipulation_node\n'}
+[5.608417] (robot_nav) CommandEnded: {'returncode': 0}
+[5.611184] (robot_nav) JobProgress: {'identifier': 'robot_nav', 'progress': 'install'}
+[5.611225] (robot_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_nav'], 'cwd': '/ws/ros_ws/build/robot_nav', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nav'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.619336] (robot_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.620624] (robot_nav) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nav/lib/robot_nav/nav_server_node\n'}
+[5.622892] (robot_nav) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_nav/lib/robot_nav/nav_server_node" to ""\n'}
+[5.623600] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/include\n'}
+[5.627131] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/include/robot_nav\n'}
+[5.627279] (robot_nav) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nav/include/robot_nav/location_manager.hpp\n'}
+[5.627654] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/package_run_dependencies/robot_nav\n'}
+[5.628004] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/parent_prefix_path/robot_nav\n'}
+[5.628408] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.sh\n'}
+[5.628650] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.dsv\n'}
+[5.628855] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.sh\n'}
+[5.629217] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.dsv\n'}
+[5.629684] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.bash\n'}
+[5.629808] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.sh\n'}
+[5.630196] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.zsh\n'}
+[5.630540] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.dsv\n'}
+[5.630849] (robot_nav) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nav/share/robot_nav/package.dsv\n'}
+[5.631593] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/packages/robot_nav\n'}
+[5.632283] (-) TimerEvent: {}
+[5.632311] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig.cmake\n'}
+[5.635465] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig-version.cmake\n'}
+[5.635947] (robot_nav) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/package.xml\n'}
+[5.636368] (robot_nav) CommandEnded: {'returncode': 0}
+[5.732449] (-) TimerEvent: {}
+[5.807461] (robot_nav) JobEnded: {'identifier': 'robot_nav', 'rc': 0}
+[5.809580] (robot_safety) JobStarted: {'identifier': 'robot_safety'}
+[5.816181] (robot_manipulation) StdoutLine: {'line': b'[100%] Built target manipulation_node\n'}
+[5.816432] (robot_manipulation) CommandEnded: {'returncode': 0}
+[5.816672] (robot_manipulation) JobProgress: {'identifier': 'robot_manipulation', 'progress': 'install'}
+[5.816706] (robot_manipulation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_manipulation'], 'cwd': '/ws/ros_ws/build/robot_manipulation', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_manipulation'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.817770] (robot_safety) JobProgress: {'identifier': 'robot_safety', 'progress': 'cmake'}
+[5.823016] (robot_safety) JobProgress: {'identifier': 'robot_safety', 'progress': 'build'}
+[5.823068] (robot_safety) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_safety', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_safety', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_safety'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.826641] (robot_manipulation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.827311] (robot_manipulation) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_manipulation/lib/robot_manipulation/manipulation_node\n'}
+[5.829007] (robot_manipulation) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_manipulation/lib/robot_manipulation/manipulation_node" to ""\n'}
+[5.829343] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/package_run_dependencies/robot_manipulation\n'}
+[5.829626] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/parent_prefix_path/robot_manipulation\n'}
+[5.829922] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.sh\n'}
+[5.830230] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.dsv\n'}
+[5.830768] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.sh\n'}
+[5.830848] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.dsv\n'}
+[5.830908] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.bash\n'}
+[5.831375] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.sh\n'}
+[5.831562] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.zsh\n'}
+[5.831632] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.dsv\n'}
+[5.831691] (robot_manipulation) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.dsv\n'}
+[5.832505] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/packages/robot_manipulation\n'}
+[5.832604] (-) TimerEvent: {}
+[5.832625] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig.cmake\n'}
+[5.832691] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig-version.cmake\n'}
+[5.832750] (robot_manipulation) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.xml\n'}
+[5.836898] (robot_manipulation) CommandEnded: {'returncode': 0}
+[5.849394] (robot_manipulation) JobEnded: {'identifier': 'robot_manipulation', 'rc': 0}
+[5.850231] (robot_voice) JobStarted: {'identifier': 'robot_voice'}
+[5.857436] (robot_voice) JobProgress: {'identifier': 'robot_voice', 'progress': 'cmake'}
+[5.858140] (robot_voice) JobProgress: {'identifier': 'robot_voice', 'progress': 'build'}
+[5.858440] (robot_voice) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_voice', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_voice', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_voice'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.885119] (robot_safety) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target safety_node\n'}
+[5.905479] (robot_safety) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\n'}
+[5.915593] (robot_voice) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target voice_bridge_node\n'}
+[5.932725] (-) TimerEvent: {}
+[5.939976] (robot_voice) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/voice_bridge_node.dir/src/voice_bridge_node.cpp.o\n'}
+[6.032863] (-) TimerEvent: {}
+[6.133125] (-) TimerEvent: {}
+[6.233366] (-) TimerEvent: {}
+[6.333617] (-) TimerEvent: {}
+[6.433864] (-) TimerEvent: {}
+[6.534119] (-) TimerEvent: {}
+[6.634382] (-) TimerEvent: {}
+[6.734628] (-) TimerEvent: {}
+[6.834875] (-) TimerEvent: {}
+[6.935133] (-) TimerEvent: {}
+[7.035377] (-) TimerEvent: {}
+[7.135631] (-) TimerEvent: {}
+[7.235891] (-) TimerEvent: {}
+[7.336168] (-) TimerEvent: {}
+[7.437019] (-) TimerEvent: {}
+[7.537263] (-) TimerEvent: {}
+[7.637510] (-) TimerEvent: {}
+[7.737760] (-) TimerEvent: {}
+[7.838021] (-) TimerEvent: {}
+[7.938269] (-) TimerEvent: {}
+[8.039036] (-) TimerEvent: {}
+[8.139272] (-) TimerEvent: {}
+[8.239498] (-) TimerEvent: {}
+[8.340028] (-) TimerEvent: {}
+[8.440264] (-) TimerEvent: {}
+[8.540726] (-) TimerEvent: {}
+[8.640983] (-) TimerEvent: {}
+[8.742025] (-) TimerEvent: {}
+[8.842258] (-) TimerEvent: {}
+[8.942501] (-) TimerEvent: {}
+[9.042749] (-) TimerEvent: {}
+[9.143010] (-) TimerEvent: {}
+[9.244024] (-) TimerEvent: {}
+[9.344262] (-) TimerEvent: {}
+[9.444505] (-) TimerEvent: {}
+[9.544739] (-) TimerEvent: {}
+[9.645002] (-) TimerEvent: {}
+[9.746020] (-) TimerEvent: {}
+[9.846248] (-) TimerEvent: {}
+[9.946484] (-) TimerEvent: {}
+[10.046710] (-) TimerEvent: {}
+[10.146953] (-) TimerEvent: {}
+[10.248026] (-) TimerEvent: {}
+[10.348263] (-) TimerEvent: {}
+[10.448510] (-) TimerEvent: {}
+[10.548748] (-) TimerEvent: {}
+[10.649009] (-) TimerEvent: {}
+[10.749238] (-) TimerEvent: {}
+[10.850024] (-) TimerEvent: {}
+[10.950253] (-) TimerEvent: {}
+[11.050490] (-) TimerEvent: {}
+[11.150734] (-) TimerEvent: {}
+[11.251013] (-) TimerEvent: {}
+[11.312436] (robot_nlu) StdoutLine: {'line': b'[100%] Linking CXX executable nlu_node\n'}
+[11.351147] (-) TimerEvent: {}
+[11.452023] (-) TimerEvent: {}
+[11.550738] (robot_base) StdoutLine: {'line': b'[100%] Linking CXX executable base_driver_node\n'}
+[11.552088] (-) TimerEvent: {}
+[11.652269] (-) TimerEvent: {}
+[11.723005] (robot_nlu) StdoutLine: {'line': b'[100%] Built target nlu_node\n'}
+[11.737115] (robot_nlu) CommandEnded: {'returncode': 0}
+[11.737873] (robot_nlu) JobProgress: {'identifier': 'robot_nlu', 'progress': 'install'}
+[11.738193] (robot_nlu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_nlu'], 'cwd': '/ws/ros_ws/build/robot_nlu', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nlu'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.749183] (robot_nlu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.749391] (robot_nlu) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node\n'}
+[11.752994] (-) TimerEvent: {}
+[11.758177] (robot_nlu) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node" to ""\n'}
+[11.758376] (robot_nlu) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/libnlu_parser.a\n'}
+[11.758456] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/include\n'}
+[11.758511] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/include/robot_nlu\n'}
+[11.758567] (robot_nlu) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nlu/include/robot_nlu/nlu_parser.hpp\n'}
+[11.758621] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/package_run_dependencies/robot_nlu\n'}
+[11.758675] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/parent_prefix_path/robot_nlu\n'}
+[11.758733] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.sh\n'}
+[11.758806] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.dsv\n'}
+[11.758860] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.sh\n'}
+[11.758919] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.dsv\n'}
+[11.759014] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.bash\n'}
+[11.759072] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.sh\n'}
+[11.759128] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.zsh\n'}
+[11.759180] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.dsv\n'}
+[11.759228] (robot_nlu) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.dsv\n'}
+[11.759306] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/packages/robot_nlu\n'}
+[11.759386] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig.cmake\n'}
+[11.759489] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig-version.cmake\n'}
+[11.759550] (robot_nlu) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.xml\n'}
+[11.762975] (robot_nlu) CommandEnded: {'returncode': 0}
+[11.774685] (robot_nlu) JobEnded: {'identifier': 'robot_nlu', 'rc': 0}
+[11.775531] (robot_executor) JobStarted: {'identifier': 'robot_executor'}
+[11.784724] (robot_executor) JobProgress: {'identifier': 'robot_executor', 'progress': 'cmake'}
+[11.785542] (robot_executor) JobProgress: {'identifier': 'robot_executor', 'progress': 'build'}
+[11.785856] (robot_executor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_executor', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_executor', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_executor'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[11.848204] (robot_executor) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target executor_node\n'}
+[11.853086] (-) TimerEvent: {}
+[11.872163] (robot_executor) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o\n'}
+[11.953264] (-) TimerEvent: {}
+[12.047205] (robot_base) StdoutLine: {'line': b'[100%] Built target base_driver_node\n'}
+[12.053365] (-) TimerEvent: {}
+[12.062233] (robot_base) CommandEnded: {'returncode': 0}
+[12.062943] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'install'}
+[12.063232] (robot_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_base'], 'cwd': '/ws/ros_ws/build/robot_base', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_base'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.073550] (robot_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.074973] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node\n'}
+[12.081768] (robot_base) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node" to ""\n'}
+[12.082765] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libserial_interface_stub.a\n'}
+[12.086167] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libbase_safety_utils.a\n'}
+[12.086349] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include\n'}
+[12.086467] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base\n'}
+[12.087237] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/include/robot_base/safety_utils.hpp\n'}
+[12.087752] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/include/robot_base/serial_interface.hpp\n'}
+[12.087862] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/package_run_dependencies/robot_base\n'}
+[12.088306] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/parent_prefix_path/robot_base\n'}
+[12.091361] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.sh\n'}
+[12.091537] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.dsv\n'}
+[12.091899] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.sh\n'}
+[12.092725] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.dsv\n'}
+[12.093253] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.bash\n'}
+[12.093868] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.sh\n'}
+[12.094348] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.zsh\n'}
+[12.094764] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.dsv\n'}
+[12.095217] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.dsv\n'}
+[12.095765] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/packages/robot_base\n'}
+[12.097646] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig.cmake\n'}
+[12.098146] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig-version.cmake\n'}
+[12.101601] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/package.xml\n'}
+[12.102188] (robot_base) CommandEnded: {'returncode': 0}
+[12.113916] (robot_base) JobEnded: {'identifier': 'robot_base', 'rc': 0}
+[12.115379] (robot_identity) JobStarted: {'identifier': 'robot_identity'}
+[12.126618] (robot_identity) JobProgress: {'identifier': 'robot_identity', 'progress': 'cmake'}
+[12.127404] (robot_identity) JobProgress: {'identifier': 'robot_identity', 'progress': 'build'}
+[12.127734] (robot_identity) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_identity', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_identity', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_identity'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[12.153502] (-) TimerEvent: {}
+[12.191059] (robot_identity) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target identity_enroll_policy\n'}
+[12.206051] (robot_identity) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/identity_enroll_policy.dir/src/enroll_policy.cpp.o\n'}
+[12.229202] (robot_identity) StdoutLine: {'line': b'[ 30%] Built target gtest_main\n'}
+[12.230409] (robot_identity) StdoutLine: {'line': b'[ 50%] Built target gtest\n'}
+[12.247325] (robot_identity) StdoutLine: {'line': b'[ 60%] Linking CXX static library libidentity_enroll_policy.a\n'}
+[12.253613] (-) TimerEvent: {}
+[12.353842] (-) TimerEvent: {}
+[12.420201] (robot_identity) StdoutLine: {'line': b'[ 60%] Built target identity_enroll_policy\n'}
+[12.442432] (robot_identity) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_enroll_gating\n'}
+[12.453987] (-) TimerEvent: {}
+[12.459438] (robot_identity) StdoutLine: {'line': b'[ 70%] Building CXX object CMakeFiles/test_enroll_gating.dir/test/test_enroll_gating.cpp.o\n'}
+[12.461188] (robot_identity) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target identity_node\n'}
+[12.500011] (robot_identity) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/identity_node.dir/src/identity_node.cpp.o\n'}
+[12.554120] (-) TimerEvent: {}
+[12.654367] (-) TimerEvent: {}
+[12.754598] (-) TimerEvent: {}
+[12.854834] (-) TimerEvent: {}
+[12.955029] (-) TimerEvent: {}
+[13.055269] (-) TimerEvent: {}
+[13.155515] (-) TimerEvent: {}
+[13.255763] (-) TimerEvent: {}
+[13.356018] (-) TimerEvent: {}
+[13.456250] (-) TimerEvent: {}
+[13.556493] (-) TimerEvent: {}
+[13.656738] (-) TimerEvent: {}
+[13.693081] (robot_identity) StdoutLine: {'line': b'[ 90%] Linking CXX executable test_enroll_gating\n'}
+[13.756873] (-) TimerEvent: {}
+[13.857125] (-) TimerEvent: {}
+[13.957364] (-) TimerEvent: {}
+[14.030236] (robot_identity) StdoutLine: {'line': b'[ 90%] Built target test_enroll_gating\n'}
+[14.057513] (-) TimerEvent: {}
+[14.157764] (-) TimerEvent: {}
+[14.258018] (-) TimerEvent: {}
+[14.358248] (-) TimerEvent: {}
+[14.458481] (-) TimerEvent: {}
+[14.558715] (-) TimerEvent: {}
+[14.658961] (-) TimerEvent: {}
+[14.759187] (-) TimerEvent: {}
+[14.853744] (robot_voice) StdoutLine: {'line': b'[100%] Linking CXX executable voice_bridge_node\n'}
+[14.859265] (-) TimerEvent: {}
+[14.959460] (-) TimerEvent: {}
+[15.059700] (-) TimerEvent: {}
+[15.160017] (-) TimerEvent: {}
+[15.260893] (robot_voice) StdoutLine: {'line': b'[100%] Built target voice_bridge_node\n'}
+[15.263159] (-) TimerEvent: {}
+[15.273009] (robot_voice) CommandEnded: {'returncode': 0}
+[15.273709] (robot_voice) JobProgress: {'identifier': 'robot_voice', 'progress': 'install'}
+[15.274004] (robot_voice) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_voice'], 'cwd': '/ws/ros_ws/build/robot_voice', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_voice'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.286167] (robot_voice) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.286366] (robot_voice) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node\n'}
+[15.290336] (robot_voice) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node" to ""\n'}
+[15.290701] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/package_run_dependencies/robot_voice\n'}
+[15.291032] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/parent_prefix_path/robot_voice\n'}
+[15.291328] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.sh\n'}
+[15.291612] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.dsv\n'}
+[15.291891] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.sh\n'}
+[15.293060] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.dsv\n'}
+[15.293157] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.bash\n'}
+[15.293223] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.sh\n'}
+[15.293287] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.zsh\n'}
+[15.293351] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.dsv\n'}
+[15.293435] (robot_voice) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv\n'}
+[15.293517] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/packages/robot_voice\n'}
+[15.293594] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig.cmake\n'}
+[15.293679] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig-version.cmake\n'}
+[15.293870] (robot_voice) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/package.xml\n'}
+[15.296054] (robot_voice) CommandEnded: {'returncode': 0}
+[15.309467] (robot_voice) JobEnded: {'identifier': 'robot_voice', 'rc': 0}
+[15.310060] (robot_perception) JobStarted: {'identifier': 'robot_perception'}
+[15.363291] (-) TimerEvent: {}
+[15.464006] (-) TimerEvent: {}
+[15.566214] (-) TimerEvent: {}
+[15.666781] (-) TimerEvent: {}
+[15.768004] (-) TimerEvent: {}
+[15.868221] (-) TimerEvent: {}
+[15.914098] (robot_perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_perception', 'build', '--build-base', '/ws/ros_ws/build/robot_perception/build', 'install', '--record', '/ws/ros_ws/build/robot_perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ws/ros_ws/src/robot_perception', 'env': {'HOSTNAME': '4c6aae883c49', 'ROS_PACKAGE_PATH': '/ws/ros_ws/install/robot_msgs/share', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ws/ros_ws/build/robot_perception', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/ros_ws/build/robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ws/ros_ws/install/robot_msgs'}, 'shell': False}
+[15.969017] (-) TimerEvent: {}
+[16.069237] (-) TimerEvent: {}
+[16.126079] (robot_perception) StdoutLine: {'line': b'running egg_info\n'}
+[16.127376] (robot_perception) StdoutLine: {'line': b'writing ../../build/robot_perception/robot_perception.egg-info/PKG-INFO\n'}
+[16.133309] (robot_perception) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_perception/robot_perception.egg-info/dependency_links.txt\n'}
+[16.133896] (robot_perception) StdoutLine: {'line': b'writing entry points to ../../build/robot_perception/robot_perception.egg-info/entry_points.txt\n'}
+[16.134353] (robot_perception) StdoutLine: {'line': b'writing requirements to ../../build/robot_perception/robot_perception.egg-info/requires.txt\n'}
+[16.135153] (robot_perception) StdoutLine: {'line': b'writing top-level names to ../../build/robot_perception/robot_perception.egg-info/top_level.txt\n'}
+[16.137573] (robot_perception) StdoutLine: {'line': b"reading manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'\n"}
+[16.138505] (robot_perception) StdoutLine: {'line': b"writing manifest file '../../build/robot_perception/robot_perception.egg-info/SOURCES.txt'\n"}
+[16.169385] (-) TimerEvent: {}
+[16.258199] (robot_perception) StdoutLine: {'line': b'running build\n'}
+[16.258407] (robot_perception) StdoutLine: {'line': b'running build_py\n'}
+[16.258492] (robot_perception) StdoutLine: {'line': b'copying robot_perception/perception_node.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception\n'}
+[16.258562] (robot_perception) StdoutLine: {'line': b'copying robot_perception/__init__.py -> /ws/ros_ws/build/robot_perception/build/lib/robot_perception\n'}
+[16.258620] (robot_perception) StdoutLine: {'line': b'running install\n'}
+[16.258676] (robot_perception) StdoutLine: {'line': b'running install_lib\n'}
+[16.260673] (robot_perception) StdoutLine: {'line': b'copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/perception_node.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception\n'}
+[16.261304] (robot_perception) StdoutLine: {'line': b'copying /ws/ros_ws/build/robot_perception/build/lib/robot_perception/__init__.py -> /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception\n'}
+[16.263090] (robot_perception) StdoutLine: {'line': b'byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/perception_node.py to perception_node.cpython-310.pyc\n'}
+[16.265691] (robot_perception) StdoutLine: {'line': b'byte-compiling /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception/__init__.py to __init__.cpython-310.pyc\n'}
+[16.266240] (robot_perception) StdoutLine: {'line': b'running install_data\n'}
+[16.266893] (robot_perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.269457] (-) TimerEvent: {}
+[16.273066] (robot_perception) StdoutLine: {'line': b"removing '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[16.273207] (robot_perception) StdoutLine: {'line': b'Copying ../../build/robot_perception/robot_perception.egg-info to /ws/ros_ws/install/robot_perception/lib/python3.10/site-packages/robot_perception-0.0.1-py3.10.egg-info\n'}
+[16.274157] (robot_perception) StdoutLine: {'line': b'running install_scripts\n'}
+[16.297898] (robot_perception) StdoutLine: {'line': b'Installing perception_node script to /ws/ros_ws/install/robot_perception/lib/robot_perception\n'}
+[16.299409] (robot_perception) StdoutLine: {'line': b"writing list of installed files to '/ws/ros_ws/build/robot_perception/install.log'\n"}
+[16.334886] (robot_perception) CommandEnded: {'returncode': 0}
+[16.340967] (robot_perception) JobEnded: {'identifier': 'robot_perception', 'rc': 0}
+[16.369611] (-) TimerEvent: {}
+[16.469878] (-) TimerEvent: {}
+[16.570147] (-) TimerEvent: {}
+[16.670402] (-) TimerEvent: {}
+[16.770648] (-) TimerEvent: {}
+[16.870903] (-) TimerEvent: {}
+[16.971159] (-) TimerEvent: {}
+[17.059244] (robot_safety) StdoutLine: {'line': b'[100%] Linking CXX executable safety_node\n'}
+[17.071288] (-) TimerEvent: {}
+[17.171533] (-) TimerEvent: {}
+[17.271783] (-) TimerEvent: {}
+[17.372031] (-) TimerEvent: {}
+[17.472290] (-) TimerEvent: {}
+[17.572531] (-) TimerEvent: {}
+[17.624176] (robot_safety) StdoutLine: {'line': b'[100%] Built target safety_node\n'}
+[17.672667] (-) TimerEvent: {}
+[17.681097] (robot_safety) CommandEnded: {'returncode': 0}
+[17.681406] (robot_safety) JobProgress: {'identifier': 'robot_safety', 'progress': 'install'}
+[17.681430] (robot_safety) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_safety'], 'cwd': '/ws/ros_ws/build/robot_safety', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_safety'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.690050] (robot_safety) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.691023] (robot_safety) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_safety/lib/robot_safety/safety_node\n'}
+[17.698121] (robot_safety) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_safety/lib/robot_safety/safety_node" to ""\n'}
+[17.698250] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/package_run_dependencies/robot_safety\n'}
+[17.699568] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/parent_prefix_path/robot_safety\n'}
+[17.699657] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.sh\n'}
+[17.700061] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.dsv\n'}
+[17.700130] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.sh\n'}
+[17.700188] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.dsv\n'}
+[17.700244] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.bash\n'}
+[17.700297] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.sh\n'}
+[17.700356] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.zsh\n'}
+[17.700411] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.dsv\n'}
+[17.700462] (robot_safety) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_safety/share/robot_safety/package.dsv\n'}
+[17.700512] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/packages/robot_safety\n'}
+[17.700561] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig.cmake\n'}
+[17.700610] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig-version.cmake\n'}
+[17.700659] (robot_safety) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/package.xml\n'}
+[17.701457] (robot_safety) CommandEnded: {'returncode': 0}
+[17.772809] (-) TimerEvent: {}
+[17.873046] (-) TimerEvent: {}
+[17.973307] (-) TimerEvent: {}
+[18.000181] (robot_safety) JobEnded: {'identifier': 'robot_safety', 'rc': 0}
+[18.001030] (robot_identity) StdoutLine: {'line': b'[100%] Linking CXX executable identity_node\n'}
+[18.001139] (robot_identity) StdoutLine: {'line': b'[100%] Built target identity_node\n'}
+[18.001369] (robot_identity) CommandEnded: {'returncode': 0}
+[18.001726] (robot_identity) JobProgress: {'identifier': 'robot_identity', 'progress': 'install'}
+[18.001969] (robot_identity) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_identity'], 'cwd': '/ws/ros_ws/build/robot_identity', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_identity'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[18.010039] (robot_identity) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.010370] (robot_identity) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node\n'}
+[18.012587] (robot_identity) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node" to ""\n'}
+[18.012750] (robot_identity) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/libidentity_enroll_policy.a\n'}
+[18.013084] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/include\n'}
+[18.013161] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/include/robot_identity\n'}
+[18.013381] (robot_identity) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_identity/include/robot_identity/enroll_policy.hpp\n'}
+[18.013736] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/package_run_dependencies/robot_identity\n'}
+[18.014040] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/parent_prefix_path/robot_identity\n'}
+[18.014127] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.sh\n'}
+[18.014482] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.dsv\n'}
+[18.014869] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.sh\n'}
+[18.015049] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.dsv\n'}
+[18.015398] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.bash\n'}
+[18.015488] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.sh\n'}
+[18.015722] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.zsh\n'}
+[18.015947] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.dsv\n'}
+[18.016104] (robot_identity) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/package.dsv\n'}
+[18.016378] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/packages/robot_identity\n'}
+[18.016585] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig.cmake\n'}
+[18.016737] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig-version.cmake\n'}
+[18.017522] (robot_identity) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/package.xml\n'}
+[18.017798] (robot_identity) CommandEnded: {'returncode': 0}
+[18.026696] (robot_identity) JobEnded: {'identifier': 'robot_identity', 'rc': 0}
+[18.073434] (-) TimerEvent: {}
+[18.173651] (-) TimerEvent: {}
+[18.273854] (-) TimerEvent: {}
+[18.374041] (-) TimerEvent: {}
+[18.474433] (-) TimerEvent: {}
+[18.574665] (-) TimerEvent: {}
+[18.674875] (-) TimerEvent: {}
+[18.775116] (-) TimerEvent: {}
+[18.875297] (-) TimerEvent: {}
+[18.975519] (-) TimerEvent: {}
+[19.075714] (-) TimerEvent: {}
+[19.175915] (-) TimerEvent: {}
+[19.276149] (-) TimerEvent: {}
+[19.376357] (-) TimerEvent: {}
+[19.476573] (-) TimerEvent: {}
+[19.576810] (-) TimerEvent: {}
+[19.677062] (-) TimerEvent: {}
+[19.777289] (-) TimerEvent: {}
+[19.877523] (-) TimerEvent: {}
+[19.977751] (-) TimerEvent: {}
+[20.078023] (-) TimerEvent: {}
+[20.178251] (-) TimerEvent: {}
+[20.278488] (-) TimerEvent: {}
+[20.378692] (-) TimerEvent: {}
+[20.478960] (-) TimerEvent: {}
+[20.579178] (-) TimerEvent: {}
+[20.679402] (-) TimerEvent: {}
+[20.779615] (-) TimerEvent: {}
+[20.879847] (-) TimerEvent: {}
+[20.980088] (-) TimerEvent: {}
+[21.080327] (-) TimerEvent: {}
+[21.180539] (-) TimerEvent: {}
+[21.280781] (-) TimerEvent: {}
+[21.381001] (-) TimerEvent: {}
+[21.481262] (-) TimerEvent: {}
+[21.581487] (-) TimerEvent: {}
+[21.681720] (-) TimerEvent: {}
+[21.703647] (robot_executor) StdoutLine: {'line': b'[100%] Linking CXX executable executor_node\n'}
+[21.781868] (-) TimerEvent: {}
+[21.882112] (-) TimerEvent: {}
+[21.982338] (-) TimerEvent: {}
+[22.083134] (-) TimerEvent: {}
+[22.096989] (robot_executor) StdoutLine: {'line': b'[100%] Built target executor_node\n'}
+[22.105678] (robot_executor) CommandEnded: {'returncode': 0}
+[22.106243] (robot_executor) JobProgress: {'identifier': 'robot_executor', 'progress': 'install'}
+[22.106429] (robot_executor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_executor'], 'cwd': '/ws/ros_ws/build/robot_executor', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_executor'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[22.112801] (robot_executor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.113087] (robot_executor) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_executor/lib/robot_executor/executor_node\n'}
+[22.118417] (robot_executor) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_executor/lib/robot_executor/executor_node" to ""\n'}
+[22.118718] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/package_run_dependencies/robot_executor\n'}
+[22.118873] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/parent_prefix_path/robot_executor\n'}
+[22.118967] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/ament_prefix_path.sh\n'}
+[22.119039] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/ament_prefix_path.dsv\n'}
+[22.119091] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/path.sh\n'}
+[22.119145] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/path.dsv\n'}
+[22.119185] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.bash\n'}
+[22.119571] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.sh\n'}
+[22.119725] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.zsh\n'}
+[22.119872] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.dsv\n'}
+[22.119975] (robot_executor) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_executor/share/robot_executor/package.dsv\n'}
+[22.120074] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/packages/robot_executor\n'}
+[22.120172] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/cmake/robot_executorConfig.cmake\n'}
+[22.120268] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/cmake/robot_executorConfig-version.cmake\n'}
+[22.120379] (robot_executor) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/package.xml\n'}
+[22.121033] (robot_executor) CommandEnded: {'returncode': 0}
+[22.183234] (-) TimerEvent: {}
+[22.251624] (robot_executor) JobEnded: {'identifier': 'robot_executor', 'rc': 0}
+[22.252291] (robot_bringup) JobStarted: {'identifier': 'robot_bringup'}
+[22.262144] (robot_bringup) JobProgress: {'identifier': 'robot_bringup', 'progress': 'cmake'}
+[22.262563] (robot_bringup) JobProgress: {'identifier': 'robot_bringup', 'progress': 'build'}
+[22.262804] (robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_bringup', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_bringup', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base')]), 'shell': False}
+[22.283341] (-) TimerEvent: {}
+[22.294350] (robot_bringup) CommandEnded: {'returncode': 0}
+[22.294973] (robot_bringup) JobProgress: {'identifier': 'robot_bringup', 'progress': 'install'}
+[22.295234] (robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_bringup'], 'cwd': '/ws/ros_ws/build/robot_bringup', 'env': OrderedDict([('HOSTNAME', '4c6aae883c49'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base')]), 'shell': False}
+[22.301550] (robot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.301723] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch\n'}
+[22.301790] (robot_bringup) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch/nav_mode.launch.py\n'}
+[22.301966] (robot_bringup) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch/dev_mode.launch.py\n'}
+[22.302166] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config\n'}
+[22.302309] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/slam_params.yaml\n'}
+[22.302790] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/search_areas.yaml\n'}
+[22.303113] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/nav2_params.yaml\n'}
+[22.303544] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/bringup.yaml\n'}
+[22.303761] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/locations.yaml\n'}
+[22.303834] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup\n'}
+[22.303894] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup\n'}
+[22.303986] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh\n'}
+[22.304097] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv\n'}
+[22.304174] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/path.sh\n'}
+[22.304222] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/path.dsv\n'}
+[22.304312] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.bash\n'}
+[22.304387] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.sh\n'}
+[22.304434] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.zsh\n'}
+[22.304479] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.dsv\n'}
+[22.304522] (robot_bringup) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/package.dsv\n'}
+[22.304565] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup\n'}
+[22.304607] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake\n'}
+[22.304649] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake\n'}
+[22.304776] (robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_bringup/share/robot_bringup/package.xml\n'}
+[22.305359] (robot_bringup) CommandEnded: {'returncode': 0}
+[22.314948] (robot_bringup) JobEnded: {'identifier': 'robot_bringup', 'rc': 0}
+[22.315427] (-) EventReactorShutdown: {}

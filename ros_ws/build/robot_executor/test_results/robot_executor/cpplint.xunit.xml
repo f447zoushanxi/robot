@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_executor.cpplint"
+  tests="1"
+  failures="0"
+  errors="0"
+  time="0.063"
+>
+  <testcase
+    name="/ws/ros_ws/src/robot_executor/src/executor_node.cpp"
+    classname="robot_executor.cpplint"/>
+  <system-out>Checked files:
+* /ws/ros_ws/src/robot_executor/src/executor_node.cpp</system-out>
+</testsuite>

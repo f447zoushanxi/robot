@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_voice.copyright"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.022"
+>
+  <testcase
+    name="src/voice_bridge_node.cpp"
+    classname="robot_voice.copyright"/>
+  <system-out>Checked files:
+* src/voice_bridge_node.cpp</system-out>
+</testsuite>

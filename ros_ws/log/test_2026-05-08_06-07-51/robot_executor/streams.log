@@ -1,0 +1,105 @@
+[0.033s] Invoking command in '/ws/ros_ws/build/robot_executor': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.047s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_executor/CTestConfiguration.ini
+[0.048s] Parse Config file:/ws/ros_ws/build/robot_executor/CTestConfiguration.ini
+[0.049s]    Site: a0e3119139a3
+[0.049s]    Build name: (empty)
+[0.050s]  Add coverage exclude regular expressions.
+[0.051s] Create new tag: 20260508-0607 - Experimental
+[0.051s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_executor/CTestConfiguration.ini
+[0.051s] Parse Config file:/ws/ros_ws/build/robot_executor/CTestConfiguration.ini
+[0.051s] Test project /ws/ros_ws/build/robot_executor
+[0.051s] Constructing a list of tests
+[0.054s] Done constructing a list of tests
+[0.055s] Updating test list for fixtures
+[0.055s] Added 0 tests to meet fixture requirements
+[0.056s] Checking test dependency graph...
+[0.056s] Checking test dependency graph end
+[0.056s] test 1
+[0.056s]     Start 1: copyright
+[0.056s] 
+[0.056s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml"
+[0.057s] 1: Test timeout computed to be: 200
+[0.139s] 1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[0.139s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml
+[0.269s] 1: No problems found, checked 1 files
+[0.291s] 1: -- run_test.py: return code 0
+[0.293s] 1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml'
+[0.308s] 1/6 Test #1: copyright ........................   Passed    0.25 sec
+[0.309s] test 2
+[0.310s]     Start 2: cppcheck
+[0.312s] 
+[0.312s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml"
+[0.312s] 2: Test timeout computed to be: 300
+[0.376s] 2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[0.377s] 2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml
+[0.467s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.487s] 2: -- run_test.py: return code 0
+[0.487s] 2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml'
+[0.501s] 2/6 Test #2: cppcheck .........................   Passed    0.19 sec
+[0.502s] test 3
+[0.502s]     Start 3: cpplint
+[0.502s] 
+[0.502s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml"
+[0.503s] 3: Test timeout computed to be: 120
+[0.576s] 3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[0.576s] 3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml
+[0.737s] 3: Using '--root=/ws/ros_ws/src/robot_executor/src' argument
+[0.737s] 3: 
+[0.737s] 3: Done processing /ws/ros_ws/src/robot_executor/src/executor_node.cpp
+[0.738s] 3: 
+[0.738s] 3: No problems found
+[0.757s] 3: -- run_test.py: return code 0
+[0.758s] 3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml'
+[0.773s] 3/6 Test #3: cpplint ..........................   Passed    0.27 sec
+[0.774s] test 4
+[0.774s]     Start 4: lint_cmake
+[0.774s] 
+[0.774s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml"
+[0.777s] 4: Test timeout computed to be: 60
+[0.841s] 4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[0.842s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml
+[0.926s] 4: 
+[0.926s] 4: No problems found
+[0.940s] 4: -- run_test.py: return code 0
+[0.941s] 4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml'
+[0.956s] 4/6 Test #4: lint_cmake .......................   Passed    0.18 sec
+[0.956s] test 5
+[0.956s]     Start 5: uncrustify
+[0.956s] 
+[0.957s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml"
+[0.957s] 5: Test timeout computed to be: 60
+[1.024s] 5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[1.024s] 5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml
+[1.113s] 5: No code style divergence in file 'src/executor_node.cpp'
+[1.114s] 5: 
+[1.114s] 5: No problems found
+[1.133s] 5: -- run_test.py: return code 0
+[1.134s] 5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml'
+[1.145s] 5/6 Test #5: uncrustify .......................   Passed    0.19 sec
+[1.145s] test 6
+[1.146s]     Start 6: xmllint
+[1.146s] 
+[1.147s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml"
+[1.149s] 6: Test timeout computed to be: 60
+[1.209s] 6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+[1.209s] 6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml
+[1.458s] 6: File 'package.xml' is valid
+[1.458s] 6: 
+[1.458s] 6: No problems found
+[1.458s] 6: -- run_test.py: return code 0
+[1.458s] 6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml'
+[1.458s] 6/6 Test #6: xmllint ..........................   Passed    0.19 sec
+[1.458s] 
+[1.459s] 100% tests passed, 0 tests failed out of 6
+[1.459s] 
+[1.459s] Label Time Summary:
+[1.459s] copyright     =   0.25 sec*proc (1 test)
+[1.459s] cppcheck      =   0.19 sec*proc (1 test)
+[1.459s] cpplint       =   0.27 sec*proc (1 test)
+[1.460s] lint_cmake    =   0.18 sec*proc (1 test)
+[1.460s] linter        =   1.27 sec*proc (6 tests)
+[1.460s] uncrustify    =   0.19 sec*proc (1 test)
+[1.460s] xmllint       =   0.19 sec*proc (1 test)
+[1.460s] 
+[1.460s] Total Test time (real) =   1.28 sec
+[1.462s] Invoked command in '/ws/ros_ws/build/robot_executor' returned '0': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure

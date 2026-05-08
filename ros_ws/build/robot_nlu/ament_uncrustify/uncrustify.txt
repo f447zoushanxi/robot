@@ -1,0 +1,16 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml
+
+No code style divergence in file 'include/robot_nlu/nlu_parser.hpp'
+
+No code style divergence in file 'src/nlu_node.cpp'
+
+No code style divergence in file 'src/nlu_parser.cpp'
+
+No code style divergence in file 'test/test_nlu_parser.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml'

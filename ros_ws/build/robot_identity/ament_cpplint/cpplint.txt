@@ -1,0 +1,22 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml
+
+Using '--root=/ws/ros_ws/src/robot_identity/include' argument
+
+Done processing /ws/ros_ws/src/robot_identity/include/robot_identity/enroll_policy.hpp
+
+Using '--root=/ws/ros_ws/src/robot_identity/src' argument
+
+Done processing /ws/ros_ws/src/robot_identity/src/enroll_policy.cpp
+
+Done processing /ws/ros_ws/src/robot_identity/src/identity_node.cpp
+
+Using '--root=/ws/ros_ws/src/robot_identity/test' argument
+
+Done processing /ws/ros_ws/src/robot_identity/test/test_enroll_gating.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml'

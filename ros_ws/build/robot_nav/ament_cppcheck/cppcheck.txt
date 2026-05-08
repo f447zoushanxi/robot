@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_nav/include
+
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml'

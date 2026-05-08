@@ -1,0 +1,11 @@
+
+# 是否找到目标
+bool found
+# 目标在 base_link 坐标系下的 3D 位置
+geometry_msgs/Point position
+# 检测置信度 [0,1]
+float32 confidence
+# 输出坐标系名称
+string frame_id
+# 额外调试信息
+string message

@@ -1,0 +1,16 @@
+/ws/ros_ws/install/robot_safety/lib/robot_safety/safety_node
+/ws/ros_ws/install/robot_safety/share/ament_index/resource_index/package_run_dependencies/robot_safety
+/ws/ros_ws/install/robot_safety/share/ament_index/resource_index/parent_prefix_path/robot_safety
+/ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.sh
+/ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.dsv
+/ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.sh
+/ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.dsv
+/ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.bash
+/ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.sh
+/ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.zsh
+/ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.dsv
+/ws/ros_ws/install/robot_safety/share/robot_safety/package.dsv
+/ws/ros_ws/install/robot_safety/share/ament_index/resource_index/packages/robot_safety
+/ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig.cmake
+/ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig-version.cmake
+/ws/ros_ws/install/robot_safety/share/robot_safety/package.xml

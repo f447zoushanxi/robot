@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000715] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000741] (-) JobUnselected: {'identifier': 'robot_executor'}
+[0.000756] (-) JobUnselected: {'identifier': 'robot_identity'}
+[0.000770] (-) JobUnselected: {'identifier': 'robot_manipulation'}
+[0.000783] (-) JobUnselected: {'identifier': 'robot_msgs'}
+[0.000837] (-) JobUnselected: {'identifier': 'robot_nav'}
+[0.000851] (-) JobUnselected: {'identifier': 'robot_nlu'}
+[0.000865] (-) JobUnselected: {'identifier': 'robot_perception'}
+[0.000878] (-) JobUnselected: {'identifier': 'robot_safety'}
+[0.000890] (-) JobUnselected: {'identifier': 'robot_voice'}
+[0.000906] (robot_base) JobQueued: {'identifier': 'robot_base', 'dependencies': OrderedDict()}
+[0.000922] (robot_base) JobStarted: {'identifier': 'robot_base'}
+[0.008941] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'cmake'}
+[0.009535] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'build'}
+[0.010239] (robot_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/ros_ws/build/robot_base', '--', '-j4', '-l4'], 'cwd': '/ws/ros_ws/build/robot_base', 'env': OrderedDict([('HOSTNAME', '2859887dbc55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_base'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.054885] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target base_safety_utils\n'}
+[0.055167] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target serial_interface_stub\n'}
+[0.067124] (robot_base) StdoutLine: {'line': b'[ 33%] Built target base_safety_utils\n'}
+[0.067259] (robot_base) StdoutLine: {'line': b'[ 33%] Built target gtest_main\n'}
+[0.069981] (robot_base) StdoutLine: {'line': b'[ 58%] Built target gtest\n'}
+[0.070509] (robot_base) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o\n'}
+[0.082881] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_timeout_brake\n'}
+[0.098885] (-) TimerEvent: {}
+[0.101995] (robot_base) StdoutLine: {'line': b'[ 75%] Built target test_timeout_brake\n'}
+[0.199105] (-) TimerEvent: {}
+[0.246686] (robot_base) StdoutLine: {'line': b'[ 83%] Linking CXX static library libserial_interface_stub.a\n'}
+[0.280954] (robot_base) StdoutLine: {'line': b'[ 83%] Built target serial_interface_stub\n'}
+[0.297892] (robot_base) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target base_driver_node\n'}
+[0.299129] (-) TimerEvent: {}
+[0.317029] (robot_base) StdoutLine: {'line': b'[ 91%] Linking CXX executable base_driver_node\n'}
+[0.399264] (-) TimerEvent: {}
+[0.499475] (-) TimerEvent: {}
+[0.599745] (-) TimerEvent: {}
+[0.700056] (-) TimerEvent: {}
+[0.716558] (robot_base) StdoutLine: {'line': b'[100%] Built target base_driver_node\n'}
+[0.730176] (robot_base) CommandEnded: {'returncode': 0}
+[0.732285] (robot_base) JobProgress: {'identifier': 'robot_base', 'progress': 'install'}
+[0.742868] (robot_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/ros_ws/build/robot_base'], 'cwd': '/ws/ros_ws/build/robot_base', 'env': OrderedDict([('HOSTNAME', '2859887dbc55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_base'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.752186] (robot_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.752545] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node\n'}
+[0.757580] (robot_base) StdoutLine: {'line': b'-- Set runtime path of "/ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node" to ""\n'}
+[0.758301] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libserial_interface_stub.a\n'}
+[0.758581] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/lib/robot_base/libbase_safety_utils.a\n'}
+[0.758765] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include\n'}
+[0.759000] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base\n'}
+[0.759206] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base/safety_utils.hpp\n'}
+[0.759287] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base/serial_interface.hpp\n'}
+[0.759337] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/package_run_dependencies/robot_base\n'}
+[0.759375] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/parent_prefix_path/robot_base\n'}
+[0.759430] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.sh\n'}
+[0.759485] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.dsv\n'}
+[0.759534] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.sh\n'}
+[0.759590] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.dsv\n'}
+[0.759628] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.bash\n'}
+[0.759688] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.sh\n'}
+[0.759752] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.zsh\n'}
+[0.759810] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.dsv\n'}
+[0.759858] (robot_base) StdoutLine: {'line': b'-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.dsv\n'}
+[0.759895] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/packages/robot_base\n'}
+[0.759927] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig.cmake\n'}
+[0.759959] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig-version.cmake\n'}
+[0.759989] (robot_base) StdoutLine: {'line': b'-- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/package.xml\n'}
+[0.761394] (robot_base) CommandEnded: {'returncode': 0}
+[0.800253] (-) TimerEvent: {}
+[0.824917] (robot_base) JobEnded: {'identifier': 'robot_base', 'rc': 0}
+[0.826024] (-) EventReactorShutdown: {}

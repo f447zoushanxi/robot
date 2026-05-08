@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260508-0601-Experimental"
+	Name="a0e3119139a3"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="a0e3119139a3"
+	OSRelease="6.17.0-1010-azure"
+	OSVersion="#10~24.04.1-Ubuntu SMP Fri Mar  6 22:00:57 UTC 2026"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="17"
+	ProcessorCacheSize="1024"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="3071"
+	TotalPhysicalMemory="15989"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3693.93"
+	>
+	<Testing>
+		<StartDateTime>May 08 06:01 UTC</StartDateTime>
+		<StartTestTime>1778220086</StartTestTime>
+		<TestList>
+			<Test>./test_timeout_brake</Test>
+			<Test>./copyright</Test>
+			<Test>./cppcheck</Test>
+			<Test>./cpplint</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_timeout_brake</Name>
+			<Path>.</Path>
+			<FullName>./test_timeout_brake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cmake_gtest/test_timeout_brake.txt" "--command" "/ws/ros_ws/build/robot_base/test_timeout_brake" "--gtest_output=xml:/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.113387</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cmake_gtest/test_timeout_brake.txt" "--command" "/ws/ros_ws/build/robot_base/test_timeout_brake" "--gtest_output=xml:/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/build/robot_base':
+ - /ws/ros_ws/build/robot_base/test_timeout_brake --gtest_output=xml:/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from BaseSafetyUtils
+[ RUN      ] BaseSafetyUtils.BrakeOnTimeout
+[       OK ] BaseSafetyUtils.BrakeOnTimeout (0 ms)
+[ RUN      ] BaseSafetyUtils.KeepCommandWithoutTimeout
+[       OK ] BaseSafetyUtils.KeepCommandWithoutTimeout (0 ms)
+[----------] 2 tests from BaseSafetyUtils (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml'
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>copyright</Name>
+			<Path>.</Path>
+			<FullName>./copyright</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.203328</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml
+include/robot_base/safety_utils.hpp: could not find copyright notice
+include/robot_base/serial_interface.hpp: could not find copyright notice
+src/base_driver_node.cpp: could not find copyright notice
+src/safety_utils.cpp: could not find copyright notice
+src/serial_interface_stub.cpp: could not find copyright notice
+test/test_timeout_brake.cpp: could not find copyright notice
+6 errors, checked 6 files
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>copyright</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_base/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.195344</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_base/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_base/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cpplint</Name>
+			<Path>.</Path>
+			<FullName>./cpplint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.290504</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml
+Using '--root=/ws/ros_ws/src/robot_base/include' argument
+
+Done processing /ws/ros_ws/src/robot_base/include/robot_base/safety_utils.hpp
+
+Done processing /ws/ros_ws/src/robot_base/include/robot_base/serial_interface.hpp
+
+Using '--root=/ws/ros_ws/src/robot_base/src' argument
+
+Done processing /ws/ros_ws/src/robot_base/src/base_driver_node.cpp
+
+Done processing /ws/ros_ws/src/robot_base/src/safety_utils.cpp
+
+Done processing /ws/ros_ws/src/robot_base/src/serial_interface_stub.cpp
+
+Using '--root=/ws/ros_ws/src/robot_base/test' argument
+
+Done processing /ws/ros_ws/src/robot_base/test/test_timeout_brake.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cpplint</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.185208</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.201569</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml
+Code style divergence in file 'src/serial_interface_stub.cpp':
+
+--- src/serial_interface_stub.cpp
++++ src/serial_interface_stub.cpp.uncrustify
+@@ -13,2 +13,2 @@
+-  bool open(const std::string &amp;, int) override { return true; }
+-  bool write_command(const VelocityCommand &amp;) override { return true; }
++  bool open(const std::string &amp;, int) override {return true;}
++  bool write_command(const VelocityCommand &amp;) override {return true;}
+
+1 files with code style divergence
+No code style divergence in file 'include/robot_base/safety_utils.hpp'
+
+No code style divergence in file 'include/robot_base/serial_interface.hpp'
+
+No code style divergence in file 'src/base_driver_node.cpp'
+
+No code style divergence in file 'src/safety_utils.cpp'
+
+No code style divergence in file 'test/test_timeout_brake.cpp'
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.194181</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>May 08 06:01 UTC</EndDateTime>
+		<EndTestTime>1778220087</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

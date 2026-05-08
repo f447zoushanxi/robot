@@ -1,0 +1,50 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found launch_testing_ament_cmake: 1.0.14 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ws/ros_ws/build/robot_bringup
+-- Install configuration: ""
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch/nav_mode.launch.py
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/launch/dev_mode.launch.py
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/slam_params.yaml
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/search_areas.yaml
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/nav2_params.yaml
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/bringup.yaml
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/config/locations.yaml
+-- Installing: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+-- Installing: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/path.sh
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/environment/path.dsv
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.bash
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.sh
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.zsh
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/local_setup.dsv
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/package.dsv
+-- Installing: /ws/ros_ws/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+-- Installing: /ws/ros_ws/install/robot_bringup/share/robot_bringup/package.xml

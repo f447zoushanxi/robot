@@ -1,0 +1,10 @@
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/uninstall.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/robot_manipulation_uninstall.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/manipulation_node.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/test.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/edit_cache.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/rebuild_cache.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/list_install_components.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/install.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/install/local.dir
+/ws/ros_ws/build/robot_manipulation/CMakeFiles/install/strip.dir

@@ -1,0 +1,26 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml
+
+Using '--root=/ws/ros_ws/src/robot_base/include' argument
+
+Done processing /ws/ros_ws/src/robot_base/include/robot_base/safety_utils.hpp
+
+Done processing /ws/ros_ws/src/robot_base/include/robot_base/serial_interface.hpp
+
+Using '--root=/ws/ros_ws/src/robot_base/src' argument
+
+Done processing /ws/ros_ws/src/robot_base/src/base_driver_node.cpp
+
+Done processing /ws/ros_ws/src/robot_base/src/safety_utils.cpp
+
+Done processing /ws/ros_ws/src/robot_base/src/serial_interface_stub.cpp
+
+Using '--root=/ws/ros_ws/src/robot_base/test' argument
+
+Done processing /ws/ros_ws/src/robot_base/test/test_timeout_brake.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml'

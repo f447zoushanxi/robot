@@ -1,0 +1,16 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml
+
+No code style divergence in file 'include/robot_nav/location_manager.hpp'
+
+No code style divergence in file 'src/location_manager.cpp'
+
+No code style divergence in file 'src/nav_server_node.cpp'
+
+No code style divergence in file 'test/test_location_manager.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml'

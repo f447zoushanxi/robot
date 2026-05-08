@@ -1,0 +1,5 @@
+/ws/ros_ws/build/robot_msgs/rosidl_adapter/robot_msgs:srv/DetectObject.idl
+/ws/ros_ws/build/robot_msgs/rosidl_adapter/robot_msgs:srv/FindPerson.idl
+/ws/ros_ws/build/robot_msgs/rosidl_adapter/robot_msgs:srv/EnrollOwner.idl
+/ws/ros_ws/build/robot_msgs/rosidl_adapter/robot_msgs:action/PickBottle.idl
+/ws/ros_ws/build/robot_msgs/rosidl_adapter/robot_msgs:action/HandOver.idl

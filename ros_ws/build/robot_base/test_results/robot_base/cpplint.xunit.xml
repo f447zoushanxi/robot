@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_base.cpplint"
+  tests="6"
+  failures="0"
+  errors="0"
+  time="0.081"
+>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/include/robot_base/safety_utils.hpp"
+    classname="robot_base.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/include/robot_base/serial_interface.hpp"
+    classname="robot_base.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/src/base_driver_node.cpp"
+    classname="robot_base.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/src/safety_utils.cpp"
+    classname="robot_base.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/src/serial_interface_stub.cpp"
+    classname="robot_base.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_base/test/test_timeout_brake.cpp"
+    classname="robot_base.cpplint"/>
+  <system-out>Checked files:
+* /ws/ros_ws/src/robot_base/include/robot_base/safety_utils.hpp
+* /ws/ros_ws/src/robot_base/include/robot_base/serial_interface.hpp
+* /ws/ros_ws/src/robot_base/src/base_driver_node.cpp
+* /ws/ros_ws/src/robot_base/src/safety_utils.cpp
+* /ws/ros_ws/src/robot_base/src/serial_interface_stub.cpp
+* /ws/ros_ws/src/robot_base/test/test_timeout_brake.cpp</system-out>
+</testsuite>

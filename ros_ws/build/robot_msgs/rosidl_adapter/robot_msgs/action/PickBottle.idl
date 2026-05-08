@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_msgs/action/PickBottle.action
+// generated code does not contain a copyright notice
+
+
+module robot_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "目标对象名称，默认 bottle")
+    struct PickBottle_Goal {
+      string object_name;
+    };
+    @verbatim (language="comment", text=
+      "动作结果")
+    struct PickBottle_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "阶段反馈（search/approach/grasp...）")
+    struct PickBottle_Feedback {
+      string stage;
+    };
+  };
+};

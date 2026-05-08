@@ -1,0 +1,191 @@
+[0.026s] Invoking command in '/ws/ros_ws/build/robot_nav': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nav:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.037s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nav/CTestConfiguration.ini
+[0.038s] Parse Config file:/ws/ros_ws/build/robot_nav/CTestConfiguration.ini
+[0.038s]    Site: a0e3119139a3
+[0.038s]    Build name: (empty)
+[0.038s]  Add coverage exclude regular expressions.
+[0.040s] Create new tag: 20260508-0601 - Experimental
+[0.043s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nav/CTestConfiguration.ini
+[0.043s] Parse Config file:/ws/ros_ws/build/robot_nav/CTestConfiguration.ini
+[0.043s] Test project /ws/ros_ws/build/robot_nav
+[0.043s] Constructing a list of tests
+[0.043s] Done constructing a list of tests
+[0.043s] Updating test list for fixtures
+[0.044s] Added 0 tests to meet fixture requirements
+[0.044s] Checking test dependency graph...
+[0.044s] Checking test dependency graph end
+[0.044s] test 1
+[0.044s]     Start 1: test_location_manager
+[0.044s] 
+[0.044s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cmake_gtest/test_location_manager.txt" "--command" "/ws/ros_ws/build/robot_nav/test_location_manager" "--gtest_output=xml:/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml"
+[0.044s] 1: Test timeout computed to be: 60
+[0.129s] 1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_nav':
+[0.130s] 1:  - /ws/ros_ws/build/robot_nav/test_location_manager --gtest_output=xml:/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml
+[0.138s] 1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[0.138s] 1: [==========] Running 2 tests from 1 test suite.
+[0.138s] 1: [----------] Global test environment set-up.
+[0.138s] 1: [----------] 2 tests from LocationManager
+[0.139s] 1: [ RUN      ] LocationManager.LoadValidLocationsYaml
+[0.139s] 1: [       OK ] LocationManager.LoadValidLocationsYaml (1 ms)
+[0.140s] 1: [ RUN      ] LocationManager.IgnoreInvalidEntryAndKeepValidOnes
+[0.140s] 1: [       OK ] LocationManager.IgnoreInvalidEntryAndKeepValidOnes (0 ms)
+[0.141s] 1: [----------] 2 tests from LocationManager (1 ms total)
+[0.141s] 1: 
+[0.141s] 1: [----------] Global test environment tear-down
+[0.141s] 1: [==========] 2 tests from 1 test suite ran. (1 ms total)
+[0.141s] 1: [  PASSED  ] 2 tests.
+[0.142s] 1: -- run_test.py: return code 0
+[0.142s] 1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml'
+[0.142s] 1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml'
+[0.160s] 1/7 Test #1: test_location_manager ............   Passed    0.12 sec
+[0.161s] test 2
+[0.161s]     Start 2: copyright
+[0.162s] 
+[0.162s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml"
+[0.163s] 2: Test timeout computed to be: 200
+[0.227s] 2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[0.228s] 2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml
+[0.332s] 2: include/robot_nav/location_manager.hpp: could not find copyright notice
+[0.333s] 2: src/location_manager.cpp: could not find copyright notice
+[0.333s] 2: src/nav_server_node.cpp: could not find copyright notice
+[0.334s] 2: test/test_location_manager.cpp: could not find copyright notice
+[0.334s] 2: 4 errors, checked 4 files
+[0.355s] 2: -- run_test.py: return code 1
+[0.355s] 2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml'
+[0.368s] 2/7 Test #2: copyright ........................***Failed    0.21 sec
+[0.369s] -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[0.370s]  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml
+[0.371s] include/robot_nav/location_manager.hpp: could not find copyright notice
+[0.372s] src/location_manager.cpp: could not find copyright notice
+[0.373s] src/nav_server_node.cpp: could not find copyright notice
+[0.373s] test/test_location_manager.cpp: could not find copyright notice
+[0.374s] 4 errors, checked 4 files
+[0.374s] -- run_test.py: return code 1
+[0.374s] -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml'
+[0.374s] 
+[0.375s] test 3
+[0.375s]     Start 3: cppcheck
+[0.375s] 
+[0.375s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_nav/include"
+[0.375s] 3: Test timeout computed to be: 300
+[0.439s] 3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[0.440s] 3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_nav/include
+[0.522s] 3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.535s] 3: -- run_test.py: return code 0
+[0.535s] 3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml'
+[0.551s] 3/7 Test #3: cppcheck .........................   Passed    0.18 sec
+[0.551s] test 4
+[0.552s]     Start 4: cpplint
+[0.552s] 
+[0.553s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml"
+[0.553s] 4: Test timeout computed to be: 120
+[0.615s] 4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[0.616s] 4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml
+[0.785s] 4: Using '--root=/ws/ros_ws/src/robot_nav/include' argument
+[0.785s] 4: 
+[0.785s] 4: Done processing /ws/ros_ws/src/robot_nav/include/robot_nav/location_manager.hpp
+[0.786s] 4: 
+[0.786s] 4: Using '--root=/ws/ros_ws/src/robot_nav/src' argument
+[0.786s] 4: 
+[0.787s] 4: Done processing /ws/ros_ws/src/robot_nav/src/location_manager.cpp
+[0.787s] 4: 
+[0.788s] 4: Done processing /ws/ros_ws/src/robot_nav/src/nav_server_node.cpp
+[0.788s] 4: 
+[0.788s] 4: Using '--root=/ws/ros_ws/src/robot_nav/test' argument
+[0.788s] 4: 
+[0.788s] 4: Done processing /ws/ros_ws/src/robot_nav/test/test_location_manager.cpp
+[0.788s] 4: 
+[0.788s] 4: No problems found
+[0.809s] 4: -- run_test.py: return code 0
+[0.809s] 4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml'
+[0.815s] 4/7 Test #4: cpplint ..........................   Passed    0.26 sec
+[0.816s] test 5
+[0.816s]     Start 5: lint_cmake
+[0.817s] 
+[0.817s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml"
+[0.817s] 5: Test timeout computed to be: 60
+[0.882s] 5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[0.883s] 5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml
+[0.962s] 5: 
+[0.962s] 5: No problems found
+[0.978s] 5: -- run_test.py: return code 0
+[0.979s] 5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml'
+[0.994s] 5/7 Test #5: lint_cmake .......................   Passed    0.18 sec
+[0.994s] test 6
+[0.995s]     Start 6: uncrustify
+[0.995s] 
+[0.995s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml"
+[0.996s] 6: Test timeout computed to be: 60
+[1.067s] 6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[1.068s] 6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml
+[1.162s] 6: Code style divergence in file 'src/nav_server_node.cpp':
+[1.162s] 6: 
+[1.162s] 6: --- src/nav_server_node.cpp
+[1.163s] 6: +++ src/nav_server_node.cpp.uncrustify
+[1.163s] 6: @@ -43 +43 @@
+[1.163s] 6: -          std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+[1.163s] 6: +        std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+[1.163s] 6: 
+[1.164s] 6: 1 files with code style divergence
+[1.164s] 6: No code style divergence in file 'include/robot_nav/location_manager.hpp'
+[1.164s] 6: 
+[1.164s] 6: No code style divergence in file 'src/location_manager.cpp'
+[1.164s] 6: 
+[1.165s] 6: No code style divergence in file 'test/test_location_manager.cpp'
+[1.166s] 6: 
+[1.178s] 6: -- run_test.py: return code 1
+[1.179s] 6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml'
+[1.192s] 6/7 Test #6: uncrustify .......................***Failed    0.19 sec
+[1.192s] -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[1.192s]  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml
+[1.192s] Code style divergence in file 'src/nav_server_node.cpp':
+[1.192s] 
+[1.192s] --- src/nav_server_node.cpp
+[1.192s] +++ src/nav_server_node.cpp.uncrustify
+[1.194s] @@ -43 +43 @@
+[1.195s] -          std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+[1.195s] +        std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+[1.195s] 
+[1.195s] 1 files with code style divergence
+[1.196s] No code style divergence in file 'include/robot_nav/location_manager.hpp'
+[1.196s] 
+[1.196s] No code style divergence in file 'src/location_manager.cpp'
+[1.196s] 
+[1.196s] No code style divergence in file 'test/test_location_manager.cpp'
+[1.197s] 
+[1.197s] -- run_test.py: return code 1
+[1.197s] -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml'
+[1.197s] 
+[1.200s] test 7
+[1.201s]     Start 7: xmllint
+[1.201s] 
+[1.201s] 7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml"
+[1.201s] 7: Test timeout computed to be: 60
+[1.284s] 7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+[1.284s] 7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml
+[1.364s] 7: File 'package.xml' is valid
+[1.364s] 7: 
+[1.365s] 7: No problems found
+[1.381s] 7: -- run_test.py: return code 0
+[1.382s] 7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml'
+[1.391s] 7/7 Test #7: xmllint ..........................   Passed    0.20 sec
+[1.392s] 
+[1.392s] 71% tests passed, 2 tests failed out of 7
+[1.392s] 
+[1.393s] Label Time Summary:
+[1.393s] copyright     =   0.21 sec*proc (1 test)
+[1.393s] cppcheck      =   0.18 sec*proc (1 test)
+[1.394s] cpplint       =   0.26 sec*proc (1 test)
+[1.394s] gtest         =   0.12 sec*proc (1 test)
+[1.394s] lint_cmake    =   0.18 sec*proc (1 test)
+[1.395s] linter        =   1.22 sec*proc (6 tests)
+[1.396s] uncrustify    =   0.19 sec*proc (1 test)
+[1.396s] xmllint       =   0.20 sec*proc (1 test)
+[1.397s] 
+[1.397s] Total Test time (real) =   1.36 sec
+[1.397s] 
+[1.398s] The following tests FAILED:
+[1.398s] 	  2 - copyright (Failed)
+[1.400s] 	  6 - uncrustify (Failed)
+[1.401s] Errors while running CTest
+[1.402s] Invoked command in '/ws/ros_ws/build/robot_nav' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nav:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure

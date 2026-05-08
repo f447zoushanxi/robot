@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml
+
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml'

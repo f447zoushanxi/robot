@@ -1,0 +1,16 @@
+/ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node
+/ws/ros_ws/install/robot_voice/share/ament_index/resource_index/package_run_dependencies/robot_voice
+/ws/ros_ws/install/robot_voice/share/ament_index/resource_index/parent_prefix_path/robot_voice
+/ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.sh
+/ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.dsv
+/ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.sh
+/ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.dsv
+/ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.bash
+/ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.sh
+/ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.zsh
+/ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.dsv
+/ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv
+/ws/ros_ws/install/robot_voice/share/ament_index/resource_index/packages/robot_voice
+/ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig.cmake
+/ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig-version.cmake
+/ws/ros_ws/install/robot_voice/share/robot_voice/package.xml

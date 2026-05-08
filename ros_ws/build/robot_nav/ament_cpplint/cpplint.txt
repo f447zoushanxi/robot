@@ -1,0 +1,22 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml
+
+Using '--root=/ws/ros_ws/src/robot_nav/include' argument
+
+Done processing /ws/ros_ws/src/robot_nav/include/robot_nav/location_manager.hpp
+
+Using '--root=/ws/ros_ws/src/robot_nav/src' argument
+
+Done processing /ws/ros_ws/src/robot_nav/src/location_manager.cpp
+
+Done processing /ws/ros_ws/src/robot_nav/src/nav_server_node.cpp
+
+Using '--root=/ws/ros_ws/src/robot_nav/test' argument
+
+Done processing /ws/ros_ws/src/robot_nav/test/test_location_manager.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml'

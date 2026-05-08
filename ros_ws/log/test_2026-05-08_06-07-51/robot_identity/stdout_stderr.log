@@ -1,0 +1,146 @@
+UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_identity/CTestConfiguration.ini
+Parse Config file:/ws/ros_ws/build/robot_identity/CTestConfiguration.ini
+   Site: a0e3119139a3
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20260508-0607 - Experimental
+UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_identity/CTestConfiguration.ini
+Parse Config file:/ws/ros_ws/build/robot_identity/CTestConfiguration.ini
+Test project /ws/ros_ws/build/robot_identity
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_enroll_gating
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cmake_gtest/test_enroll_gating.txt" "--command" "/ws/ros_ws/build/robot_identity/test_enroll_gating" "--gtest_output=xml:/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_identity':
+1:  - /ws/ros_ws/build/robot_identity/test_enroll_gating --gtest_output=xml:/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml
+1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 3 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 3 tests from EnrollPolicy
+1: [ RUN      ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured
+1: [       OK ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured (0 ms)
+1: [ RUN      ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest
+1: [       OK ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest (0 ms)
+1: [ RUN      ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled
+1: [       OK ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled (0 ms)
+1: [----------] 3 tests from EnrollPolicy (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 3 tests from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 3 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'
+1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'
+1/7 Test #1: test_enroll_gating ...............   Passed    0.09 sec
+test 2
+    Start 2: copyright
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml"
+2: Test timeout computed to be: 200
+2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml
+2: No problems found, checked 4 files
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml'
+2/7 Test #2: copyright ........................   Passed    0.31 sec
+test 3
+    Start 3: cppcheck
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_identity/include"
+3: Test timeout computed to be: 300
+3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_identity/include
+3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml'
+3/7 Test #3: cppcheck .........................   Passed    0.20 sec
+test 4
+    Start 4: cpplint
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml"
+4: Test timeout computed to be: 120
+4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml
+4: Using '--root=/ws/ros_ws/src/robot_identity/include' argument
+4: 
+4: Done processing /ws/ros_ws/src/robot_identity/include/robot_identity/enroll_policy.hpp
+4: 
+4: Using '--root=/ws/ros_ws/src/robot_identity/src' argument
+4: 
+4: Done processing /ws/ros_ws/src/robot_identity/src/enroll_policy.cpp
+4: 
+4: Done processing /ws/ros_ws/src/robot_identity/src/identity_node.cpp
+4: 
+4: Using '--root=/ws/ros_ws/src/robot_identity/test' argument
+4: 
+4: Done processing /ws/ros_ws/src/robot_identity/test/test_enroll_gating.cpp
+4: 
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml'
+4/7 Test #4: cpplint ..........................   Passed    0.25 sec
+test 5
+    Start 5: lint_cmake
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml"
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml
+5: 
+5: No problems found
+5: -- run_test.py: return code 0
+5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml'
+5/7 Test #5: lint_cmake .......................   Passed    0.17 sec
+test 6
+    Start 6: uncrustify
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml"
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml
+6: No code style divergence in file 'include/robot_identity/enroll_policy.hpp'
+6: 
+6: No code style divergence in file 'src/enroll_policy.cpp'
+6: 
+6: No code style divergence in file 'src/identity_node.cpp'
+6: 
+6: No code style divergence in file 'test/test_enroll_gating.cpp'
+6: 
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml'
+6/7 Test #6: uncrustify .......................   Passed    0.18 sec
+test 7
+    Start 7: xmllint
+
+7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml"
+7: Test timeout computed to be: 60
+7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml
+7: File 'package.xml' is valid
+7: 
+7: No problems found
+7: -- run_test.py: return code 0
+7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml'
+7/7 Test #7: xmllint ..........................   Passed    0.13 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Label Time Summary:
+copyright     =   0.31 sec*proc (1 test)
+cppcheck      =   0.20 sec*proc (1 test)
+cpplint       =   0.25 sec*proc (1 test)
+gtest         =   0.09 sec*proc (1 test)
+lint_cmake    =   0.17 sec*proc (1 test)
+linter        =   1.24 sec*proc (6 tests)
+uncrustify    =   0.18 sec*proc (1 test)
+xmllint       =   0.13 sec*proc (1 test)
+
+Total Test time (real) =   1.34 sec

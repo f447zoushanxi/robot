@@ -1,0 +1,1248 @@
+[0.000000] (-) TimerEvent: {}
+[0.000209] (robot_base) JobQueued: {'identifier': 'robot_base', 'dependencies': OrderedDict([('robot_base', '/ws/ros_ws/install/robot_base')])}
+[0.000235] (robot_manipulation) JobQueued: {'identifier': 'robot_manipulation', 'dependencies': OrderedDict([('robot_manipulation', '/ws/ros_ws/install/robot_manipulation')])}
+[0.000253] (robot_msgs) JobQueued: {'identifier': 'robot_msgs', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs')])}
+[0.000266] (robot_nav) JobQueued: {'identifier': 'robot_nav', 'dependencies': OrderedDict([('robot_nav', '/ws/ros_ws/install/robot_nav')])}
+[0.000279] (robot_nlu) JobQueued: {'identifier': 'robot_nlu', 'dependencies': OrderedDict([('robot_nlu', '/ws/ros_ws/install/robot_nlu')])}
+[0.000291] (robot_safety) JobQueued: {'identifier': 'robot_safety', 'dependencies': OrderedDict([('robot_safety', '/ws/ros_ws/install/robot_safety')])}
+[0.000303] (robot_voice) JobQueued: {'identifier': 'robot_voice', 'dependencies': OrderedDict([('robot_voice', '/ws/ros_ws/install/robot_voice')])}
+[0.000316] (robot_executor) JobQueued: {'identifier': 'robot_executor', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs'), ('robot_executor', '/ws/ros_ws/install/robot_executor')])}
+[0.000330] (robot_identity) JobQueued: {'identifier': 'robot_identity', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs'), ('robot_identity', '/ws/ros_ws/install/robot_identity')])}
+[0.000343] (robot_perception) JobQueued: {'identifier': 'robot_perception', 'dependencies': OrderedDict([('robot_msgs', '/ws/ros_ws/install/robot_msgs'), ('robot_perception', '/ws/ros_ws/install/robot_perception')])}
+[0.000356] (robot_bringup) JobQueued: {'identifier': 'robot_bringup', 'dependencies': OrderedDict([('robot_base', '/ws/ros_ws/install/robot_base'), ('robot_manipulation', '/ws/ros_ws/install/robot_manipulation'), ('robot_msgs', '/ws/ros_ws/install/robot_msgs'), ('robot_nav', '/ws/ros_ws/install/robot_nav'), ('robot_nlu', '/ws/ros_ws/install/robot_nlu'), ('robot_safety', '/ws/ros_ws/install/robot_safety'), ('robot_voice', '/ws/ros_ws/install/robot_voice'), ('robot_executor', '/ws/ros_ws/install/robot_executor'), ('robot_identity', '/ws/ros_ws/install/robot_identity'), ('robot_perception', '/ws/ros_ws/install/robot_perception'), ('robot_bringup', '/ws/ros_ws/install/robot_bringup')])}
+[0.000639] (robot_msgs) JobStarted: {'identifier': 'robot_msgs'}
+[0.016388] (robot_base) JobStarted: {'identifier': 'robot_base'}
+[0.020415] (robot_manipulation) JobStarted: {'identifier': 'robot_manipulation'}
+[0.024291] (robot_nav) JobStarted: {'identifier': 'robot_nav'}
+[0.042689] (robot_msgs) JobEnded: {'identifier': 'robot_msgs', 'rc': 0}
+[0.043408] (robot_nlu) JobStarted: {'identifier': 'robot_nlu'}
+[0.047471] (robot_base) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_base', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_base:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_base'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_base')]), 'shell': False}
+[0.049233] (robot_manipulation) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_manipulation', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_manipulation:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_manipulation'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_manipulation')]), 'shell': False}
+[0.051675] (robot_nav) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_nav', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_nav:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nav'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_nav')]), 'shell': False}
+[0.058675] (robot_base) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_base/CTestConfiguration.ini\n'}
+[0.059476] (robot_base) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_base/CTestConfiguration.ini\n'}
+[0.059800] (robot_base) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[0.060175] (robot_base) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.061753] (robot_base) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.064468] (robot_base) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[0.064709] (robot_base) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_base/CTestConfiguration.ini\n'}
+[0.064881] (robot_base) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_base/CTestConfiguration.ini\n'}
+[0.065021] (robot_base) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_base\n'}
+[0.065143] (robot_base) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.065247] (robot_manipulation) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_manipulation/CTestConfiguration.ini\n'}
+[0.065396] (robot_manipulation) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_manipulation/CTestConfiguration.ini\n'}
+[0.065506] (robot_manipulation) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[0.065622] (robot_manipulation) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.065739] (robot_manipulation) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.065965] (robot_manipulation) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[0.066087] (robot_manipulation) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_manipulation/CTestConfiguration.ini\n'}
+[0.066193] (robot_manipulation) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_manipulation/CTestConfiguration.ini\n'}
+[0.066302] (robot_manipulation) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_manipulation\n'}
+[0.066412] (robot_manipulation) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.066519] (robot_manipulation) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.066638] (robot_manipulation) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.066759] (robot_manipulation) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.066874] (robot_manipulation) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.067158] (robot_manipulation) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.067282] (robot_manipulation) StdoutLine: {'line': b'test 1\n'}
+[0.067390] (robot_manipulation) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[0.067488] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[0.067594] (robot_manipulation) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/copyright.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/copyright.xunit.xml"\n'}
+[0.067754] (robot_manipulation) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[0.070558] (robot_base) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.073845] (robot_base) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.074054] (robot_base) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.074143] (robot_base) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.074222] (robot_base) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.074298] (robot_base) StdoutLine: {'line': b'test 1\n'}
+[0.074389] (robot_base) StdoutLine: {'line': b'    Start 1: test_timeout_brake\n'}
+[0.074472] (robot_base) StdoutLine: {'line': b'\n'}
+[0.074551] (robot_base) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cmake_gtest/test_timeout_brake.txt" "--command" "/ws/ros_ws/build/robot_base/test_timeout_brake" "--gtest_output=xml:/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml"\n'}
+[0.074679] (robot_base) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.074770] (robot_nav) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nav/CTestConfiguration.ini\n'}
+[0.074897] (robot_nav) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_nav/CTestConfiguration.ini\n'}
+[0.074983] (robot_nav) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[0.075063] (robot_nav) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.075149] (robot_nav) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.075230] (robot_nav) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[0.075311] (robot_nav) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nav/CTestConfiguration.ini\n'}
+[0.075388] (robot_nav) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_nav/CTestConfiguration.ini\n'}
+[0.075466] (robot_nav) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_nav\n'}
+[0.075540] (robot_nav) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.075800] (robot_nav) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.075917] (robot_nav) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.076495] (robot_nav) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.076633] (robot_nav) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.076734] (robot_nav) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.076816] (robot_nav) StdoutLine: {'line': b'test 1\n'}
+[0.076901] (robot_nav) StdoutLine: {'line': b'    Start 1: test_location_manager\n'}
+[0.076986] (robot_nav) StdoutLine: {'line': b'\n'}
+[0.077067] (robot_nav) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cmake_gtest/test_location_manager.txt" "--command" "/ws/ros_ws/build/robot_nav/test_location_manager" "--gtest_output=xml:/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml"\n'}
+[0.077491] (robot_nav) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.077622] (robot_nlu) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_nlu', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_nlu:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_nlu'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_nlu')]), 'shell': False}
+[0.086858] (robot_nlu) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini\n'}
+[0.087285] (robot_nlu) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini\n'}
+[0.087886] (robot_nlu) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[0.088102] (robot_nlu) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.088694] (robot_nlu) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.089195] (robot_nlu) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[0.089527] (robot_nlu) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini\n'}
+[0.089772] (robot_nlu) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_nlu/CTestConfiguration.ini\n'}
+[0.089841] (robot_nlu) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_nlu\n'}
+[0.089895] (robot_nlu) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.090562] (robot_nlu) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.090801] (robot_nlu) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.090882] (robot_nlu) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.091376] (robot_nlu) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.091458] (robot_nlu) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.091504] (robot_nlu) StdoutLine: {'line': b'test 1\n'}
+[0.091855] (robot_nlu) StdoutLine: {'line': b'    Start 1: test_nlu_parser\n'}
+[0.091942] (robot_nlu) StdoutLine: {'line': b'\n'}
+[0.092024] (robot_nlu) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cmake_gtest/test_nlu_parser.txt" "--command" "/ws/ros_ws/build/robot_nlu/test_nlu_parser" "--gtest_output=xml:/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml"\n'}
+[0.092086] (robot_nlu) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.100700] (-) TimerEvent: {}
+[0.160082] (robot_base) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_base':\n"}
+[0.161299] (robot_base) StdoutLine: {'line': b'1:  - /ws/ros_ws/build/robot_base/test_timeout_brake --gtest_output=xml:/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml\n'}
+[0.166511] (robot_base) StdoutLine: {'line': b'1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.167225] (robot_base) StdoutLine: {'line': b'1: [==========] Running 2 tests from 1 test suite.\n'}
+[0.169148] (robot_base) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.169377] (robot_base) StdoutLine: {'line': b'1: [----------] 2 tests from BaseSafetyUtils\n'}
+[0.169639] (robot_base) StdoutLine: {'line': b'1: [ RUN      ] BaseSafetyUtils.BrakeOnTimeout\n'}
+[0.169858] (robot_base) StdoutLine: {'line': b'1: [       OK ] BaseSafetyUtils.BrakeOnTimeout (0 ms)\n'}
+[0.170276] (robot_base) StdoutLine: {'line': b'1: [ RUN      ] BaseSafetyUtils.KeepCommandWithoutTimeout\n'}
+[0.170510] (robot_base) StdoutLine: {'line': b'1: [       OK ] BaseSafetyUtils.KeepCommandWithoutTimeout (0 ms)\n'}
+[0.170771] (robot_base) StdoutLine: {'line': b'1: [----------] 2 tests from BaseSafetyUtils (0 ms total)\n'}
+[0.171019] (robot_base) StdoutLine: {'line': b'1: \n'}
+[0.171251] (robot_base) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.171463] (robot_base) StdoutLine: {'line': b'1: [==========] 2 tests from 1 test suite ran. (0 ms total)\n'}
+[0.171690] (robot_base) StdoutLine: {'line': b'1: [  PASSED  ] 2 tests.\n'}
+[0.171979] (robot_base) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.172640] (robot_base) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml'\n"}
+[0.172885] (robot_base) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/test_timeout_brake.gtest.xml'\n"}
+[0.200846] (-) TimerEvent: {}
+[0.213435] (robot_base) StdoutLine: {'line': b'1/7 Test #1: test_timeout_brake ...............   Passed    0.15 sec\n'}
+[0.214058] (robot_base) StdoutLine: {'line': b'test 2\n'}
+[0.214277] (robot_base) StdoutLine: {'line': b'    Start 2: copyright\n'}
+[0.214484] (robot_base) StdoutLine: {'line': b'\n'}
+[0.214588] (robot_base) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml"\n'}
+[0.214860] (robot_base) StdoutLine: {'line': b'2: Test timeout computed to be: 200\n'}
+[0.216194] (robot_nav) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_nav':\n"}
+[0.216448] (robot_nav) StdoutLine: {'line': b'1:  - /ws/ros_ws/build/robot_nav/test_location_manager --gtest_output=xml:/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml\n'}
+[0.222054] (robot_nav) StdoutLine: {'line': b'1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.222302] (robot_nav) StdoutLine: {'line': b'1: [==========] Running 2 tests from 1 test suite.\n'}
+[0.222446] (robot_nav) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.222528] (robot_nav) StdoutLine: {'line': b'1: [----------] 2 tests from LocationManager\n'}
+[0.222706] (robot_nav) StdoutLine: {'line': b'1: [ RUN      ] LocationManager.LoadValidLocationsYaml\n'}
+[0.222859] (robot_nav) StdoutLine: {'line': b'1: [       OK ] LocationManager.LoadValidLocationsYaml (1 ms)\n'}
+[0.223031] (robot_nav) StdoutLine: {'line': b'1: [ RUN      ] LocationManager.IgnoreInvalidEntryAndKeepValidOnes\n'}
+[0.223205] (robot_nav) StdoutLine: {'line': b'1: [       OK ] LocationManager.IgnoreInvalidEntryAndKeepValidOnes (0 ms)\n'}
+[0.223353] (robot_nav) StdoutLine: {'line': b'1: [----------] 2 tests from LocationManager (1 ms total)\n'}
+[0.223483] (robot_nav) StdoutLine: {'line': b'1: \n'}
+[0.223649] (robot_nav) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.223814] (robot_nav) StdoutLine: {'line': b'1: [==========] 2 tests from 1 test suite ran. (1 ms total)\n'}
+[0.223992] (robot_nav) StdoutLine: {'line': b'1: [  PASSED  ] 2 tests.\n'}
+[0.224145] (robot_nav) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.224309] (robot_nav) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml'\n"}
+[0.224463] (robot_nav) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/test_location_manager.gtest.xml'\n"}
+[0.224595] (robot_manipulation) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[0.224755] (robot_manipulation) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/copyright.xunit.xml\n'}
+[0.234425] (robot_nlu) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_nlu':\n"}
+[0.235196] (robot_nlu) StdoutLine: {'line': b'1:  - /ws/ros_ws/build/robot_nlu/test_nlu_parser --gtest_output=xml:/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml\n'}
+[0.239436] (robot_nlu) StdoutLine: {'line': b'1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.240276] (robot_nlu) StdoutLine: {'line': b'1: [==========] Running 2 tests from 1 test suite.\n'}
+[0.240491] (robot_nlu) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.240657] (robot_nlu) StdoutLine: {'line': b'1: [----------] 2 tests from NluParser\n'}
+[0.240809] (robot_nlu) StdoutLine: {'line': b'1: [ RUN      ] NluParser.ParseDeliverWaterIntent\n'}
+[0.240963] (robot_nlu) StdoutLine: {'line': b'1: [       OK ] NluParser.ParseDeliverWaterIntent (0 ms)\n'}
+[0.241108] (robot_nlu) StdoutLine: {'line': b'1: [ RUN      ] NluParser.ParseStopIntent\n'}
+[0.241241] (robot_nlu) StdoutLine: {'line': b'1: [       OK ] NluParser.ParseStopIntent (0 ms)\n'}
+[0.241343] (robot_nlu) StdoutLine: {'line': b'1: [----------] 2 tests from NluParser (0 ms total)\n'}
+[0.241486] (robot_nlu) StdoutLine: {'line': b'1: \n'}
+[0.241596] (robot_nlu) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.241753] (robot_nlu) StdoutLine: {'line': b'1: [==========] 2 tests from 1 test suite ran. (0 ms total)\n'}
+[0.241886] (robot_nlu) StdoutLine: {'line': b'1: [  PASSED  ] 2 tests.\n'}
+[0.242942] (robot_nlu) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.243084] (robot_nav) StdoutLine: {'line': b'1/7 Test #1: test_location_manager ............   Passed    0.18 sec\n'}
+[0.243316] (robot_nav) StdoutLine: {'line': b'test 2\n'}
+[0.243714] (robot_nav) StdoutLine: {'line': b'    Start 2: copyright\n'}
+[0.243967] (robot_nav) StdoutLine: {'line': b'\n'}
+[0.244287] (robot_nav) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml"\n'}
+[0.244499] (robot_nav) StdoutLine: {'line': b'2: Test timeout computed to be: 200\n'}
+[0.244834] (robot_nlu) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml'\n"}
+[0.245042] (robot_nlu) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/test_nlu_parser.gtest.xml'\n"}
+[0.261728] (robot_nlu) StdoutLine: {'line': b'1/7 Test #1: test_nlu_parser ..................   Passed    0.17 sec\n'}
+[0.262049] (robot_nlu) StdoutLine: {'line': b'test 2\n'}
+[0.262287] (robot_nlu) StdoutLine: {'line': b'    Start 2: copyright\n'}
+[0.262434] (robot_nlu) StdoutLine: {'line': b'\n'}
+[0.262561] (robot_nlu) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml"\n'}
+[0.262730] (robot_nlu) StdoutLine: {'line': b'2: Test timeout computed to be: 200\n'}
+[0.287319] (robot_base) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[0.288174] (robot_base) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml\n'}
+[0.300978] (-) TimerEvent: {}
+[0.316576] (robot_nav) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[0.318442] (robot_nav) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml\n'}
+[0.332296] (robot_nlu) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[0.332640] (robot_nlu) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml\n'}
+[0.357055] (robot_manipulation) StdoutLine: {'line': b'1: No problems found, checked 1 files\n'}
+[0.383347] (robot_manipulation) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.384586] (robot_manipulation) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/copyright.xunit.xml'\n"}
+[0.401110] (-) TimerEvent: {}
+[0.403879] (robot_manipulation) StdoutLine: {'line': b'1/6 Test #1: copyright ........................   Passed    0.34 sec\n'}
+[0.405735] (robot_manipulation) StdoutLine: {'line': b'test 2\n'}
+[0.407785] (robot_manipulation) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[0.408664] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[0.409472] (robot_manipulation) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cppcheck.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cppcheck.xunit.xml"\n'}
+[0.410179] (robot_manipulation) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[0.485151] (robot_manipulation) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[0.486094] (robot_manipulation) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cppcheck.xunit.xml\n'}
+[0.501680] (-) TimerEvent: {}
+[0.510730] (robot_nav) StdoutLine: {'line': b'2: No problems found, checked 4 files\n'}
+[0.520543] (robot_nlu) StdoutLine: {'line': b'2: No problems found, checked 4 files\n'}
+[0.521023] (robot_base) StdoutLine: {'line': b'2: No problems found, checked 6 files\n'}
+[0.531347] (robot_nav) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.532444] (robot_nav) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/copyright.xunit.xml'\n"}
+[0.543251] (robot_base) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.546733] (robot_nlu) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.546948] (robot_nlu) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/copyright.xunit.xml'\n"}
+[0.547009] (robot_base) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/copyright.xunit.xml'\n"}
+[0.551967] (robot_nav) StdoutLine: {'line': b'2/7 Test #2: copyright ........................   Passed    0.31 sec\n'}
+[0.552434] (robot_nav) StdoutLine: {'line': b'test 3\n'}
+[0.552591] (robot_nav) StdoutLine: {'line': b'    Start 3: cppcheck\n'}
+[0.552692] (robot_nav) StdoutLine: {'line': b'\n'}
+[0.552750] (robot_nav) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_nav/include"\n'}
+[0.552805] (robot_nav) StdoutLine: {'line': b'3: Test timeout computed to be: 300\n'}
+[0.564134] (robot_base) StdoutLine: {'line': b'2/7 Test #2: copyright ........................   Passed    0.35 sec\n'}
+[0.564931] (robot_base) StdoutLine: {'line': b'test 3\n'}
+[0.565282] (robot_base) StdoutLine: {'line': b'    Start 3: cppcheck\n'}
+[0.565627] (robot_base) StdoutLine: {'line': b'\n'}
+[0.565822] (robot_base) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_base/include"\n'}
+[0.566099] (robot_base) StdoutLine: {'line': b'3: Test timeout computed to be: 300\n'}
+[0.575013] (robot_nlu) StdoutLine: {'line': b'2/7 Test #2: copyright ........................   Passed    0.31 sec\n'}
+[0.576091] (robot_nlu) StdoutLine: {'line': b'test 3\n'}
+[0.576350] (robot_nlu) StdoutLine: {'line': b'    Start 3: cppcheck\n'}
+[0.576535] (robot_nlu) StdoutLine: {'line': b'\n'}
+[0.576692] (robot_nlu) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_nlu/include"\n'}
+[0.577704] (robot_nlu) StdoutLine: {'line': b'3: Test timeout computed to be: 300\n'}
+[0.580961] (robot_manipulation) StdoutLine: {'line': b'2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[0.600917] (robot_manipulation) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.601769] (robot_manipulation) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cppcheck.xunit.xml'\n"}
+[0.602046] (-) TimerEvent: {}
+[0.619976] (robot_manipulation) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.21 sec\n'}
+[0.620774] (robot_manipulation) StdoutLine: {'line': b'test 3\n'}
+[0.621183] (robot_manipulation) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[0.621552] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[0.621750] (robot_manipulation) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cpplint.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cpplint.xunit.xml"\n'}
+[0.622130] (robot_manipulation) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[0.624678] (robot_nav) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[0.624996] (robot_nav) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_nav/include\n'}
+[0.633755] (robot_base) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[0.635078] (robot_base) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_base/include\n'}
+[0.640650] (robot_nlu) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[0.641394] (robot_nlu) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_nlu/include\n'}
+[0.690666] (robot_manipulation) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[0.691269] (robot_manipulation) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cpplint.xunit.xml\n'}
+[0.702693] (-) TimerEvent: {}
+[0.714816] (robot_nav) StdoutLine: {'line': b'3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[0.717739] (robot_base) StdoutLine: {'line': b'3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[0.725296] (robot_nlu) StdoutLine: {'line': b'3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[0.740853] (robot_base) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.741980] (robot_base) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/cppcheck.xunit.xml'\n"}
+[0.746761] (robot_nav) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.748131] (robot_nav) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cppcheck.xunit.xml'\n"}
+[0.753398] (robot_nlu) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.753812] (robot_nlu) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cppcheck.xunit.xml'\n"}
+[0.765380] (robot_base) StdoutLine: {'line': b'3/7 Test #3: cppcheck .........................   Passed    0.20 sec\n'}
+[0.765969] (robot_nav) StdoutLine: {'line': b'3/7 Test #3: cppcheck .........................   Passed    0.21 sec\n'}
+[0.766158] (robot_nav) StdoutLine: {'line': b'test 4\n'}
+[0.766249] (robot_nav) StdoutLine: {'line': b'    Start 4: cpplint\n'}
+[0.766307] (robot_nav) StdoutLine: {'line': b'\n'}
+[0.766947] (robot_nav) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml"\n'}
+[0.767367] (robot_nav) StdoutLine: {'line': b'4: Test timeout computed to be: 120\n'}
+[0.767834] (robot_base) StdoutLine: {'line': b'test 4\n'}
+[0.768152] (robot_base) StdoutLine: {'line': b'    Start 4: cpplint\n'}
+[0.768430] (robot_base) StdoutLine: {'line': b'\n'}
+[0.768709] (robot_base) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml"\n'}
+[0.768976] (robot_base) StdoutLine: {'line': b'4: Test timeout computed to be: 120\n'}
+[0.780668] (robot_nlu) StdoutLine: {'line': b'3/7 Test #3: cppcheck .........................   Passed    0.20 sec\n'}
+[0.781274] (robot_nlu) StdoutLine: {'line': b'test 4\n'}
+[0.781529] (robot_nlu) StdoutLine: {'line': b'    Start 4: cpplint\n'}
+[0.781760] (robot_nlu) StdoutLine: {'line': b'\n'}
+[0.782005] (robot_nlu) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml"\n'}
+[0.782262] (robot_nlu) StdoutLine: {'line': b'4: Test timeout computed to be: 120\n'}
+[0.802822] (-) TimerEvent: {}
+[0.817226] (robot_manipulation) StdoutLine: {'line': b"3: Using '--root=/ws/ros_ws/src/robot_manipulation/src' argument\n"}
+[0.817870] (robot_manipulation) StdoutLine: {'line': b'3: \n'}
+[0.818001] (robot_manipulation) StdoutLine: {'line': b'3: Done processing /ws/ros_ws/src/robot_manipulation/src/manipulation_node.cpp\n'}
+[0.818129] (robot_manipulation) StdoutLine: {'line': b'3: \n'}
+[0.818315] (robot_manipulation) StdoutLine: {'line': b'3: No problems found\n'}
+[0.832426] (robot_nav) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[0.836140] (robot_nav) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml\n'}
+[0.836826] (robot_base) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[0.836988] (robot_base) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml\n'}
+[0.844289] (robot_nlu) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[0.844741] (robot_nlu) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml\n'}
+[0.847343] (robot_manipulation) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.847725] (robot_manipulation) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/cpplint.xunit.xml'\n"}
+[0.862392] (robot_manipulation) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................   Passed    0.24 sec\n'}
+[0.862703] (robot_manipulation) StdoutLine: {'line': b'test 4\n'}
+[0.862790] (robot_manipulation) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[0.862865] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[0.865073] (robot_manipulation) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/lint_cmake.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/lint_cmake.xunit.xml"\n'}
+[0.865524] (robot_manipulation) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.902956] (-) TimerEvent: {}
+[0.933971] (robot_manipulation) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[0.935215] (robot_manipulation) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/lint_cmake.xunit.xml\n'}
+[0.987883] (robot_nlu) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nlu/include' argument\n"}
+[0.988357] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.989450] (robot_nlu) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nlu/include/robot_nlu/nlu_parser.hpp\n'}
+[0.992672] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.992940] (robot_nlu) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nlu/src' argument\n"}
+[0.993038] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.993501] (robot_nlu) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nlu/src/nlu_node.cpp\n'}
+[0.994121] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.994408] (robot_nlu) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nlu/src/nlu_parser.cpp\n'}
+[0.994712] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.995062] (robot_nlu) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nlu/test' argument\n"}
+[0.995333] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.995599] (robot_nlu) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nlu/test/test_nlu_parser.cpp\n'}
+[0.996186] (robot_nlu) StdoutLine: {'line': b'4: \n'}
+[0.996355] (robot_nlu) StdoutLine: {'line': b'4: No problems found\n'}
+[0.996512] (robot_nav) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nav/include' argument\n"}
+[0.996707] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.996867] (robot_nav) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nav/include/robot_nav/location_manager.hpp\n'}
+[0.997049] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997169] (robot_nav) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nav/src' argument\n"}
+[0.997335] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997512] (robot_nav) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nav/src/location_manager.cpp\n'}
+[0.997618] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997683] (robot_nav) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nav/src/nav_server_node.cpp\n'}
+[0.997735] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997784] (robot_nav) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_nav/test' argument\n"}
+[0.997833] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997883] (robot_nav) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_nav/test/test_location_manager.cpp\n'}
+[0.997934] (robot_nav) StdoutLine: {'line': b'4: \n'}
+[0.997984] (robot_nav) StdoutLine: {'line': b'4: No problems found\n'}
+[1.003704] (-) TimerEvent: {}
+[1.008947] (robot_base) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_base/include' argument\n"}
+[1.009303] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.009579] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/include/robot_base/safety_utils.hpp\n'}
+[1.009802] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.010001] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/include/robot_base/serial_interface.hpp\n'}
+[1.010141] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.010232] (robot_base) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_base/src' argument\n"}
+[1.010308] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.010373] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/src/base_driver_node.cpp\n'}
+[1.010451] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.010596] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/src/safety_utils.cpp\n'}
+[1.010785] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.010952] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/src/serial_interface_stub.cpp\n'}
+[1.011105] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.011261] (robot_base) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_base/test' argument\n"}
+[1.011429] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.011579] (robot_base) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_base/test/test_timeout_brake.cpp\n'}
+[1.011757] (robot_base) StdoutLine: {'line': b'4: \n'}
+[1.012024] (robot_base) StdoutLine: {'line': b'4: No problems found\n'}
+[1.017848] (robot_nav) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.018802] (robot_nav) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/cpplint.xunit.xml'\n"}
+[1.020228] (robot_nlu) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.020724] (robot_nlu) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/cpplint.xunit.xml'\n"}
+[1.022879] (robot_manipulation) StdoutLine: {'line': b'4: \n'}
+[1.023198] (robot_manipulation) StdoutLine: {'line': b'4: No problems found\n'}
+[1.032788] (robot_base) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.034003] (robot_base) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/cpplint.xunit.xml'\n"}
+[1.038069] (robot_nav) StdoutLine: {'line': b'4/7 Test #4: cpplint ..........................   Passed    0.27 sec\n'}
+[1.038479] (robot_nav) StdoutLine: {'line': b'test 5\n'}
+[1.038756] (robot_nav) StdoutLine: {'line': b'    Start 5: lint_cmake\n'}
+[1.039069] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.039276] (robot_nav) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml"\n'}
+[1.040650] (robot_nav) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.041266] (robot_nlu) StdoutLine: {'line': b'4/7 Test #4: cpplint ..........................   Passed    0.26 sec\n'}
+[1.043916] (robot_nlu) StdoutLine: {'line': b'test 5\n'}
+[1.044134] (robot_nlu) StdoutLine: {'line': b'    Start 5: lint_cmake\n'}
+[1.044253] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.044366] (robot_nlu) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml"\n'}
+[1.044494] (robot_nlu) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.044629] (robot_manipulation) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.044785] (robot_manipulation) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/lint_cmake.xunit.xml'\n"}
+[1.052828] (robot_base) StdoutLine: {'line': b'4/7 Test #4: cpplint ..........................   Passed    0.29 sec\n'}
+[1.053375] (robot_base) StdoutLine: {'line': b'test 5\n'}
+[1.053501] (robot_base) StdoutLine: {'line': b'    Start 5: lint_cmake\n'}
+[1.053703] (robot_base) StdoutLine: {'line': b'\n'}
+[1.053811] (robot_base) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml"\n'}
+[1.054254] (robot_base) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.059905] (robot_manipulation) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.20 sec\n'}
+[1.062908] (robot_manipulation) StdoutLine: {'line': b'test 5\n'}
+[1.063095] (robot_manipulation) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[1.063244] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[1.063376] (robot_manipulation) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml"\n'}
+[1.063519] (robot_manipulation) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.103838] (-) TimerEvent: {}
+[1.108925] (robot_nav) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[1.109163] (robot_nav) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml\n'}
+[1.110196] (robot_nlu) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[1.110344] (robot_nlu) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml\n'}
+[1.124714] (robot_base) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[1.124976] (robot_base) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml\n'}
+[1.129363] (robot_manipulation) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[1.129723] (robot_manipulation) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml\n'}
+[1.187616] (robot_nlu) StdoutLine: {'line': b'5: \n'}
+[1.188653] (robot_nlu) StdoutLine: {'line': b'5: No problems found\n'}
+[1.190855] (robot_nav) StdoutLine: {'line': b'5: \n'}
+[1.191091] (robot_nav) StdoutLine: {'line': b'5: No problems found\n'}
+[1.202960] (robot_base) StdoutLine: {'line': b'5: \n'}
+[1.203312] (robot_base) StdoutLine: {'line': b'5: No problems found\n'}
+[1.204131] (-) TimerEvent: {}
+[1.209685] (robot_nlu) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.210016] (robot_nlu) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/lint_cmake.xunit.xml'\n"}
+[1.215875] (robot_nav) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.219739] (robot_nav) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/lint_cmake.xunit.xml'\n"}
+[1.221283] (robot_base) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.221954] (robot_base) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/lint_cmake.xunit.xml'\n"}
+[1.222399] (robot_manipulation) StdoutLine: {'line': b"5: No code style divergence in file 'src/manipulation_node.cpp'\n"}
+[1.222917] (robot_manipulation) StdoutLine: {'line': b'5: \n'}
+[1.223349] (robot_manipulation) StdoutLine: {'line': b'5: No problems found\n'}
+[1.239234] (robot_nav) StdoutLine: {'line': b'5/7 Test #5: lint_cmake .......................   Passed    0.20 sec\n'}
+[1.240942] (robot_nav) StdoutLine: {'line': b'test 6\n'}
+[1.241763] (robot_nlu) StdoutLine: {'line': b'5/7 Test #5: lint_cmake .......................   Passed    0.20 sec\n'}
+[1.242253] (robot_nlu) StdoutLine: {'line': b'test 6\n'}
+[1.242721] (robot_nlu) StdoutLine: {'line': b'    Start 6: uncrustify\n'}
+[1.243174] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.243565] (robot_nlu) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml"\n'}
+[1.244135] (robot_nlu) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.244916] (robot_base) StdoutLine: {'line': b'5/7 Test #5: lint_cmake .......................   Passed    0.19 sec\n'}
+[1.246491] (robot_base) StdoutLine: {'line': b'test 6\n'}
+[1.247037] (robot_base) StdoutLine: {'line': b'    Start 6: uncrustify\n'}
+[1.247567] (robot_base) StdoutLine: {'line': b'\n'}
+[1.248254] (robot_base) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml"\n'}
+[1.248830] (robot_nav) StdoutLine: {'line': b'    Start 6: uncrustify\n'}
+[1.249255] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.250817] (robot_nav) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml"\n'}
+[1.251320] (robot_nav) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.251804] (robot_base) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.252255] (robot_manipulation) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.252783] (robot_manipulation) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml'\n"}
+[1.271280] (robot_manipulation) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.21 sec\n'}
+[1.274994] (robot_manipulation) StdoutLine: {'line': b'test 6\n'}
+[1.275666] (robot_manipulation) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[1.276155] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[1.276595] (robot_manipulation) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml" "--package-name" "robot_manipulation" "--output-file" "/ws/ros_ws/build/robot_manipulation/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml"\n'}
+[1.277136] (robot_manipulation) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.304284] (-) TimerEvent: {}
+[1.306988] (robot_nlu) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[1.307283] (robot_nlu) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml\n'}
+[1.316685] (robot_base) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[1.317234] (robot_base) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml\n'}
+[1.323030] (robot_nav) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[1.323574] (robot_nav) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml\n'}
+[1.338068] (robot_manipulation) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':\n"}
+[1.338738] (robot_manipulation) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml\n'}
+[1.395351] (robot_nlu) StdoutLine: {'line': b"6: No code style divergence in file 'include/robot_nlu/nlu_parser.hpp'\n"}
+[1.395894] (robot_nlu) StdoutLine: {'line': b'6: \n'}
+[1.397808] (robot_nlu) StdoutLine: {'line': b"6: No code style divergence in file 'src/nlu_node.cpp'\n"}
+[1.398047] (robot_nlu) StdoutLine: {'line': b'6: \n'}
+[1.398806] (robot_nlu) StdoutLine: {'line': b"6: No code style divergence in file 'src/nlu_parser.cpp'\n"}
+[1.399014] (robot_nlu) StdoutLine: {'line': b'6: \n'}
+[1.399220] (robot_nlu) StdoutLine: {'line': b"6: No code style divergence in file 'test/test_nlu_parser.cpp'\n"}
+[1.399425] (robot_nlu) StdoutLine: {'line': b'6: \n'}
+[1.399633] (robot_nlu) StdoutLine: {'line': b'6: No problems found\n'}
+[1.404363] (-) TimerEvent: {}
+[1.412709] (robot_nlu) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[1.413295] (robot_nlu) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/uncrustify.xunit.xml'\n"}
+[1.413481] (robot_base) StdoutLine: {'line': b"6: Code style divergence in file 'src/serial_interface_stub.cpp':\n"}
+[1.413685] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.413880] (robot_base) StdoutLine: {'line': b'6: --- src/serial_interface_stub.cpp\n'}
+[1.414060] (robot_base) StdoutLine: {'line': b'6: +++ src/serial_interface_stub.cpp.uncrustify\n'}
+[1.414252] (robot_base) StdoutLine: {'line': b'6: @@ -25,2 +25,2 @@\n'}
+[1.414448] (robot_base) StdoutLine: {'line': b'6: -  bool open(const std::string &, int) override { return true; }\n'}
+[1.414660] (robot_base) StdoutLine: {'line': b'6: -  bool write_command(const VelocityCommand &) override { return true; }\n'}
+[1.414869] (robot_base) StdoutLine: {'line': b'6: +  bool open(const std::string &, int) override {return true;}\n'}
+[1.415073] (robot_base) StdoutLine: {'line': b'6: +  bool write_command(const VelocityCommand &) override {return true;}\n'}
+[1.415284] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.415480] (robot_base) StdoutLine: {'line': b'6: 1 files with code style divergence\n'}
+[1.415722] (robot_base) StdoutLine: {'line': b"6: No code style divergence in file 'include/robot_base/safety_utils.hpp'\n"}
+[1.415938] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.416143] (robot_base) StdoutLine: {'line': b"6: No code style divergence in file 'include/robot_base/serial_interface.hpp'\n"}
+[1.416343] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.416538] (robot_base) StdoutLine: {'line': b"6: No code style divergence in file 'src/base_driver_node.cpp'\n"}
+[1.416746] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.416950] (robot_base) StdoutLine: {'line': b"6: No code style divergence in file 'src/safety_utils.cpp'\n"}
+[1.417166] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.417544] (robot_base) StdoutLine: {'line': b"6: No code style divergence in file 'test/test_timeout_brake.cpp'\n"}
+[1.417771] (robot_base) StdoutLine: {'line': b'6: \n'}
+[1.417976] (robot_manipulation) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[1.418193] (robot_manipulation) StdoutLine: {'line': b'6: \n'}
+[1.418465] (robot_manipulation) StdoutLine: {'line': b'6: No problems found\n'}
+[1.421760] (robot_nav) StdoutLine: {'line': b"6: No code style divergence in file 'include/robot_nav/location_manager.hpp'\n"}
+[1.424683] (robot_nav) StdoutLine: {'line': b'6: \n'}
+[1.425021] (robot_nav) StdoutLine: {'line': b"6: No code style divergence in file 'src/location_manager.cpp'\n"}
+[1.425220] (robot_nav) StdoutLine: {'line': b'6: \n'}
+[1.425429] (robot_nav) StdoutLine: {'line': b"6: No code style divergence in file 'src/nav_server_node.cpp'\n"}
+[1.425666] (robot_nav) StdoutLine: {'line': b'6: \n'}
+[1.425897] (robot_nav) StdoutLine: {'line': b"6: No code style divergence in file 'test/test_location_manager.cpp'\n"}
+[1.426102] (robot_nav) StdoutLine: {'line': b'6: \n'}
+[1.426302] (robot_nav) StdoutLine: {'line': b'6: No problems found\n'}
+[1.429811] (robot_nlu) StdoutLine: {'line': b'6/7 Test #6: uncrustify .......................   Passed    0.19 sec\n'}
+[1.430293] (robot_nlu) StdoutLine: {'line': b'test 7\n'}
+[1.430479] (robot_nlu) StdoutLine: {'line': b'    Start 7: xmllint\n'}
+[1.430694] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.430923] (robot_nlu) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml" "--package-name" "robot_nlu" "--output-file" "/ws/ros_ws/build/robot_nlu/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml"\n'}
+[1.431171] (robot_nlu) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[1.434820] (robot_manipulation) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[1.435184] (robot_manipulation) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml'\n"}
+[1.444528] (robot_base) StdoutLine: {'line': b'6: -- run_test.py: return code 1\n'}
+[1.445159] (robot_base) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml'\n"}
+[1.449480] (robot_nav) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[1.451671] (robot_nav) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/uncrustify.xunit.xml'\n"}
+[1.452042] (robot_manipulation) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    0.18 sec\n'}
+[1.452276] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[1.452484] (robot_manipulation) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 6\n'}
+[1.452777] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[1.453007] (robot_manipulation) StdoutLine: {'line': b'Label Time Summary:\n'}
+[1.453223] (robot_manipulation) StdoutLine: {'line': b'copyright     =   0.34 sec*proc (1 test)\n'}
+[1.453471] (robot_manipulation) StdoutLine: {'line': b'cppcheck      =   0.21 sec*proc (1 test)\n'}
+[1.453705] (robot_manipulation) StdoutLine: {'line': b'cpplint       =   0.24 sec*proc (1 test)\n'}
+[1.453988] (robot_manipulation) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[1.454246] (robot_manipulation) StdoutLine: {'line': b'linter        =   1.38 sec*proc (6 tests)\n'}
+[1.455059] (robot_manipulation) StdoutLine: {'line': b'uncrustify    =   0.21 sec*proc (1 test)\n'}
+[1.457885] (robot_manipulation) StdoutLine: {'line': b'xmllint       =   0.18 sec*proc (1 test)\n'}
+[1.458459] (robot_manipulation) StdoutLine: {'line': b'\n'}
+[1.458694] (robot_manipulation) StdoutLine: {'line': b'Total Test time (real) =   1.39 sec\n'}
+[1.459159] (robot_manipulation) CommandEnded: {'returncode': 0}
+[1.459439] (robot_manipulation) JobEnded: {'identifier': 'robot_manipulation', 'rc': 0}
+[1.461397] (robot_safety) JobStarted: {'identifier': 'robot_safety'}
+[1.467464] (robot_base) StdoutLine: {'line': b'6/7 Test #6: uncrustify .......................***Failed    0.22 sec\n'}
+[1.468016] (robot_base) StdoutLine: {'line': b"-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[1.468231] (robot_base) StdoutLine: {'line': b' - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml\n'}
+[1.468425] (robot_base) StdoutLine: {'line': b"Code style divergence in file 'src/serial_interface_stub.cpp':\n"}
+[1.468650] (robot_base) StdoutLine: {'line': b'\n'}
+[1.468858] (robot_base) StdoutLine: {'line': b'--- src/serial_interface_stub.cpp\n'}
+[1.469164] (robot_base) StdoutLine: {'line': b'+++ src/serial_interface_stub.cpp.uncrustify\n'}
+[1.469436] (robot_base) StdoutLine: {'line': b'@@ -25,2 +25,2 @@\n'}
+[1.470675] (robot_base) StdoutLine: {'line': b'-  bool open(const std::string &, int) override { return true; }\n'}
+[1.470907] (robot_base) StdoutLine: {'line': b'-  bool write_command(const VelocityCommand &) override { return true; }\n'}
+[1.471119] (robot_base) StdoutLine: {'line': b'+  bool open(const std::string &, int) override {return true;}\n'}
+[1.471333] (robot_base) StdoutLine: {'line': b'+  bool write_command(const VelocityCommand &) override {return true;}\n'}
+[1.471542] (robot_base) StdoutLine: {'line': b'\n'}
+[1.471762] (robot_base) StdoutLine: {'line': b'1 files with code style divergence\n'}
+[1.471985] (robot_base) StdoutLine: {'line': b"No code style divergence in file 'include/robot_base/safety_utils.hpp'\n"}
+[1.472197] (robot_base) StdoutLine: {'line': b'\n'}
+[1.472400] (robot_base) StdoutLine: {'line': b"No code style divergence in file 'include/robot_base/serial_interface.hpp'\n"}
+[1.480348] (robot_base) StdoutLine: {'line': b'\n'}
+[1.484010] (robot_base) StdoutLine: {'line': b"No code style divergence in file 'src/base_driver_node.cpp'\n"}
+[1.486671] (robot_base) StdoutLine: {'line': b'\n'}
+[1.486997] (robot_base) StdoutLine: {'line': b"No code style divergence in file 'src/safety_utils.cpp'\n"}
+[1.487211] (robot_base) StdoutLine: {'line': b'\n'}
+[1.487434] (robot_base) StdoutLine: {'line': b"No code style divergence in file 'test/test_timeout_brake.cpp'\n"}
+[1.487663] (robot_base) StdoutLine: {'line': b'\n'}
+[1.487879] (robot_base) StdoutLine: {'line': b'-- run_test.py: return code 1\n'}
+[1.488091] (robot_base) StdoutLine: {'line': b"-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml'\n"}
+[1.488301] (robot_base) StdoutLine: {'line': b'\n'}
+[1.488501] (robot_base) StdoutLine: {'line': b'test 7\n'}
+[1.488722] (robot_base) StdoutLine: {'line': b'    Start 7: xmllint\n'}
+[1.488938] (robot_base) StdoutLine: {'line': b'\n'}
+[1.489129] (robot_base) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml" "--package-name" "robot_base" "--output-file" "/ws/ros_ws/build/robot_base/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml"\n'}
+[1.489344] (robot_base) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[1.489525] (robot_safety) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_safety', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_safety:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_safety'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_safety')]), 'shell': False}
+[1.490218] (robot_nav) StdoutLine: {'line': b'6/7 Test #6: uncrustify .......................   Passed    0.24 sec\n'}
+[1.490512] (robot_nav) StdoutLine: {'line': b'test 7\n'}
+[1.490833] (robot_nav) StdoutLine: {'line': b'    Start 7: xmllint\n'}
+[1.491952] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.492175] (robot_nav) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml" "--package-name" "robot_nav" "--output-file" "/ws/ros_ws/build/robot_nav/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml"\n'}
+[1.492443] (robot_nav) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[1.492759] (robot_nlu) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nlu':\n"}
+[1.492990] (robot_nlu) StdoutLine: {'line': b'7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml\n'}
+[1.493656] (robot_safety) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_safety/CTestConfiguration.ini\n'}
+[1.494119] (robot_safety) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_safety/CTestConfiguration.ini\n'}
+[1.494415] (robot_safety) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[1.495646] (robot_safety) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[1.495996] (robot_safety) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[1.496217] (robot_safety) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[1.496437] (robot_safety) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_safety/CTestConfiguration.ini\n'}
+[1.496669] (robot_safety) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_safety/CTestConfiguration.ini\n'}
+[1.496896] (robot_safety) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_safety\n'}
+[1.497106] (robot_safety) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[1.497316] (robot_safety) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[1.500007] (robot_safety) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[1.500265] (robot_safety) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[1.500491] (robot_safety) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[1.500730] (robot_safety) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[1.500953] (robot_safety) StdoutLine: {'line': b'test 1\n'}
+[1.501189] (robot_safety) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[1.501413] (robot_safety) StdoutLine: {'line': b'\n'}
+[1.501637] (robot_safety) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml"\n'}
+[1.501854] (robot_safety) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[1.504480] (-) TimerEvent: {}
+[1.545647] (robot_base) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':\n"}
+[1.546210] (robot_base) StdoutLine: {'line': b'7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml\n'}
+[1.560675] (robot_nav) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_nav':\n"}
+[1.561289] (robot_nav) StdoutLine: {'line': b'7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml\n'}
+[1.562971] (robot_safety) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[1.563333] (robot_safety) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml\n'}
+[1.575383] (robot_nlu) StdoutLine: {'line': b"7: File 'package.xml' is valid\n"}
+[1.576686] (robot_nlu) StdoutLine: {'line': b'7: \n'}
+[1.577048] (robot_nlu) StdoutLine: {'line': b'7: No problems found\n'}
+[1.594412] (robot_nlu) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[1.595520] (robot_nlu) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nlu/test_results/robot_nlu/xmllint.xunit.xml'\n"}
+[1.604706] (-) TimerEvent: {}
+[1.609515] (robot_nlu) StdoutLine: {'line': b'7/7 Test #7: xmllint ..........................   Passed    0.18 sec\n'}
+[1.610527] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.612691] (robot_nlu) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 7\n'}
+[1.613076] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.613320] (robot_nlu) StdoutLine: {'line': b'Label Time Summary:\n'}
+[1.613639] (robot_nlu) StdoutLine: {'line': b'copyright     =   0.31 sec*proc (1 test)\n'}
+[1.613859] (robot_nlu) StdoutLine: {'line': b'cppcheck      =   0.20 sec*proc (1 test)\n'}
+[1.614069] (robot_nlu) StdoutLine: {'line': b'cpplint       =   0.26 sec*proc (1 test)\n'}
+[1.614291] (robot_nlu) StdoutLine: {'line': b'gtest         =   0.17 sec*proc (1 test)\n'}
+[1.614490] (robot_nlu) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[1.614961] (robot_nlu) StdoutLine: {'line': b'linter        =   1.35 sec*proc (6 tests)\n'}
+[1.615934] (robot_nlu) StdoutLine: {'line': b'uncrustify    =   0.19 sec*proc (1 test)\n'}
+[1.616914] (robot_nlu) StdoutLine: {'line': b'xmllint       =   0.18 sec*proc (1 test)\n'}
+[1.617267] (robot_nlu) StdoutLine: {'line': b'\n'}
+[1.617682] (robot_nlu) StdoutLine: {'line': b'Total Test time (real) =   1.52 sec\n'}
+[1.618271] (robot_nlu) CommandEnded: {'returncode': 0}
+[1.618858] (robot_nlu) JobEnded: {'identifier': 'robot_nlu', 'rc': 0}
+[1.621916] (robot_voice) JobStarted: {'identifier': 'robot_voice'}
+[1.639629] (robot_base) StdoutLine: {'line': b"7: File 'package.xml' is valid\n"}
+[1.640162] (robot_base) StdoutLine: {'line': b'7: \n'}
+[1.640380] (robot_base) StdoutLine: {'line': b'7: No problems found\n'}
+[1.641449] (robot_voice) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_voice', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_voice:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_voice'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_voice')]), 'shell': False}
+[1.653940] (robot_voice) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_voice/CTestConfiguration.ini\n'}
+[1.656685] (robot_voice) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_voice/CTestConfiguration.ini\n'}
+[1.657188] (robot_voice) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[1.657561] (robot_voice) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[1.657928] (robot_voice) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[1.658236] (robot_nav) StdoutLine: {'line': b"7: File 'package.xml' is valid\n"}
+[1.658522] (robot_voice) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[1.658833] (robot_voice) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_voice/CTestConfiguration.ini\n'}
+[1.659104] (robot_voice) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_voice/CTestConfiguration.ini\n'}
+[1.659355] (robot_nav) StdoutLine: {'line': b'7: \n'}
+[1.659632] (robot_nav) StdoutLine: {'line': b'7: No problems found\n'}
+[1.659902] (robot_voice) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_voice\n'}
+[1.660277] (robot_voice) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[1.662658] (robot_voice) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[1.662942] (robot_voice) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[1.663196] (robot_voice) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[1.663430] (robot_voice) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[1.663698] (robot_voice) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[1.663940] (robot_voice) StdoutLine: {'line': b'test 1\n'}
+[1.664179] (robot_voice) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[1.664404] (robot_voice) StdoutLine: {'line': b'\n'}
+[1.664641] (robot_voice) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml"\n'}
+[1.664884] (robot_voice) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[1.667199] (robot_base) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[1.667911] (robot_base) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/xmllint.xunit.xml'\n"}
+[1.680565] (robot_safety) StdoutLine: {'line': b'1: No problems found, checked 1 files\n'}
+[1.691458] (robot_nav) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[1.692671] (robot_nav) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_nav/test_results/robot_nav/xmllint.xunit.xml'\n"}
+[1.692932] (robot_base) StdoutLine: {'line': b'7/7 Test #7: xmllint ..........................   Passed    0.23 sec\n'}
+[1.694623] (robot_base) StdoutLine: {'line': b'\n'}
+[1.694862] (robot_base) StdoutLine: {'line': b'86% tests passed, 1 tests failed out of 7\n'}
+[1.695212] (robot_base) StdoutLine: {'line': b'\n'}
+[1.695563] (robot_base) StdoutLine: {'line': b'Label Time Summary:\n'}
+[1.697372] (robot_base) StdoutLine: {'line': b'copyright     =   0.35 sec*proc (1 test)\n'}
+[1.698144] (robot_base) StdoutLine: {'line': b'cppcheck      =   0.20 sec*proc (1 test)\n'}
+[1.701806] (robot_base) StdoutLine: {'line': b'cpplint       =   0.29 sec*proc (1 test)\n'}
+[1.702317] (robot_base) StdoutLine: {'line': b'gtest         =   0.15 sec*proc (1 test)\n'}
+[1.702481] (robot_base) StdoutLine: {'line': b'lint_cmake    =   0.19 sec*proc (1 test)\n'}
+[1.702840] (robot_base) StdoutLine: {'line': b'linter        =   1.47 sec*proc (6 tests)\n'}
+[1.703073] (robot_base) StdoutLine: {'line': b'uncrustify    =   0.22 sec*proc (1 test)\n'}
+[1.703424] (robot_base) StdoutLine: {'line': b'xmllint       =   0.23 sec*proc (1 test)\n'}
+[1.703770] (robot_base) StdoutLine: {'line': b'\n'}
+[1.704078] (robot_base) StdoutLine: {'line': b'Total Test time (real) =   1.63 sec\n'}
+[1.704375] (robot_base) StdoutLine: {'line': b'\n'}
+[1.704805] (-) TimerEvent: {}
+[1.704858] (robot_base) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[1.704975] (robot_base) StdoutLine: {'line': b'\t  6 - uncrustify (Failed)\n'}
+[1.705297] (robot_base) StderrLine: {'line': b'Errors while running CTest\n'}
+[1.705526] (robot_safety) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.706099] (robot_base) CommandEnded: {'returncode': 8}
+[1.706637] (robot_base) TestFailure: {'identifier': 'robot_base'}
+[1.706682] (robot_base) JobEnded: {'identifier': 'robot_base', 'rc': 0}
+[1.707976] (robot_executor) JobStarted: {'identifier': 'robot_executor'}
+[1.710978] (robot_safety) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml'\n"}
+[1.711283] (robot_nav) StdoutLine: {'line': b'7/7 Test #7: xmllint ..........................   Passed    0.22 sec\n'}
+[1.712236] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.713570] (robot_nav) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 7\n'}
+[1.713728] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.714286] (robot_nav) StdoutLine: {'line': b'Label Time Summary:\n'}
+[1.714416] (robot_nav) StdoutLine: {'line': b'copyright     =   0.31 sec*proc (1 test)\n'}
+[1.715243] (robot_nav) StdoutLine: {'line': b'cppcheck      =   0.21 sec*proc (1 test)\n'}
+[1.715677] (robot_nav) StdoutLine: {'line': b'cpplint       =   0.27 sec*proc (1 test)\n'}
+[1.717169] (robot_nav) StdoutLine: {'line': b'gtest         =   0.18 sec*proc (1 test)\n'}
+[1.717569] (robot_nav) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[1.717829] (robot_nav) StdoutLine: {'line': b'linter        =   1.46 sec*proc (6 tests)\n'}
+[1.718097] (robot_nav) StdoutLine: {'line': b'uncrustify    =   0.24 sec*proc (1 test)\n'}
+[1.718401] (robot_nav) StdoutLine: {'line': b'xmllint       =   0.22 sec*proc (1 test)\n'}
+[1.718884] (robot_nav) StdoutLine: {'line': b'\n'}
+[1.718985] (robot_nav) StdoutLine: {'line': b'Total Test time (real) =   1.64 sec\n'}
+[1.719063] (robot_nav) CommandEnded: {'returncode': 0}
+[1.719633] (robot_nav) JobEnded: {'identifier': 'robot_nav', 'rc': 0}
+[1.720393] (robot_identity) JobStarted: {'identifier': 'robot_identity'}
+[1.722362] (robot_safety) StdoutLine: {'line': b'1/6 Test #1: copyright ........................   Passed    0.22 sec\n'}
+[1.722940] (robot_safety) StdoutLine: {'line': b'test 2\n'}
+[1.724717] (robot_safety) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[1.724879] (robot_safety) StdoutLine: {'line': b'\n'}
+[1.724998] (robot_safety) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/cppcheck.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/cppcheck.xunit.xml"\n'}
+[1.725114] (robot_safety) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[1.725219] (robot_voice) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[1.725358] (robot_voice) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml\n'}
+[1.736323] (robot_executor) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_executor', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_executor:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_executor'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[1.748314] (robot_executor) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_executor/CTestConfiguration.ini\n'}
+[1.748939] (robot_executor) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_executor/CTestConfiguration.ini\n'}
+[1.749499] (robot_executor) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[1.750101] (robot_executor) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[1.752680] (robot_executor) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[1.753441] (robot_executor) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[1.754224] (robot_executor) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_executor/CTestConfiguration.ini\n'}
+[1.754925] (robot_executor) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_executor/CTestConfiguration.ini\n'}
+[1.755502] (robot_executor) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_executor\n'}
+[1.756106] (robot_executor) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[1.756577] (robot_executor) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[1.757149] (robot_executor) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[1.757669] (robot_executor) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[1.758223] (robot_executor) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[1.758742] (robot_executor) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[1.759226] (robot_executor) StdoutLine: {'line': b'test 1\n'}
+[1.760825] (robot_executor) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[1.761334] (robot_executor) StdoutLine: {'line': b'\n'}
+[1.761844] (robot_executor) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml"\n'}
+[1.762370] (robot_executor) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[1.762914] (robot_identity) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_identity', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_identity:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_identity'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_msgs')]), 'shell': False}
+[1.774420] (robot_identity) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_identity/CTestConfiguration.ini\n'}
+[1.775981] (robot_identity) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_identity/CTestConfiguration.ini\n'}
+[1.776781] (robot_identity) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[1.777245] (robot_identity) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[1.777777] (robot_identity) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[1.778213] (robot_identity) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[1.778703] (robot_identity) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_identity/CTestConfiguration.ini\n'}
+[1.779291] (robot_identity) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_identity/CTestConfiguration.ini\n'}
+[1.779741] (robot_identity) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_identity\n'}
+[1.780162] (robot_identity) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[1.780598] (robot_identity) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[1.780707] (robot_identity) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[1.780769] (robot_identity) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[1.780823] (robot_identity) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[1.780873] (robot_identity) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[1.780925] (robot_identity) StdoutLine: {'line': b'test 1\n'}
+[1.780976] (robot_identity) StdoutLine: {'line': b'    Start 1: test_enroll_gating\n'}
+[1.781027] (robot_identity) StdoutLine: {'line': b'\n'}
+[1.781077] (robot_identity) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cmake_gtest/test_enroll_gating.txt" "--command" "/ws/ros_ws/build/robot_identity/test_enroll_gating" "--gtest_output=xml:/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml"\n'}
+[1.781138] (robot_identity) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[1.787373] (robot_safety) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[1.788682] (robot_safety) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/cppcheck.xunit.xml\n'}
+[1.804949] (-) TimerEvent: {}
+[1.813119] (robot_executor) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[1.815619] (robot_executor) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml\n'}
+[1.844718] (robot_identity) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_identity':\n"}
+[1.846093] (robot_identity) StdoutLine: {'line': b'1:  - /ws/ros_ws/build/robot_identity/test_enroll_gating --gtest_output=xml:/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml\n'}
+[1.847726] (robot_identity) StdoutLine: {'line': b'1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc\n'}
+[1.848477] (robot_identity) StdoutLine: {'line': b'1: [==========] Running 3 tests from 1 test suite.\n'}
+[1.849176] (robot_identity) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[1.850700] (robot_identity) StdoutLine: {'line': b'1: [----------] 3 tests from EnrollPolicy\n'}
+[1.851228] (robot_identity) StdoutLine: {'line': b'1: [ RUN      ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured\n'}
+[1.851692] (robot_identity) StdoutLine: {'line': b'1: [       OK ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured (0 ms)\n'}
+[1.852133] (robot_identity) StdoutLine: {'line': b'1: [ RUN      ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest\n'}
+[1.852526] (robot_identity) StdoutLine: {'line': b'1: [       OK ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest (0 ms)\n'}
+[1.852952] (robot_identity) StdoutLine: {'line': b'1: [ RUN      ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled\n'}
+[1.853336] (robot_identity) StdoutLine: {'line': b'1: [       OK ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled (0 ms)\n'}
+[1.853760] (robot_identity) StdoutLine: {'line': b'1: [----------] 3 tests from EnrollPolicy (0 ms total)\n'}
+[1.854173] (robot_identity) StdoutLine: {'line': b'1: \n'}
+[1.855654] (robot_identity) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[1.856113] (robot_identity) StdoutLine: {'line': b'1: [==========] 3 tests from 1 test suite ran. (1 ms total)\n'}
+[1.856522] (robot_identity) StdoutLine: {'line': b'1: [  PASSED  ] 3 tests.\n'}
+[1.856661] (robot_identity) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.856766] (robot_identity) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'\n"}
+[1.856858] (robot_identity) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'\n"}
+[1.856942] (robot_voice) StdoutLine: {'line': b'1: No problems found, checked 1 files\n'}
+[1.864945] (robot_identity) StdoutLine: {'line': b'1/7 Test #1: test_enroll_gating ...............   Passed    0.09 sec\n'}
+[1.866680] (robot_identity) StdoutLine: {'line': b'test 2\n'}
+[1.866952] (robot_identity) StdoutLine: {'line': b'    Start 2: copyright\n'}
+[1.867045] (robot_identity) StdoutLine: {'line': b'\n'}
+[1.867122] (robot_identity) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml"\n'}
+[1.867229] (robot_identity) StdoutLine: {'line': b'2: Test timeout computed to be: 200\n'}
+[1.871629] (robot_voice) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.872347] (robot_voice) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml'\n"}
+[1.887531] (robot_voice) StdoutLine: {'line': b'1/6 Test #1: copyright ........................   Passed    0.23 sec\n'}
+[1.888178] (robot_voice) StdoutLine: {'line': b'test 2\n'}
+[1.888373] (robot_voice) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[1.888545] (robot_voice) StdoutLine: {'line': b'\n'}
+[1.888740] (robot_voice) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml"\n'}
+[1.889050] (robot_voice) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[1.890333] (robot_safety) StdoutLine: {'line': b'2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[1.905081] (-) TimerEvent: {}
+[1.912695] (robot_safety) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[1.913407] (robot_safety) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/cppcheck.xunit.xml'\n"}
+[1.927787] (robot_safety) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.21 sec\n'}
+[1.928501] (robot_safety) StdoutLine: {'line': b'test 3\n'}
+[1.928712] (robot_safety) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[1.928893] (robot_safety) StdoutLine: {'line': b'\n'}
+[1.929052] (robot_safety) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/cpplint.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/cpplint.xunit.xml"\n'}
+[1.929250] (robot_safety) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[1.934243] (robot_executor) StdoutLine: {'line': b'1: No problems found, checked 1 files\n'}
+[1.938380] (robot_identity) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[1.939154] (robot_identity) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml\n'}
+[1.958003] (robot_voice) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[1.958553] (robot_voice) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml\n'}
+[1.960843] (robot_executor) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.962871] (robot_executor) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/copyright.xunit.xml'\n"}
+[1.982142] (robot_executor) StdoutLine: {'line': b'1/6 Test #1: copyright ........................   Passed    0.23 sec\n'}
+[1.985001] (robot_executor) StdoutLine: {'line': b'test 2\n'}
+[1.985163] (robot_executor) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[1.985219] (robot_executor) StdoutLine: {'line': b'\n'}
+[1.985268] (robot_executor) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml"\n'}
+[1.985325] (robot_executor) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[2.001691] (robot_safety) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[2.002245] (robot_safety) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/cpplint.xunit.xml\n'}
+[2.005164] (-) TimerEvent: {}
+[2.043091] (robot_voice) StdoutLine: {'line': b'2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[2.058145] (robot_executor) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[2.061717] (robot_executor) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml\n'}
+[2.067165] (robot_voice) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[2.067802] (robot_voice) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml'\n"}
+[2.084044] (robot_voice) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.20 sec\n'}
+[2.084770] (robot_voice) StdoutLine: {'line': b'test 3\n'}
+[2.084966] (robot_voice) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[2.085122] (robot_voice) StdoutLine: {'line': b'\n'}
+[2.085290] (robot_voice) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml"\n'}
+[2.085493] (robot_voice) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[2.105323] (-) TimerEvent: {}
+[2.120956] (robot_safety) StdoutLine: {'line': b"3: Using '--root=/ws/ros_ws/src/robot_safety/src' argument\n"}
+[2.121481] (robot_safety) StdoutLine: {'line': b'3: \n'}
+[2.121669] (robot_safety) StdoutLine: {'line': b'3: Done processing /ws/ros_ws/src/robot_safety/src/safety_node.cpp\n'}
+[2.121846] (robot_safety) StdoutLine: {'line': b'3: \n'}
+[2.121997] (robot_safety) StdoutLine: {'line': b'3: No problems found\n'}
+[2.130519] (robot_identity) StdoutLine: {'line': b'2: No problems found, checked 4 files\n'}
+[2.145937] (robot_safety) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[2.146479] (robot_safety) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/cpplint.xunit.xml'\n"}
+[2.154454] (robot_voice) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[2.156683] (robot_voice) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml\n'}
+[2.157160] (robot_identity) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[2.157350] (robot_identity) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/copyright.xunit.xml'\n"}
+[2.159902] (robot_executor) StdoutLine: {'line': b'2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[2.165066] (robot_safety) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................   Passed    0.23 sec\n'}
+[2.165661] (robot_safety) StdoutLine: {'line': b'test 4\n'}
+[2.166041] (robot_safety) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[2.166365] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.166655] (robot_safety) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml"\n'}
+[2.166981] (robot_safety) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[2.172091] (robot_identity) StdoutLine: {'line': b'2/7 Test #2: copyright ........................   Passed    0.31 sec\n'}
+[2.172819] (robot_identity) StdoutLine: {'line': b'test 3\n'}
+[2.174707] (robot_identity) StdoutLine: {'line': b'    Start 3: cppcheck\n'}
+[2.175128] (robot_identity) StdoutLine: {'line': b'\n'}
+[2.175449] (robot_identity) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml" "--include_dirs" "/ws/ros_ws/src/robot_identity/include"\n'}
+[2.175813] (robot_identity) StdoutLine: {'line': b'3: Test timeout computed to be: 300\n'}
+[2.201997] (robot_executor) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[2.202578] (robot_executor) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/cppcheck.xunit.xml'\n"}
+[2.205433] (-) TimerEvent: {}
+[2.222696] (robot_executor) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.24 sec\n'}
+[2.223275] (robot_executor) StdoutLine: {'line': b'test 3\n'}
+[2.223439] (robot_executor) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[2.223584] (robot_executor) StdoutLine: {'line': b'\n'}
+[2.223776] (robot_executor) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml"\n'}
+[2.223996] (robot_executor) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[2.239019] (robot_identity) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[2.239575] (robot_safety) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[2.239872] (robot_safety) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml\n'}
+[2.240068] (robot_identity) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml --include_dirs /ws/ros_ws/src/robot_identity/include\n'}
+[2.264048] (robot_voice) StdoutLine: {'line': b"3: Using '--root=/ws/ros_ws/src/robot_voice/src' argument\n"}
+[2.264801] (robot_voice) StdoutLine: {'line': b'3: \n'}
+[2.265007] (robot_voice) StdoutLine: {'line': b'3: Done processing /ws/ros_ws/src/robot_voice/src/voice_bridge_node.cpp\n'}
+[2.265190] (robot_voice) StdoutLine: {'line': b'3: \n'}
+[2.265363] (robot_voice) StdoutLine: {'line': b'3: No problems found\n'}
+[2.281844] (robot_voice) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[2.282361] (robot_voice) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml'\n"}
+[2.292959] (robot_executor) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[2.293551] (robot_executor) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml\n'}
+[2.295270] (robot_voice) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................   Passed    0.21 sec\n'}
+[2.295539] (robot_voice) StdoutLine: {'line': b'test 4\n'}
+[2.295785] (robot_voice) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[2.296001] (robot_voice) StdoutLine: {'line': b'\n'}
+[2.296211] (robot_voice) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml"\n'}
+[2.296450] (robot_voice) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[2.305549] (-) TimerEvent: {}
+[2.320882] (robot_safety) StdoutLine: {'line': b'4: \n'}
+[2.321434] (robot_safety) StdoutLine: {'line': b'4: No problems found\n'}
+[2.324237] (robot_identity) StdoutLine: {'line': b'3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[2.342672] (robot_safety) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[2.345697] (robot_safety) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/lint_cmake.xunit.xml'\n"}
+[2.346430] (robot_identity) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[2.346721] (robot_identity) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/cppcheck.xunit.xml'\n"}
+[2.360463] (robot_safety) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.20 sec\n'}
+[2.361308] (robot_safety) StdoutLine: {'line': b'test 5\n'}
+[2.361708] (robot_safety) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[2.362088] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.362279] (robot_safety) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/uncrustify.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/uncrustify.xunit.xml"\n'}
+[2.362672] (robot_safety) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[2.363050] (robot_identity) StdoutLine: {'line': b'3/7 Test #3: cppcheck .........................   Passed    0.19 sec\n'}
+[2.363267] (robot_identity) StdoutLine: {'line': b'test 4\n'}
+[2.363467] (robot_identity) StdoutLine: {'line': b'    Start 4: cpplint\n'}
+[2.363708] (robot_identity) StdoutLine: {'line': b'\n'}
+[2.363917] (robot_identity) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml"\n'}
+[2.364199] (robot_identity) StdoutLine: {'line': b'4: Test timeout computed to be: 120\n'}
+[2.374568] (robot_voice) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[2.375118] (robot_voice) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml\n'}
+[2.405693] (-) TimerEvent: {}
+[2.431906] (robot_identity) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[2.432470] (robot_safety) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[2.432701] (robot_safety) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/uncrustify.xunit.xml\n'}
+[2.432896] (robot_identity) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml\n'}
+[2.448124] (robot_executor) StdoutLine: {'line': b"3: Using '--root=/ws/ros_ws/src/robot_executor/src' argument\n"}
+[2.448720] (robot_executor) StdoutLine: {'line': b'3: \n'}
+[2.448924] (robot_executor) StdoutLine: {'line': b'3: Done processing /ws/ros_ws/src/robot_executor/src/executor_node.cpp\n'}
+[2.449112] (robot_executor) StdoutLine: {'line': b'3: \n'}
+[2.449308] (robot_executor) StdoutLine: {'line': b'3: No problems found\n'}
+[2.457468] (robot_voice) StdoutLine: {'line': b'4: \n'}
+[2.458053] (robot_voice) StdoutLine: {'line': b'4: No problems found\n'}
+[2.472996] (robot_executor) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[2.473561] (robot_executor) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml'\n"}
+[2.479857] (robot_voice) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[2.480397] (robot_voice) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml'\n"}
+[2.488996] (robot_executor) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................   Passed    0.27 sec\n'}
+[2.489818] (robot_executor) StdoutLine: {'line': b'test 4\n'}
+[2.490024] (robot_executor) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[2.490209] (robot_executor) StdoutLine: {'line': b'\n'}
+[2.491864] (robot_executor) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml"\n'}
+[2.492124] (robot_executor) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[2.501010] (robot_voice) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.20 sec\n'}
+[2.501551] (robot_voice) StdoutLine: {'line': b'test 5\n'}
+[2.501749] (robot_voice) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[2.501936] (robot_voice) StdoutLine: {'line': b'\n'}
+[2.502120] (robot_voice) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml"\n'}
+[2.502326] (robot_voice) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[2.505807] (-) TimerEvent: {}
+[2.526634] (robot_safety) StdoutLine: {'line': b"5: No code style divergence in file 'src/safety_node.cpp'\n"}
+[2.528732] (robot_safety) StdoutLine: {'line': b'5: \n'}
+[2.529112] (robot_safety) StdoutLine: {'line': b'5: No problems found\n'}
+[2.546583] (robot_safety) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[2.547491] (robot_safety) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/uncrustify.xunit.xml'\n"}
+[2.560593] (robot_safety) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.20 sec\n'}
+[2.561442] (robot_safety) StdoutLine: {'line': b'test 6\n'}
+[2.561835] (robot_safety) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[2.562195] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.562390] (robot_safety) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/xmllint.xunit.xml" "--package-name" "robot_safety" "--output-file" "/ws/ros_ws/build/robot_safety/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_safety/test_results/robot_safety/xmllint.xunit.xml"\n'}
+[2.562742] (robot_safety) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[2.566674] (robot_voice) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[2.566879] (robot_voice) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml\n'}
+[2.567585] (robot_executor) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[2.567761] (robot_executor) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml\n'}
+[2.577663] (robot_identity) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_identity/include' argument\n"}
+[2.578080] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.579975] (robot_identity) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_identity/include/robot_identity/enroll_policy.hpp\n'}
+[2.580151] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.580509] (robot_identity) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_identity/src' argument\n"}
+[2.580946] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.581291] (robot_identity) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_identity/src/enroll_policy.cpp\n'}
+[2.581941] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.582681] (robot_identity) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_identity/src/identity_node.cpp\n'}
+[2.582846] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.583233] (robot_identity) StdoutLine: {'line': b"4: Using '--root=/ws/ros_ws/src/robot_identity/test' argument\n"}
+[2.586688] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.586925] (robot_identity) StdoutLine: {'line': b'4: Done processing /ws/ros_ws/src/robot_identity/test/test_enroll_gating.cpp\n'}
+[2.587503] (robot_identity) StdoutLine: {'line': b'4: \n'}
+[2.587943] (robot_identity) StdoutLine: {'line': b'4: No problems found\n'}
+[2.604010] (robot_identity) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[2.604439] (robot_identity) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/cpplint.xunit.xml'\n"}
+[2.605879] (-) TimerEvent: {}
+[2.617089] (robot_identity) StdoutLine: {'line': b'4/7 Test #4: cpplint ..........................   Passed    0.25 sec\n'}
+[2.617549] (robot_identity) StdoutLine: {'line': b'test 5\n'}
+[2.620093] (robot_identity) StdoutLine: {'line': b'    Start 5: lint_cmake\n'}
+[2.620634] (robot_identity) StdoutLine: {'line': b'\n'}
+[2.621110] (robot_identity) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml"\n'}
+[2.621531] (robot_identity) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[2.629281] (robot_safety) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':\n"}
+[2.629943] (robot_safety) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/xmllint.xunit.xml\n'}
+[2.647667] (robot_executor) StdoutLine: {'line': b'4: \n'}
+[2.647971] (robot_executor) StdoutLine: {'line': b'4: No problems found\n'}
+[2.665373] (robot_executor) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[2.668168] (robot_executor) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/lint_cmake.xunit.xml'\n"}
+[2.679695] (robot_voice) StdoutLine: {'line': b"5: No code style divergence in file 'src/voice_bridge_node.cpp'\n"}
+[2.679969] (robot_voice) StdoutLine: {'line': b'5: \n'}
+[2.680040] (robot_voice) StdoutLine: {'line': b'5: No problems found\n'}
+[2.680592] (robot_executor) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.19 sec\n'}
+[2.681138] (robot_executor) StdoutLine: {'line': b'test 5\n'}
+[2.681473] (robot_executor) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[2.681743] (robot_executor) StdoutLine: {'line': b'\n'}
+[2.682060] (robot_executor) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml"\n'}
+[2.682373] (robot_executor) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[2.683798] (robot_identity) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[2.684080] (robot_identity) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml\n'}
+[2.698558] (robot_voice) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[2.699176] (robot_voice) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml'\n"}
+[2.706011] (-) TimerEvent: {}
+[2.711771] (robot_voice) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.21 sec\n'}
+[2.712665] (robot_voice) StdoutLine: {'line': b'test 6\n'}
+[2.715709] (robot_voice) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[2.716097] (robot_voice) StdoutLine: {'line': b'\n'}
+[2.716399] (robot_voice) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml"\n'}
+[2.717088] (robot_voice) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[2.717316] (robot_safety) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[2.717697] (robot_safety) StdoutLine: {'line': b'6: \n'}
+[2.717960] (robot_safety) StdoutLine: {'line': b'6: No problems found\n'}
+[2.736579] (robot_safety) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[2.737290] (robot_safety) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/xmllint.xunit.xml'\n"}
+[2.746916] (robot_executor) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[2.747857] (robot_executor) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml\n'}
+[2.752094] (robot_safety) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    0.19 sec\n'}
+[2.754834] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.755207] (robot_safety) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 6\n'}
+[2.760220] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.760553] (robot_safety) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.761120] (robot_safety) StdoutLine: {'line': b'copyright     =   0.22 sec*proc (1 test)\n'}
+[2.761563] (robot_safety) StdoutLine: {'line': b'cppcheck      =   0.21 sec*proc (1 test)\n'}
+[2.762058] (robot_safety) StdoutLine: {'line': b'cpplint       =   0.23 sec*proc (1 test)\n'}
+[2.762467] (robot_safety) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[2.763099] (robot_safety) StdoutLine: {'line': b'linter        =   1.25 sec*proc (6 tests)\n'}
+[2.763568] (robot_safety) StdoutLine: {'line': b'uncrustify    =   0.20 sec*proc (1 test)\n'}
+[2.763963] (robot_safety) StdoutLine: {'line': b'xmllint       =   0.19 sec*proc (1 test)\n'}
+[2.764114] (robot_safety) StdoutLine: {'line': b'\n'}
+[2.764178] (robot_safety) StdoutLine: {'line': b'Total Test time (real) =   1.26 sec\n'}
+[2.764235] (robot_identity) StdoutLine: {'line': b'5: \n'}
+[2.764306] (robot_identity) StdoutLine: {'line': b'5: No problems found\n'}
+[2.764358] (robot_safety) CommandEnded: {'returncode': 0}
+[2.765743] (robot_safety) JobEnded: {'identifier': 'robot_safety', 'rc': 0}
+[2.766464] (robot_perception) JobStarted: {'identifier': 'robot_perception'}
+[2.770513] (robot_identity) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[2.771218] (robot_identity) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/lint_cmake.xunit.xml'\n"}
+[2.806140] (-) TimerEvent: {}
+[2.906404] (-) TimerEvent: {}
+[3.006691] (-) TimerEvent: {}
+[3.028635] (robot_perception) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/ws/ros_ws/src/robot_perception', 'env': {'HOSTNAME': '35f211623a71', 'ROS_PACKAGE_PATH': '/ws/ros_ws/install/robot_msgs/share', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/ws/ros_ws/install/robot_perception:/opt/ros/humble', 'PWD': '/ws/ros_ws/build/robot_perception', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ws/ros_ws/install/robot_msgs', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/ws/ros_ws/build/robot_perception/pytest.xml --junit-prefix=robot_perception -o cache_dir=/ws/ros_ws/build/robot_perception/.pytest_cache'}, 'shell': False}
+[3.031371] (robot_identity) StdoutLine: {'line': b'5/7 Test #5: lint_cmake .......................   Passed    0.17 sec\n'}
+[3.032525] (robot_identity) StdoutLine: {'line': b'test 6\n'}
+[3.034120] (robot_identity) StdoutLine: {'line': b'    Start 6: uncrustify\n'}
+[3.034289] (robot_identity) StdoutLine: {'line': b'\n'}
+[3.034403] (robot_identity) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml"\n'}
+[3.035114] (robot_identity) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[3.035399] (robot_identity) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[3.035478] (robot_identity) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml\n'}
+[3.035541] (robot_identity) StdoutLine: {'line': b"6: No code style divergence in file 'include/robot_identity/enroll_policy.hpp'\n"}
+[3.035633] (robot_identity) StdoutLine: {'line': b'6: \n'}
+[3.035701] (robot_identity) StdoutLine: {'line': b"6: No code style divergence in file 'src/enroll_policy.cpp'\n"}
+[3.035756] (robot_identity) StdoutLine: {'line': b'6: \n'}
+[3.035810] (robot_identity) StdoutLine: {'line': b"6: No code style divergence in file 'src/identity_node.cpp'\n"}
+[3.035864] (robot_identity) StdoutLine: {'line': b'6: \n'}
+[3.035920] (robot_identity) StdoutLine: {'line': b"6: No code style divergence in file 'test/test_enroll_gating.cpp'\n"}
+[3.036002] (robot_identity) StdoutLine: {'line': b'6: \n'}
+[3.036057] (robot_identity) StdoutLine: {'line': b'6: No problems found\n'}
+[3.036109] (robot_identity) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.036164] (robot_identity) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml'\n"}
+[3.036218] (robot_identity) StdoutLine: {'line': b'6/7 Test #6: uncrustify .......................   Passed    0.19 sec\n'}
+[3.036270] (robot_identity) StdoutLine: {'line': b'test 7\n'}
+[3.036710] (robot_identity) StdoutLine: {'line': b'    Start 7: xmllint\n'}
+[3.037252] (robot_identity) StdoutLine: {'line': b'\n'}
+[3.037544] (robot_identity) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml" "--package-name" "robot_identity" "--output-file" "/ws/ros_ws/build/robot_identity/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml"\n'}
+[3.037916] (robot_identity) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[3.038115] (robot_voice) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':\n"}
+[3.038329] (robot_voice) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml\n'}
+[3.038538] (robot_voice) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[3.038756] (robot_voice) StdoutLine: {'line': b'6: \n'}
+[3.038948] (robot_voice) StdoutLine: {'line': b'6: No problems found\n'}
+[3.039139] (robot_voice) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.039334] (robot_voice) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml'\n"}
+[3.039542] (robot_voice) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    0.20 sec\n'}
+[3.039786] (robot_voice) StdoutLine: {'line': b'\n'}
+[3.040008] (robot_voice) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 6\n'}
+[3.040207] (robot_voice) StdoutLine: {'line': b'\n'}
+[3.040415] (robot_voice) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.040637] (robot_voice) StdoutLine: {'line': b'copyright     =   0.23 sec*proc (1 test)\n'}
+[3.041277] (robot_voice) StdoutLine: {'line': b'cppcheck      =   0.20 sec*proc (1 test)\n'}
+[3.041364] (robot_voice) StdoutLine: {'line': b'cpplint       =   0.21 sec*proc (1 test)\n'}
+[3.041490] (robot_voice) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[3.041845] (robot_voice) StdoutLine: {'line': b'linter        =   1.25 sec*proc (6 tests)\n'}
+[3.042088] (robot_voice) StdoutLine: {'line': b'uncrustify    =   0.21 sec*proc (1 test)\n'}
+[3.042283] (robot_voice) StdoutLine: {'line': b'xmllint       =   0.20 sec*proc (1 test)\n'}
+[3.042569] (robot_voice) StdoutLine: {'line': b'\n'}
+[3.042814] (robot_voice) StdoutLine: {'line': b'Total Test time (real) =   1.26 sec\n'}
+[3.043060] (robot_executor) StdoutLine: {'line': b"5: No code style divergence in file 'src/executor_node.cpp'\n"}
+[3.043243] (robot_executor) StdoutLine: {'line': b'5: \n'}
+[3.043447] (robot_executor) StdoutLine: {'line': b'5: No problems found\n'}
+[3.043637] (robot_executor) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[3.043792] (robot_executor) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/uncrustify.xunit.xml'\n"}
+[3.043983] (robot_executor) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.18 sec\n'}
+[3.044187] (robot_executor) StdoutLine: {'line': b'test 6\n'}
+[3.045223] (robot_executor) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[3.045427] (robot_executor) StdoutLine: {'line': b'\n'}
+[3.045700] (robot_executor) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml" "--package-name" "robot_executor" "--output-file" "/ws/ros_ws/build/robot_executor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml"\n'}
+[3.045956] (robot_executor) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[3.046173] (robot_executor) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':\n"}
+[3.046398] (robot_executor) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml\n'}
+[3.046562] (robot_executor) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[3.046781] (robot_executor) StdoutLine: {'line': b'6: \n'}
+[3.046895] (robot_executor) StdoutLine: {'line': b'6: No problems found\n'}
+[3.047125] (robot_executor) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.047276] (robot_executor) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/xmllint.xunit.xml'\n"}
+[3.047468] (robot_executor) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    0.17 sec\n'}
+[3.047650] (robot_executor) StdoutLine: {'line': b'\n'}
+[3.047804] (robot_executor) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 6\n'}
+[3.048017] (robot_executor) StdoutLine: {'line': b'\n'}
+[3.048120] (robot_executor) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.048312] (robot_executor) StdoutLine: {'line': b'copyright     =   0.23 sec*proc (1 test)\n'}
+[3.048424] (robot_executor) StdoutLine: {'line': b'cppcheck      =   0.24 sec*proc (1 test)\n'}
+[3.048511] (robot_executor) StdoutLine: {'line': b'cpplint       =   0.27 sec*proc (1 test)\n'}
+[3.048626] (robot_executor) StdoutLine: {'line': b'lint_cmake    =   0.19 sec*proc (1 test)\n'}
+[3.048750] (robot_executor) StdoutLine: {'line': b'linter        =   1.28 sec*proc (6 tests)\n'}
+[3.048992] (robot_executor) StdoutLine: {'line': b'uncrustify    =   0.18 sec*proc (1 test)\n'}
+[3.049135] (robot_executor) StdoutLine: {'line': b'xmllint       =   0.17 sec*proc (1 test)\n'}
+[3.049238] (robot_executor) StdoutLine: {'line': b'\n'}
+[3.049373] (robot_executor) StdoutLine: {'line': b'Total Test time (real) =   1.28 sec\n'}
+[3.049623] (robot_voice) CommandEnded: {'returncode': 0}
+[3.050033] (robot_voice) JobEnded: {'identifier': 'robot_voice', 'rc': 0}
+[3.050465] (robot_executor) CommandEnded: {'returncode': 0}
+[3.050949] (robot_executor) JobEnded: {'identifier': 'robot_executor', 'rc': 0}
+[3.051435] (robot_identity) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':\n"}
+[3.051678] (robot_identity) StdoutLine: {'line': b'7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml\n'}
+[3.105012] (robot_identity) StdoutLine: {'line': b"7: File 'package.xml' is valid\n"}
+[3.105302] (robot_identity) StdoutLine: {'line': b'7: \n'}
+[3.105476] (robot_identity) StdoutLine: {'line': b'7: No problems found\n'}
+[3.106772] (-) TimerEvent: {}
+[3.118186] (robot_identity) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[3.118385] (robot_identity) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/xmllint.xunit.xml'\n"}
+[3.135209] (robot_identity) StdoutLine: {'line': b'7/7 Test #7: xmllint ..........................   Passed    0.16 sec\n'}
+[3.135739] (robot_identity) StdoutLine: {'line': b'\n'}
+[3.135994] (robot_identity) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 7\n'}
+[3.136149] (robot_identity) StdoutLine: {'line': b'\n'}
+[3.136263] (robot_identity) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.136355] (robot_identity) StdoutLine: {'line': b'copyright     =   0.31 sec*proc (1 test)\n'}
+[3.136439] (robot_identity) StdoutLine: {'line': b'cppcheck      =   0.19 sec*proc (1 test)\n'}
+[3.136510] (robot_identity) StdoutLine: {'line': b'cpplint       =   0.25 sec*proc (1 test)\n'}
+[3.136585] (robot_identity) StdoutLine: {'line': b'gtest         =   0.09 sec*proc (1 test)\n'}
+[3.136689] (robot_identity) StdoutLine: {'line': b'lint_cmake    =   0.17 sec*proc (1 test)\n'}
+[3.136769] (robot_identity) StdoutLine: {'line': b'linter        =   1.27 sec*proc (6 tests)\n'}
+[3.136849] (robot_identity) StdoutLine: {'line': b'uncrustify    =   0.19 sec*proc (1 test)\n'}
+[3.136930] (robot_identity) StdoutLine: {'line': b'xmllint       =   0.16 sec*proc (1 test)\n'}
+[3.136999] (robot_identity) StdoutLine: {'line': b'\n'}
+[3.137065] (robot_identity) StdoutLine: {'line': b'Total Test time (real) =   1.36 sec\n'}
+[3.139511] (robot_identity) CommandEnded: {'returncode': 0}
+[3.139814] (robot_identity) JobEnded: {'identifier': 'robot_identity', 'rc': 0}
+[3.206922] (-) TimerEvent: {}
+[3.307164] (-) TimerEvent: {}
+[3.372792] (robot_perception) StdoutLine: {'line': b'============================= test session starts ==============================\n'}
+[3.372971] (robot_perception) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[3.373036] (robot_perception) StdoutLine: {'line': b'cachedir: /ws/ros_ws/build/robot_perception/.pytest_cache\n'}
+[3.373112] (robot_perception) StdoutLine: {'line': b'rootdir: /ws/ros_ws/src/robot_perception\n'}
+[3.373285] (robot_perception) StdoutLine: {'line': b'plugins: ament-copyright-0.12.15, ament-xmllint-0.12.15, launch-testing-1.0.14, ament-flake8-0.12.15, launch-testing-ros-0.19.13, ament-pep257-0.12.15, ament-lint-0.12.15, colcon-core-0.20.1\n'}
+[3.373404] (robot_perception) StdoutLine: {'line': b'collected 0 items\n'}
+[3.373444] (robot_perception) StdoutLine: {'line': b'\n'}
+[3.373497] (robot_perception) StdoutLine: {'line': b'------- generated xml file: /ws/ros_ws/build/robot_perception/pytest.xml -------\n'}
+[3.373545] (robot_perception) StdoutLine: {'line': b'============================ no tests ran in 0.09s =============================\n'}
+[3.407293] (-) TimerEvent: {}
+[3.480895] (robot_perception) CommandEnded: {'returncode': 5}
+[3.481340] (robot_perception) JobEnded: {'identifier': 'robot_perception', 'rc': 0}
+[3.485436] (robot_bringup) JobStarted: {'identifier': 'robot_bringup'}
+[3.507456] (-) TimerEvent: {}
+[3.511699] (robot_bringup) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '-VV', '--output-on-failure'], 'cwd': '/ws/ros_ws/build/robot_bringup', 'env': OrderedDict([('HOSTNAME', '35f211623a71'), ('ROS_PACKAGE_PATH', '/ws/ros_ws/install/robot_msgs/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ws/ros_ws/install/robot_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:/opt/ros/humble'), ('PWD', '/ws/ros_ws/build/robot_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base')]), 'shell': False}
+[3.521180] (robot_bringup) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini\n'}
+[3.521765] (robot_bringup) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini\n'}
+[3.522200] (robot_bringup) StdoutLine: {'line': b'   Site: a0e3119139a3\n'}
+[3.522345] (robot_bringup) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[3.522407] (robot_bringup) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[3.522460] (robot_bringup) StdoutLine: {'line': b'Create new tag: 20260508-0606 - Experimental\n'}
+[3.522510] (robot_bringup) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini\n'}
+[3.522572] (robot_bringup) StdoutLine: {'line': b'Parse Config file:/ws/ros_ws/build/robot_bringup/CTestConfiguration.ini\n'}
+[3.522642] (robot_bringup) StdoutLine: {'line': b'Test project /ws/ros_ws/build/robot_bringup\n'}
+[3.522696] (robot_bringup) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[3.522743] (robot_bringup) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[3.522789] (robot_bringup) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[3.522833] (robot_bringup) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[3.522928] (robot_bringup) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[3.523037] (robot_bringup) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[3.523124] (robot_bringup) StdoutLine: {'line': b'test 1\n'}
+[3.523194] (robot_bringup) StdoutLine: {'line': b'    Start 1: test_dev_mode.launch.test.py\n'}
+[3.523250] (robot_bringup) StdoutLine: {'line': b'\n'}
+[3.523317] (robot_bringup) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name" "robot_bringup" "--output-file" "/ws/ros_ws/build/robot_bringup/launch_test/test_dev_mode.launch.test.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py" "--junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name=robot_bringup"\n'}
+[3.523403] (robot_bringup) StdoutLine: {'line': b'1: Test timeout computed to be: 120\n'}
+[3.571571] (robot_bringup) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/ws/ros_ws/build/robot_bringup':\n"}
+[3.571824] (robot_bringup) StdoutLine: {'line': b'1:  - /usr/bin/python3 -m launch_testing.launch_test /ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py --junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml --package-name=robot_bringup\n'}
+[3.607598] (-) TimerEvent: {}
+[3.707890] (-) TimerEvent: {}
+[3.808175] (-) TimerEvent: {}
+[3.908445] (-) TimerEvent: {}
+[4.008727] (-) TimerEvent: {}
+[4.109047] (-) TimerEvent: {}
+[4.209308] (-) TimerEvent: {}
+[4.229648] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [launch]: All log files can be found below /root/.ros/log/2026-05-08-06-06-56-629842-35f211623a71-1204\n'}
+[4.229860] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[4.309306] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [base_driver_node-1]: process started with pid [1216]\n'}
+[4.309580] (-) TimerEvent: {}
+[4.310419] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [safety_node-2]: process started with pid [1218]\n'}
+[4.318708] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [voice_bridge_node-3]: process started with pid [1220]\n'}
+[4.321698] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [nlu_node-4]: process started with pid [1222]\n'}
+[4.323426] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [identity_node-5]: process started with pid [1224]\n'}
+[4.325891] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [manipulation_node-6]: process started with pid [1226]\n'}
+[4.326089] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [perception_node-7]: process started with pid [1250]\n'}
+[4.326164] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [executor_node-8]: process started with pid [1260]\n'}
+[4.344354] (robot_bringup) StdoutLine: {'line': b'1: [base_driver_node-1] [INFO] [1778220416.997379343] [base_driver_node]: robot_base started (stub=true). Serial protocol and real IO are intentionally placeholders.\n'}
+[4.381715] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [1778220417.053178222] [dev_mode_launch_test_node]: dev_mode launch test node started\n'}
+[4.409717] (-) TimerEvent: {}
+[4.483081] (robot_bringup) StdoutLine: {'line': b"1: test_core_nodes_started (robot_bringup.TestDevModeBringup) ... [INFO] [1778220417.156272337] [dev_mode_launch_test_node]: [wait:core_nodes_started] visible_nodes=8 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'safety_node', 'voice_bridge_node']\n"}
+[4.509832] (-) TimerEvent: {}
+[4.610064] (-) TimerEvent: {}
+[4.686365] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.359629289] [dev_mode_launch_test_node]: core_nodes_started check: missing=[] all=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']\n"}
+[4.686964] (robot_bringup) StdoutLine: {'line': b'1: ok\n'}
+[4.710206] (-) TimerEvent: {}
+[4.748710] (robot_bringup) StdoutLine: {'line': b'1: test_core_services_available (robot_bringup.TestDevModeBringup) ... [perception_node-7] [INFO] [1778220417.420957884] [perception_node]: robot_perception started (stub ONNX + depth projection pipeline).\n'}
+[4.795183] (robot_bringup) StdoutLine: {'line': b'1: ok\n'}
+[4.810337] (-) TimerEvent: {}
+[4.904234] (robot_bringup) StdoutLine: {'line': b"1: test_voice_to_nlu_and_executor_progress (robot_bringup.TestDevModeBringup) ... [INFO] [1778220417.577509969] [dev_mode_launch_test_node]: [wait:voice_subscribers] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']\n"}
+[4.905624] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.578982743] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=1 text='\xe8\xaf\xb7\xe7\xbb\x99\xe6\x88\x91\xe9\x80\x92\xe6\xb0\xb4'\n"}
+[4.907566] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.580977950] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=2 text='\xe8\xaf\xb7\xe7\xbb\x99\xe6\x88\x91\xe9\x80\x92\xe6\xb0\xb4'\n"}
+[4.908947] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.582430654] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=3 text='\xe8\xaf\xb7\xe7\xbb\x99\xe6\x88\x91\xe9\x80\x92\xe6\xb0\xb4'\n"}
+[4.910339] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.583789288] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=4 text='\xe8\xaf\xb7\xe7\xbb\x99\xe6\x88\x91\xe9\x80\x92\xe6\xb0\xb4'\n"}
+[4.910496] (-) TimerEvent: {}
+[4.911521] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.585026730] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=5 text='\xe8\xaf\xb7\xe7\xbb\x99\xe6\x88\x91\xe9\x80\x92\xe6\xb0\xb4'\n"}
+[4.913002] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.586485263] [dev_mode_launch_test_node]: [wait:wait_nlu] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']\n"}
+[4.913900] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [1778220417.587439100] [dev_mode_launch_test_node]: received nlu/command_json=\'{"intent":"deliver_water","slots":{"object":"bottle","deliver_to":"person_nearby"},"auth":{"requested_role":"owner","require_confirmation":true}}\'\n'}
+[5.010698] (-) TimerEvent: {}
+[5.016321] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [1778220417.689550710] [dev_mode_launch_test_node]: [wait:wait_state_change] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']\n"}
+[5.016505] (robot_bringup) StdoutLine: {'line': b'1: ok\n'}
+[5.017435] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [1778220417.690916304] [dev_mode_launch_test_node]: dev_mode launch test node shutting down\n'}
+[5.026076] (robot_bringup) StdoutLine: {'line': b'1: \n'}
+[5.026274] (robot_bringup) StdoutLine: {'line': b'1: ----------------------------------------------------------------------\n'}
+[5.026338] (robot_bringup) StdoutLine: {'line': b'1: Ran 3 tests in 0.785s\n'}
+[5.026433] (robot_bringup) StdoutLine: {'line': b'1: \n'}
+[5.026513] (robot_bringup) StdoutLine: {'line': b'1: OK\n'}
+[5.029565] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [executor_node-8]: sending signal 'SIGINT' to process[executor_node-8]\n"}
+[5.032632] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [perception_node-7]: sending signal 'SIGINT' to process[perception_node-7]\n"}
+[5.032848] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [manipulation_node-6]: sending signal 'SIGINT' to process[manipulation_node-6]\n"}
+[5.032913] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [identity_node-5]: sending signal 'SIGINT' to process[identity_node-5]\n"}
+[5.035403] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [nlu_node-4]: sending signal 'SIGINT' to process[nlu_node-4]\n"}
+[5.037270] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [voice_bridge_node-3]: sending signal 'SIGINT' to process[voice_bridge_node-3]\n"}
+[5.044659] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [safety_node-2]: sending signal 'SIGINT' to process[safety_node-2]\n"}
+[5.045400] (robot_bringup) StdoutLine: {'line': b"1: [INFO] [base_driver_node-1]: sending signal 'SIGINT' to process[base_driver_node-1]\n"}
+[5.051887] (robot_bringup) StdoutLine: {'line': b'1: [executor_node-8] [INFO] [1778220417.703156423] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.057141] (robot_bringup) StdoutLine: {'line': b'1: [manipulation_node-6] [INFO] [1778220417.704739953] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.058159] (robot_bringup) StdoutLine: {'line': b'1: [identity_node-5] [INFO] [1778220417.705883715] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.058718] (robot_bringup) StdoutLine: {'line': b'1: [nlu_node-4] [INFO] [1778220417.707248418] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.062514] (robot_bringup) StdoutLine: {'line': b'1: [voice_bridge_node-3] [INFO] [1778220417.709221380] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.064374] (robot_bringup) StdoutLine: {'line': b'1: [safety_node-2] [INFO] [1778220417.716658822] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.064592] (robot_bringup) StdoutLine: {'line': b'1: [base_driver_node-1] [INFO] [1778220417.717493221] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n'}
+[5.110842] (-) TimerEvent: {}
+[5.158541] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [voice_bridge_node-3]: process has finished cleanly [pid 1220]\n'}
+[5.159692] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [nlu_node-4]: process has finished cleanly [pid 1222]\n'}
+[5.164746] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [base_driver_node-1]: process has finished cleanly [pid 1216]\n'}
+[5.165958] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [executor_node-8]: process has finished cleanly [pid 1260]\n'}
+[5.166118] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [manipulation_node-6]: process has finished cleanly [pid 1226]\n'}
+[5.167124] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [identity_node-5]: process has finished cleanly [pid 1224]\n'}
+[5.168672] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [safety_node-2]: process has finished cleanly [pid 1218]\n'}
+[5.210983] (-) TimerEvent: {}
+[5.245746] (robot_bringup) StdoutLine: {'line': b'1: [INFO] [perception_node-7]: process has finished cleanly [pid 1250]\n'}
+[5.246272] (robot_bringup) StdoutLine: {'line': b'1: \n'}
+[5.246356] (robot_bringup) StdoutLine: {'line': b'1: ----------------------------------------------------------------------\n'}
+[5.246412] (robot_bringup) StdoutLine: {'line': b'1: Ran 0 tests in 0.000s\n'}
+[5.246467] (robot_bringup) StdoutLine: {'line': b'1: \n'}
+[5.246521] (robot_bringup) StdoutLine: {'line': b'1: OK\n'}
+[5.311179] (-) TimerEvent: {}
+[5.411461] (-) TimerEvent: {}
+[5.487594] (robot_bringup) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[5.487830] (robot_bringup) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml'\n"}
+[5.500858] (robot_bringup) StdoutLine: {'line': b'1/1 Test #1: test_dev_mode.launch.test.py .....   Passed    1.98 sec\n'}
+[5.501247] (robot_bringup) StdoutLine: {'line': b'\n'}
+[5.501333] (robot_bringup) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 1\n'}
+[5.501392] (robot_bringup) StdoutLine: {'line': b'\n'}
+[5.501442] (robot_bringup) StdoutLine: {'line': b'Label Time Summary:\n'}
+[5.501490] (robot_bringup) StdoutLine: {'line': b'launch_test    =   1.98 sec*proc (1 test)\n'}
+[5.501536] (robot_bringup) StdoutLine: {'line': b'\n'}
+[5.501578] (robot_bringup) StdoutLine: {'line': b'Total Test time (real) =   1.98 sec\n'}
+[5.503531] (robot_bringup) CommandEnded: {'returncode': 0}
+[5.503887] (robot_bringup) JobEnded: {'identifier': 'robot_bringup', 'rc': 0}
+[5.504410] (-) EventReactorShutdown: {}

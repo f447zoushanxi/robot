@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml
+
+File 'package.xml' is valid
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/xmllint.xunit.xml'

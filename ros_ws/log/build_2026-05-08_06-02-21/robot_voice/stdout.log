@@ -1,0 +1,22 @@
+Consolidate compiler generated dependencies of target voice_bridge_node
+[ 50%] Building CXX object CMakeFiles/voice_bridge_node.dir/src/voice_bridge_node.cpp.o
+[100%] Linking CXX executable voice_bridge_node
+[100%] Built target voice_bridge_node
+-- Install configuration: ""
+-- Installing: /ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node
+-- Set runtime path of "/ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node" to ""
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/package_run_dependencies/robot_voice
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/parent_prefix_path/robot_voice
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.sh
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.sh
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.bash
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.sh
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.zsh
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.dsv
+-- Installing: /ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/packages/robot_voice
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig.cmake
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig-version.cmake
+-- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/package.xml

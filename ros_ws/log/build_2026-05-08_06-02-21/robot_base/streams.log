@@ -1,0 +1,48 @@
+[0.011s] Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[0.079s] Consolidate compiler generated dependencies of target gtest
+[0.089s] Consolidate compiler generated dependencies of target serial_interface_stub
+[0.099s] [ 16%] Built target gtest
+[0.104s] Consolidate compiler generated dependencies of target gtest_main
+[0.105s] [ 25%] Building CXX object CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o
+[0.108s] Consolidate compiler generated dependencies of target base_safety_utils
+[0.136s] [ 41%] Built target gtest_main
+[0.136s] [ 50%] Building CXX object CMakeFiles/base_safety_utils.dir/src/safety_utils.cpp.o
+[0.714s] [ 58%] Linking CXX static library libserial_interface_stub.a
+[0.790s] [ 58%] Built target serial_interface_stub
+[1.374s] [ 66%] Linking CXX static library libbase_safety_utils.a
+[1.444s] [ 66%] Built target base_safety_utils
+[1.479s] Consolidate compiler generated dependencies of target test_timeout_brake
+[1.483s] Consolidate compiler generated dependencies of target base_driver_node
+[1.529s] [ 75%] Building CXX object CMakeFiles/test_timeout_brake.dir/test/test_timeout_brake.cpp.o
+[1.529s] [ 83%] Building CXX object CMakeFiles/base_driver_node.dir/src/base_driver_node.cpp.o
+[3.544s] [ 91%] Linking CXX executable test_timeout_brake
+[3.703s] [ 91%] Built target test_timeout_brake
+[11.438s] [100%] Linking CXX executable base_driver_node
+[11.925s] [100%] Built target base_driver_node
+[11.926s] Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[11.926s] Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base
+[11.936s] -- Install configuration: ""
+[11.936s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node
+[11.941s] -- Set runtime path of "/ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node" to ""
+[11.941s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libserial_interface_stub.a
+[11.942s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libbase_safety_utils.a
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/include
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base
+[11.945s] -- Installing: /ws/ros_ws/install/robot_base/include/robot_base/safety_utils.hpp
+[11.945s] -- Installing: /ws/ros_ws/install/robot_base/include/robot_base/serial_interface.hpp
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/package_run_dependencies/robot_base
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/parent_prefix_path/robot_base
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.sh
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.dsv
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.sh
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.dsv
+[11.945s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.bash
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.sh
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.zsh
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.dsv
+[11.946s] -- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.dsv
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/packages/robot_base
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig.cmake
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig-version.cmake
+[11.946s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/package.xml
+[11.949s] Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base

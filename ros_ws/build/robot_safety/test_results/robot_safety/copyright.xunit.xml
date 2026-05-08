@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_safety.copyright"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.022"
+>
+  <testcase
+    name="src/safety_node.cpp"
+    classname="robot_safety.copyright"/>
+  <system-out>Checked files:
+* src/safety_node.cpp</system-out>
+</testsuite>

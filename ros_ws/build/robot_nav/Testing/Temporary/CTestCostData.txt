@@ -1,0 +1,8 @@
+test_location_manager 5 0.0274014
+copyright 2 0.161514
+cppcheck 5 0.0385265
+cpplint 5 0.055176
+lint_cmake 5 0.0355857
+uncrustify 4 0.0485749
+xmllint 5 0.0406305
+---

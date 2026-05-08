@@ -1,0 +1,86 @@
+Start testing: May 08 06:01 UTC
+----------------------------------------------------------
+1/1 Testing: test_dev_mode.launch.test.py
+1/1 Test: test_dev_mode.launch.test.py
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name" "robot_bringup" "--output-file" "/ws/ros_ws/build/robot_bringup/launch_test/test_dev_mode.launch.test.py.txt" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py" "--junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml" "--package-name=robot_bringup"
+Directory: /ws/ros_ws/build/robot_bringup
+"test_dev_mode.launch.test.py" start time: May 08 06:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/ws/ros_ws/build/robot_bringup':
+ - /usr/bin/python3 -m launch_testing.launch_test /ws/ros_ws/src/robot_bringup/test/dev_mode.launch.test.py --junit-xml=/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml --package-name=robot_bringup
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-05-08-06-01-29-332450-a0e3119139a3-2703
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [base_driver_node-1]: process started with pid [2715]
+[INFO] [safety_node-2]: process started with pid [2717]
+[INFO] [voice_bridge_node-3]: process started with pid [2719]
+[INFO] [nlu_node-4]: process started with pid [2721]
+[INFO] [identity_node-5]: process started with pid [2749]
+[INFO] [manipulation_node-6]: process started with pid [2765]
+[INFO] [perception_node-7]: process started with pid [2767]
+[INFO] [executor_node-8]: process started with pid [2775]
+[base_driver_node-1] [INFO] [1778220089.449278789] [base_driver_node]: robot_base started (stub=true). Serial protocol and real IO are intentionally placeholders.
+[INFO] [1778220089.503219939] [dev_mode_launch_test_node]: dev_mode launch test node started
+test_core_nodes_started (robot_bringup.TestDevModeBringup) ... [INFO] [1778220089.605959732] [dev_mode_launch_test_node]: [wait:core_nodes_started] visible_nodes=8 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'safety_node', 'voice_bridge_node']
+[perception_node-7] [INFO] [1778220089.752768631] [perception_node]: robot_perception started (stub ONNX + depth projection pipeline).
+[INFO] [1778220089.808000510] [dev_mode_launch_test_node]: core_nodes_started check: missing=[] all=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+ok
+test_core_services_available (robot_bringup.TestDevModeBringup) ... ok
+test_voice_to_nlu_and_executor_progress (robot_bringup.TestDevModeBringup) ... [INFO] [1778220089.995484913] [dev_mode_launch_test_node]: [wait:voice_subscribers] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[INFO] [1778220089.996809328] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=1 text='请给我递水'
+[INFO] [1778220089.998689145] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=2 text='请给我递水'
+[INFO] [1778220090.000072107] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=3 text='请给我递水'
+[INFO] [1778220090.001390964] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=4 text='请给我递水'
+[INFO] [1778220090.002697812] [dev_mode_launch_test_node]: publishing voice/raw_text attempt=5 text='请给我递水'
+[INFO] [1778220090.004171892] [dev_mode_launch_test_node]: [wait:wait_nlu] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+[INFO] [1778220090.005202797] [dev_mode_launch_test_node]: received nlu/command_json='{"intent":"deliver_water","slots":{"object":"bottle","deliver_to":"person_nearby"},"auth":{"requested_role":"owner","require_confirmation":true}}'
+[INFO] [1778220090.107036872] [dev_mode_launch_test_node]: [wait:wait_state_change] visible_nodes=9 names=['base_driver_node', 'dev_mode_launch_test_node', 'executor_node', 'identity_node', 'manipulation_node', 'nlu_node', 'perception_node', 'safety_node', 'voice_bridge_node']
+ok
+[INFO] [1778220090.108205433] [dev_mode_launch_test_node]: dev_mode launch test node shutting down
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.728s
+
+OK
+[INFO] [executor_node-8]: sending signal 'SIGINT' to process[executor_node-8]
+[INFO] [perception_node-7]: sending signal 'SIGINT' to process[perception_node-7]
+[INFO] [manipulation_node-6]: sending signal 'SIGINT' to process[manipulation_node-6]
+[INFO] [identity_node-5]: sending signal 'SIGINT' to process[identity_node-5]
+[INFO] [nlu_node-4]: sending signal 'SIGINT' to process[nlu_node-4]
+[INFO] [voice_bridge_node-3]: sending signal 'SIGINT' to process[voice_bridge_node-3]
+[INFO] [safety_node-2]: sending signal 'SIGINT' to process[safety_node-2]
+[INFO] [base_driver_node-1]: sending signal 'SIGINT' to process[base_driver_node-1]
+[executor_node-8] [INFO] [1778220090.119953249] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[manipulation_node-6] [INFO] [1778220090.123607641] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[identity_node-5] [INFO] [1778220090.123890851] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[nlu_node-4] [INFO] [1778220090.126603226] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[voice_bridge_node-3] [INFO] [1778220090.130638884] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[safety_node-2] [INFO] [1778220090.132045652] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[base_driver_node-1] [INFO] [1778220090.133192992] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [voice_bridge_node-3]: process has finished cleanly [pid 2719]
+[INFO] [base_driver_node-1]: process has finished cleanly [pid 2715]
+[INFO] [nlu_node-4]: process has finished cleanly [pid 2721]
+[INFO] [manipulation_node-6]: process has finished cleanly [pid 2765]
+[INFO] [safety_node-2]: process has finished cleanly [pid 2717]
+[INFO] [identity_node-5]: process has finished cleanly [pid 2749]
+[INFO] [executor_node-8]: process has finished cleanly [pid 2775]
+[INFO] [perception_node-7]: process has finished cleanly [pid 2767]
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_bringup/test_results/robot_bringup/test_dev_mode.launch.test.py.xunit.xml'
+<end of output>
+Test time =   1.41 sec
+----------------------------------------------------------
+Test Passed.
+"test_dev_mode.launch.test.py" end time: May 08 06:01 UTC
+"test_dev_mode.launch.test.py" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: May 08 06:01 UTC
+
+launch_test =   1.41 sec*proc
+

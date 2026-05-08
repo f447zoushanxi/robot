@@ -1,0 +1,349 @@
+[0.132s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test', '--event-handlers', 'console_direct+', '--ctest-args', '-VV', '--output-on-failure']
+[0.132s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=4, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, ctest_args=['-VV', '--output-on-failure'], python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fc0df086a70>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7fc0df0854b0>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7fc0df0854b0>>, mixin_verb=('test',))
+[0.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.220s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.220s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.220s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.221s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ws/ros_ws'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_base' with type 'ros.ament_cmake' and name 'robot_base'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_executor' with type 'ros.ament_cmake' and name 'robot_executor'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_identity' with type 'ros.ament_cmake' and name 'robot_identity'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_manipulation' with type 'ros.ament_cmake' and name 'robot_manipulation'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_msgs' with type 'ros.catkin' and name 'robot_msgs'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_nav' with type 'ros.ament_cmake' and name 'robot_nav'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_nlu' with type 'ros.ament_cmake' and name 'robot_nlu'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_perception' with type 'ros.ament_python' and name 'robot_perception'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_safety' with type 'ros.ament_cmake' and name 'robot_safety'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_voice' with type 'ros.ament_cmake' and name 'robot_voice'
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'python_testing' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'pytest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'pytest_with_coverage' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'unittest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'retest_until_pass' from command line to '0'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_base' test argument 'retest_until_fail' from command line to '0'
+[0.243s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_base' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_base', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_base', 'path': '/ws/ros_ws/src/robot_base', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'python_testing' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'pytest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'pytest_with_coverage' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'unittest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'retest_until_pass' from command line to '0'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' test argument 'retest_until_fail' from command line to '0'
+[0.243s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_manipulation' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_manipulation', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_manipulation', 'path': '/ws/ros_ws/src/robot_manipulation', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'python_testing' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'pytest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'pytest_with_coverage' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'unittest_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'retest_until_pass' from command line to '0'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' test argument 'retest_until_fail' from command line to '0'
+[0.243s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_msgs' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_msgs', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_msgs', 'path': '/ws/ros_ws/src/robot_msgs', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'python_testing' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'pytest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'pytest_with_coverage' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'unittest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'retest_until_pass' from command line to '0'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' test argument 'retest_until_fail' from command line to '0'
+[0.244s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_nav' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_nav', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_nav', 'path': '/ws/ros_ws/src/robot_nav', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'python_testing' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'pytest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'pytest_with_coverage' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'unittest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'retest_until_pass' from command line to '0'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' test argument 'retest_until_fail' from command line to '0'
+[0.244s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_nlu' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_nlu', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_nlu', 'path': '/ws/ros_ws/src/robot_nlu', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'python_testing' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'pytest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'pytest_with_coverage' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'unittest_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'retest_until_pass' from command line to '0'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' test argument 'retest_until_fail' from command line to '0'
+[0.244s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_safety' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_safety', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_safety', 'path': '/ws/ros_ws/src/robot_safety', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'python_testing' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'pytest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'pytest_with_coverage' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'unittest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'retest_until_pass' from command line to '0'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' test argument 'retest_until_fail' from command line to '0'
+[0.245s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_voice' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_voice', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_voice', 'path': '/ws/ros_ws/src/robot_voice', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'python_testing' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'pytest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'pytest_with_coverage' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'unittest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'retest_until_pass' from command line to '0'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' test argument 'retest_until_fail' from command line to '0'
+[0.245s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_executor' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_executor', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_executor', 'path': '/ws/ros_ws/src/robot_executor', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'python_testing' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'pytest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'pytest_with_coverage' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'unittest_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'retest_until_pass' from command line to '0'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' test argument 'retest_until_fail' from command line to '0'
+[0.245s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_identity' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_identity', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_identity', 'path': '/ws/ros_ws/src/robot_identity', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'python_testing' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'pytest_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'pytest_with_coverage' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'unittest_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'retest_until_pass' from command line to '0'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' test argument 'retest_until_fail' from command line to '0'
+[0.246s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_perception' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_perception', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_perception', 'path': '/ws/ros_ws/src/robot_perception', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'ctest_args' from command line to '['-VV', '--output-on-failure']'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'python_testing' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'pytest_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'pytest_with_coverage' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'unittest_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'retest_until_pass' from command line to '0'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' test argument 'retest_until_fail' from command line to '0'
+[0.246s] DEBUG:colcon.colcon_core.verb.test:Testing package 'robot_bringup' with the following arguments: {'build_base': '/ws/ros_ws/build/robot_bringup', 'ctest_args': ['-VV', '--output-on-failure'], 'install_base': '/ws/ros_ws/install/robot_bringup', 'path': '/ws/ros_ws/src/robot_bringup', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.246s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.247s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.247s] INFO:colcon.colcon_ros.task.catkin.test:Testing ROS package in '/ws/ros_ws/src/robot_msgs' with build type 'catkin'
+[0.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'ros_package_path')
+[0.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/hook/ros_package_path.ps1'
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/hook/ros_package_path.dsv'
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/hook/ros_package_path.sh'
+[0.250s] Level 1:colcon.colcon_ros.task.catkin:checking '/ws/ros_ws/build/robot_msgs/devel/local/lib/python3.10/dist-packages'
+[0.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_msgs)
+[0.252s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel' for CMake module files
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel' for CMake config files
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel/bin'
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel/lib/pkgconfig/robot_msgs.pc'
+[0.254s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel/lib/python3.10/site-packages'
+[0.254s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/build/robot_msgs/devel/bin'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/package.ps1'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/package.dsv'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/package.sh'
+[0.256s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/package.bash'
+[0.256s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/build/robot_msgs/devel/share/robot_msgs/package.zsh'
+[0.257s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_msgs'
+[0.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.260s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_base' with build type 'ament_cmake'
+[0.260s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_base'
+[0.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_manipulation' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_manipulation'
+[0.263s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.263s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.265s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_nav' with build type 'ament_cmake'
+[0.265s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_nav'
+[0.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.279s] Level 5:colcon.colcon_cmake.task.cmake.test:No ctests found in '/ws/ros_ws/src/robot_msgs'
+[0.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_manipulation': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_manipulation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_manipulation /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.282s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_nlu' with build type 'ament_cmake'
+[0.282s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_nlu'
+[0.282s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.282s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_base': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_base /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nav': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nav:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nlu': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nlu:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nlu /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_manipulation' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_manipulation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_manipulation /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.433s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_safety' with build type 'ament_cmake'
+[1.433s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_safety'
+[1.434s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_safety': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_safety:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_safety /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.585s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_voice' with build type 'ament_cmake'
+[1.586s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_voice'
+[1.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nav' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nav:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nlu' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_nlu:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_nlu /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.593s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_executor' with build type 'ament_cmake'
+[1.594s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_executor'
+[1.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_voice': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_voice:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_voice /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_executor': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.655s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_identity' with build type 'ament_cmake'
+[1.655s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_identity'
+[1.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_base' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_base /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[1.657s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.657s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_identity': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_identity:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[2.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_safety' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_safety:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_safety /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[2.574s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/ws/ros_ws/src/robot_perception' with build type'ament_python'
+[2.574s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/ws/ros_ws/src/robot_perception'
+[2.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.777s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[2.778s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[2.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/src/robot_perception': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTEST_ADDOPTS=--tb=short --junit-xml=/ws/ros_ws/build/robot_perception/pytest.xml --junit-prefix=robot_perception -o cache_dir=/ws/ros_ws/build/robot_perception/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -m pytest
+[2.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_voice' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_voice:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_voice /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[2.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_executor' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[2.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_identity' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_identity:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[3.010s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/ws/ros_ws/src/robot_bringup' with build type 'ament_cmake'
+[3.011s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/ws/ros_ws/src/robot_bringup'
+[3.011s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.011s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/src/robot_perception' returned '5': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTEST_ADDOPTS=--tb=short --junit-xml=/ws/ros_ws/build/robot_perception/pytest.xml --junit-prefix=robot_perception -o cache_dir=/ws/ros_ws/build/robot_perception/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -m pytest
+[3.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_bringup': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[4.378s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_bringup' returned '0': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_bringup:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[4.379s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.379s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.379s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.505s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.505s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.505s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.505s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.505s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[4.505s] DEBUG:colcon.colcon_core.event_reactor:joined thread

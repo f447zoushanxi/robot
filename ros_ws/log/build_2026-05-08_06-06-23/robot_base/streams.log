@@ -1,0 +1,46 @@
+[0.016s] Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[0.104s] Consolidate compiler generated dependencies of target serial_interface_stub
+[0.171s] [  8%] Building CXX object CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o
+[0.174s] Consolidate compiler generated dependencies of target base_safety_utils
+[0.175s] [ 25%] Built target gtest
+[0.191s] [ 50%] Building CXX object CMakeFiles/base_safety_utils.dir/src/safety_utils.cpp.o
+[0.206s] [ 41%] Built target gtest_main
+[0.977s] [ 58%] Linking CXX static library libserial_interface_stub.a
+[1.087s] [ 58%] Built target serial_interface_stub
+[1.129s] [ 66%] Linking CXX static library libbase_safety_utils.a
+[1.225s] [ 66%] Built target base_safety_utils
+[1.299s] Consolidate compiler generated dependencies of target base_driver_node
+[1.300s] Consolidate compiler generated dependencies of target test_timeout_brake
+[1.327s] [ 75%] Building CXX object CMakeFiles/base_driver_node.dir/src/base_driver_node.cpp.o
+[1.352s] [ 83%] Building CXX object CMakeFiles/test_timeout_brake.dir/test/test_timeout_brake.cpp.o
+[4.033s] [ 91%] Linking CXX executable test_timeout_brake
+[4.416s] [ 91%] Built target test_timeout_brake
+[15.009s] [100%] Linking CXX executable base_driver_node
+[15.670s] [100%] Built target base_driver_node
+[15.687s] Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[15.689s] Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base
+[15.703s] -- Install configuration: ""
+[15.707s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node
+[15.711s] -- Set runtime path of "/ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node" to ""
+[15.711s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libserial_interface_stub.a
+[15.714s] -- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libbase_safety_utils.a
+[15.714s] -- Up-to-date: /ws/ros_ws/install/robot_base/include
+[15.714s] -- Up-to-date: /ws/ros_ws/install/robot_base/include/robot_base
+[15.714s] -- Installing: /ws/ros_ws/install/robot_base/include/robot_base/safety_utils.hpp
+[15.714s] -- Installing: /ws/ros_ws/install/robot_base/include/robot_base/serial_interface.hpp
+[15.714s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/package_run_dependencies/robot_base
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/parent_prefix_path/robot_base
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.sh
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.dsv
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.sh
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.dsv
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.bash
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.sh
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.zsh
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.dsv
+[15.715s] -- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.dsv
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/packages/robot_base
+[15.715s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig.cmake
+[15.716s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig-version.cmake
+[15.716s] -- Up-to-date: /ws/ros_ws/install/robot_base/share/robot_base/package.xml
+[15.719s] Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base

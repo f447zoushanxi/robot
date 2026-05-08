@@ -1,0 +1,4 @@
+source;share/robot_identity/local_setup.bash
+source;share/robot_identity/local_setup.dsv
+source;share/robot_identity/local_setup.sh
+source;share/robot_identity/local_setup.zsh

@@ -1,0 +1,20 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_base':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml
+
+No code style divergence in file 'include/robot_base/safety_utils.hpp'
+
+No code style divergence in file 'include/robot_base/serial_interface.hpp'
+
+No code style divergence in file 'src/base_driver_node.cpp'
+
+No code style divergence in file 'src/safety_utils.cpp'
+
+No code style divergence in file 'src/serial_interface_stub.cpp'
+
+No code style divergence in file 'test/test_timeout_brake.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_base/test_results/robot_base/uncrustify.xunit.xml'

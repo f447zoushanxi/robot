@@ -1,0 +1,16 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_identity':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml
+
+No code style divergence in file 'include/robot_identity/enroll_policy.hpp'
+
+No code style divergence in file 'src/enroll_policy.cpp'
+
+No code style divergence in file 'src/identity_node.cpp'
+
+No code style divergence in file 'test/test_enroll_gating.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/uncrustify.xunit.xml'

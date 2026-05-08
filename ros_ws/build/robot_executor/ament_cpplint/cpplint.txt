@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_executor':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml
+
+Using '--root=/ws/ros_ws/src/robot_executor/src' argument
+
+Done processing /ws/ros_ws/src/robot_executor/src/executor_node.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_executor/test_results/robot_executor/cpplint.xunit.xml'

@@ -1,0 +1,4 @@
+Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav
+Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav

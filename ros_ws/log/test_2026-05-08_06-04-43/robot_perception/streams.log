@@ -1,0 +1,11 @@
+[0.226s] Invoking command in '/ws/ros_ws/src/robot_perception': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTEST_ADDOPTS=--tb=short --junit-xml=/ws/ros_ws/build/robot_perception/pytest.xml --junit-prefix=robot_perception -o cache_dir=/ws/ros_ws/build/robot_perception/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -m pytest
+[0.428s] ============================= test session starts ==============================
+[0.428s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.428s] cachedir: /ws/ros_ws/build/robot_perception/.pytest_cache
+[0.428s] rootdir: /ws/ros_ws/src/robot_perception
+[0.429s] plugins: ament-copyright-0.12.15, ament-xmllint-0.12.15, launch-testing-1.0.14, ament-flake8-0.12.15, launch-testing-ros-0.19.13, ament-pep257-0.12.15, ament-lint-0.12.15, colcon-core-0.20.1
+[0.429s] collected 0 items
+[0.429s] 
+[0.429s] ------- generated xml file: /ws/ros_ws/build/robot_perception/pytest.xml -------
+[0.430s] ============================ no tests ran in 0.01s =============================
+[0.468s] Invoked command in '/ws/ros_ws/src/robot_perception' returned '5': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTEST_ADDOPTS=--tb=short --junit-xml=/ws/ros_ws/build/robot_perception/pytest.xml --junit-prefix=robot_perception -o cache_dir=/ws/ros_ws/build/robot_perception/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -m pytest

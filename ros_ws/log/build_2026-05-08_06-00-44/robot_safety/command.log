@@ -1,0 +1,6 @@
+Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws/ros_ws/src/robot_safety -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_safety
+Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws/ros_ws/src/robot_safety -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_safety
+Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety
+Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety

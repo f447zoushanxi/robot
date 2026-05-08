@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_manipulation':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml
+
+No code style divergence in file 'src/manipulation_node.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_manipulation/test_results/robot_manipulation/uncrustify.xunit.xml'

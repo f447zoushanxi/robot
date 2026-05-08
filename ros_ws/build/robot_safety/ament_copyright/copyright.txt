@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/src/robot_safety':
+ - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml
+
+No problems found, checked 1 files
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_safety/test_results/robot_safety/copyright.xunit.xml'

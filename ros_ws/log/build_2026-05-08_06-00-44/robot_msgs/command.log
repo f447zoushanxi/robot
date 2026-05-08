@@ -1,0 +1,6 @@
+Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake /ws/ros_ws/src/robot_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_msgs
+Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake /ws/ros_ws/src/robot_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_msgs
+Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs
+Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs

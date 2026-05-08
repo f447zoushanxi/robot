@@ -1,0 +1,768 @@
+[0.102s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--event-handlers', 'console_direct+']
+[0.102s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f1fea091a20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1fea0914b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1fea0914b0>>, mixin_verb=('build',))
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.199s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.199s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.200s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.200s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ws/ros_ws'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_base) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_base' with type 'ros.ament_cmake' and name 'robot_base'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_executor) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_executor' with type 'ros.ament_cmake' and name 'robot_executor'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_identity) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_identity' with type 'ros.ament_cmake' and name 'robot_identity'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_manipulation) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_manipulation' with type 'ros.ament_cmake' and name 'robot_manipulation'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_msgs' with type 'ros.catkin' and name 'robot_msgs'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nav) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_nav' with type 'ros.ament_cmake' and name 'robot_nav'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_nlu) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_nlu' with type 'ros.ament_cmake' and name 'robot_nlu'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_perception) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_perception' with type 'ros.ament_python' and name 'robot_perception'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_safety) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_safety' with type 'ros.ament_cmake' and name 'robot_safety'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_voice) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_voice' with type 'ros.ament_cmake' and name 'robot_voice'
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'robot_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_base', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_base', 'symlink_install': False, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'robot_manipulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'robot_manipulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_manipulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_manipulation', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_manipulation', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'robot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_msgs', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'robot_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_nav', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_nav', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'robot_nlu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'robot_nlu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_nlu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_nlu', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_nlu', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_safety' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'robot_safety' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_safety', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_safety', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_safety', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_voice' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'robot_voice' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_voice', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_voice', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_voice', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'robot_executor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'robot_executor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_executor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_executor', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_executor', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_identity' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'robot_identity' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_identity', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_identity', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_identity', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'robot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_perception', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_perception', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/ros_ws/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/ros_ws/install/robot_bringup', 'merge_install': False, 'path': '/ws/ros_ws/src/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.247s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.249s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.249s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/ws/ros_ws/src/robot_msgs' with build type 'catkin'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_msgs'
+[0.251s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_base' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_base'
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_manipulation' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_manipulation'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_nav' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_nav'
+[0.262s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.262s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+[0.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[0.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_manipulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_manipulation -- -j4 -l4
+[0.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs
+[1.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'ros_package_path')
+[1.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ros_package_path.ps1'
+[1.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ros_package_path.dsv'
+[1.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ros_package_path.sh'
+[1.739s] Level 1:colcon.colcon_ros.task.catkin:checking '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages'
+[1.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'catkin_pythonpath')
+[1.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/catkin_pythonpath.ps1'
+[1.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/catkin_pythonpath.dsv'
+[1.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/catkin_pythonpath.sh'
+[1.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'pkg_config_path')
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path.dsv'
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path.sh'
+[1.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'pkg_config_path_multiarch')
+[1.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path_multiarch.ps1'
+[1.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path_multiarch.dsv'
+[1.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/pkg_config_path_multiarch.sh'
+[1.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_msgs)
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs' for CMake module files
+[1.776s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs' for CMake config files
+[1.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'cmake_prefix_path')
+[1.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/cmake_prefix_path.ps1'
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/cmake_prefix_path.dsv'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/cmake_prefix_path.sh'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs/lib'
+[1.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_msgs', 'ld_library_path_lib')
+[1.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ld_library_path_lib.ps1'
+[1.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ld_library_path_lib.dsv'
+[1.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_msgs/share/robot_msgs/hook/ld_library_path_lib.sh'
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs/bin'
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs/lib/pkgconfig/robot_msgs.pc'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs/lib/python3.10/site-packages'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_msgs/bin'
+[1.796s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.ps1'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.dsv'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.sh'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.bash'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_msgs/share/robot_msgs/package.zsh'
+[1.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_msgs/share/colcon-core/packages/robot_msgs)
+[1.816s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_nlu' with build type 'ament_cmake'
+[1.816s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_nlu'
+[1.816s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.816s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+[7.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+[7.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav
+[7.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_nav)
+[7.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav
+[7.746s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav' for CMake module files
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav' for CMake config files
+[7.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_nav', 'cmake_prefix_path')
+[7.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.ps1'
+[7.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.dsv'
+[7.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.sh'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/bin'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib/pkgconfig/robot_nav.pc'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib/python3.10/site-packages'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/bin'
+[7.751s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.ps1'
+[7.751s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_nav/share/robot_nav/package.dsv'
+[7.752s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.sh'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.bash'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.zsh'
+[7.754s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_nav/share/colcon-core/packages/robot_nav)
+[7.754s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_nav)
+[7.755s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav' for CMake module files
+[7.755s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav' for CMake config files
+[7.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_nav', 'cmake_prefix_path')
+[7.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.ps1'
+[7.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.dsv'
+[7.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nav/share/robot_nav/hook/cmake_prefix_path.sh'
+[7.758s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib'
+[7.758s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/bin'
+[7.758s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib/pkgconfig/robot_nav.pc'
+[7.758s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/lib/python3.10/site-packages'
+[7.758s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nav/bin'
+[7.759s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.ps1'
+[7.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_nav/share/robot_nav/package.dsv'
+[7.760s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.sh'
+[7.760s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.bash'
+[7.761s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nav/share/robot_nav/package.zsh'
+[7.761s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_nav/share/colcon-core/packages/robot_nav)
+[7.764s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_safety' with build type 'ament_cmake'
+[7.764s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_safety'
+[7.765s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.765s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+[8.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_manipulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_manipulation -- -j4 -l4
+[8.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_manipulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_manipulation
+[8.110s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_manipulation)
+[8.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_manipulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_manipulation
+[8.111s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation' for CMake module files
+[8.112s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation' for CMake config files
+[8.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_manipulation', 'cmake_prefix_path')
+[8.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.ps1'
+[8.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.dsv'
+[8.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.sh'
+[8.115s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib'
+[8.115s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/bin'
+[8.115s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib/pkgconfig/robot_manipulation.pc'
+[8.115s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib/python3.10/site-packages'
+[8.115s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/bin'
+[8.116s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.ps1'
+[8.116s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.dsv'
+[8.117s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.sh'
+[8.118s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.bash'
+[8.118s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.zsh'
+[8.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_manipulation/share/colcon-core/packages/robot_manipulation)
+[8.119s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_manipulation)
+[8.120s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation' for CMake module files
+[8.120s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation' for CMake config files
+[8.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_manipulation', 'cmake_prefix_path')
+[8.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.ps1'
+[8.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.dsv'
+[8.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/hook/cmake_prefix_path.sh'
+[8.122s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib'
+[8.122s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/bin'
+[8.122s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib/pkgconfig/robot_manipulation.pc'
+[8.123s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/lib/python3.10/site-packages'
+[8.123s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_manipulation/bin'
+[8.123s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.ps1'
+[8.124s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.dsv'
+[8.125s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.sh'
+[8.125s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.bash'
+[8.126s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.zsh'
+[8.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_manipulation/share/colcon-core/packages/robot_manipulation)
+[8.128s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_voice' with build type 'ament_cmake'
+[8.129s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_voice'
+[8.129s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.129s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_voice': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_voice -- -j4 -l4
+[15.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+[15.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu
+[15.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_nlu)
+[15.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu
+[15.644s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu' for CMake module files
+[15.645s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu' for CMake config files
+[15.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_nlu', 'cmake_prefix_path')
+[15.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.ps1'
+[15.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.dsv'
+[15.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.sh'
+[15.649s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib'
+[15.649s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/bin'
+[15.649s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib/pkgconfig/robot_nlu.pc'
+[15.649s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib/python3.10/site-packages'
+[15.650s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/bin'
+[15.650s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.ps1'
+[15.651s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.dsv'
+[15.652s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.sh'
+[15.652s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.bash'
+[15.653s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.zsh'
+[15.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_nlu/share/colcon-core/packages/robot_nlu)
+[15.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_nlu)
+[15.655s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu' for CMake module files
+[15.655s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu' for CMake config files
+[15.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_nlu', 'cmake_prefix_path')
+[15.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.ps1'
+[15.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.dsv'
+[15.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_nlu/share/robot_nlu/hook/cmake_prefix_path.sh'
+[15.691s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib'
+[15.691s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/bin'
+[15.691s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib/pkgconfig/robot_nlu.pc'
+[15.692s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/lib/python3.10/site-packages'
+[15.692s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_nlu/bin'
+[15.693s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.ps1'
+[15.694s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.dsv'
+[15.695s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.sh'
+[15.695s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.bash'
+[15.696s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_nlu/share/robot_nlu/package.zsh'
+[15.697s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_nlu/share/colcon-core/packages/robot_nlu)
+[15.697s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_executor' with build type 'ament_cmake'
+[15.698s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_executor'
+[15.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.698s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_executor': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_executor -- -j4 -l4
+[15.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_base -- -j4 -l4
+[15.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base
+[15.975s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_base)
+[15.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_base
+[15.975s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base' for CMake module files
+[15.976s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base' for CMake config files
+[15.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_base', 'cmake_prefix_path')
+[15.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.ps1'
+[15.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.dsv'
+[15.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.sh'
+[15.979s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib'
+[15.979s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/bin'
+[15.979s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib/pkgconfig/robot_base.pc'
+[15.979s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib/python3.10/site-packages'
+[15.979s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/bin'
+[15.980s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.ps1'
+[15.980s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_base/share/robot_base/package.dsv'
+[15.981s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.sh'
+[15.982s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.bash'
+[15.982s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.zsh'
+[15.983s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_base/share/colcon-core/packages/robot_base)
+[15.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_base)
+[15.984s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base' for CMake module files
+[15.984s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base' for CMake config files
+[15.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_base', 'cmake_prefix_path')
+[15.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.ps1'
+[15.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.dsv'
+[15.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_base/share/robot_base/hook/cmake_prefix_path.sh'
+[15.987s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib'
+[15.987s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/bin'
+[15.987s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib/pkgconfig/robot_base.pc'
+[15.987s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/lib/python3.10/site-packages'
+[15.988s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_base/bin'
+[15.988s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.ps1'
+[15.989s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_base/share/robot_base/package.dsv'
+[15.989s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.sh'
+[15.990s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.bash'
+[15.991s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_base/share/robot_base/package.zsh'
+[15.991s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_base/share/colcon-core/packages/robot_base)
+[15.993s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_identity' with build type 'ament_cmake'
+[15.993s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_identity'
+[15.994s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.994s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[20.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_voice' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_voice -- -j4 -l4
+[20.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_voice': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_voice
+[20.279s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_voice)
+[20.280s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice' for CMake module files
+[20.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_voice' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_voice
+[20.283s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice' for CMake config files
+[20.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_voice', 'cmake_prefix_path')
+[20.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.ps1'
+[20.285s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.dsv'
+[20.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.sh'
+[20.287s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib'
+[20.287s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/bin'
+[20.287s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib/pkgconfig/robot_voice.pc'
+[20.287s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib/python3.10/site-packages'
+[20.288s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/bin'
+[20.288s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.ps1'
+[20.289s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv'
+[20.290s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.sh'
+[20.290s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.bash'
+[20.291s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.zsh'
+[20.292s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_voice/share/colcon-core/packages/robot_voice)
+[20.293s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_voice)
+[20.293s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice' for CMake module files
+[20.294s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice' for CMake config files
+[20.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_voice', 'cmake_prefix_path')
+[20.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.ps1'
+[20.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.dsv'
+[20.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_voice/share/robot_voice/hook/cmake_prefix_path.sh'
+[20.296s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib'
+[20.296s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/bin'
+[20.296s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib/pkgconfig/robot_voice.pc'
+[20.297s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/lib/python3.10/site-packages'
+[20.297s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_voice/bin'
+[20.298s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.ps1'
+[20.299s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv'
+[20.299s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.sh'
+[20.300s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.bash'
+[20.301s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_voice/share/robot_voice/package.zsh'
+[20.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_voice/share/colcon-core/packages/robot_voice)
+[20.304s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/ws/ros_ws/src/robot_perception' with build type 'ament_python'
+[20.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_perception', 'ament_prefix_path')
+[20.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/ament_prefix_path.ps1'
+[20.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/ament_prefix_path.dsv'
+[20.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/ament_prefix_path.sh'
+[20.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.309s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.633s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/ws/ros_ws/src/robot_perception'
+[20.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.634s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/src/robot_perception': CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/build/robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_perception build --build-base /ws/ros_ws/build/robot_perception/build install --record /ws/ros_ws/build/robot_perception/install.log --single-version-externally-managed install_data
+[21.376s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception' for CMake module files
+[21.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/src/robot_perception' returned '0': CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/build/robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_perception build --build-base /ws/ros_ws/build/robot_perception/build install --record /ws/ros_ws/build/robot_perception/install.log --single-version-externally-managed install_data
+[21.377s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception' for CMake config files
+[21.378s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception/lib'
+[21.378s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception/bin'
+[21.378s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception/lib/pkgconfig/robot_perception.pc'
+[21.379s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages'
+[21.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_perception', 'pythonpath')
+[21.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/pythonpath.ps1'
+[21.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/pythonpath.dsv'
+[21.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_perception/share/robot_perception/hook/pythonpath.sh'
+[21.382s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_perception/bin'
+[21.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_perception)
+[21.382s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_perception/share/robot_perception/package.ps1'
+[21.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_perception/share/robot_perception/package.dsv'
+[21.384s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_perception/share/robot_perception/package.sh'
+[21.384s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_perception/share/robot_perception/package.bash'
+[21.385s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_perception/share/robot_perception/package.zsh'
+[21.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_perception/share/colcon-core/packages/robot_perception)
+[22.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+[22.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety
+[22.627s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_safety)
+[22.628s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety' for CMake module files
+[22.629s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety' for CMake config files
+[22.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_safety', 'cmake_prefix_path')
+[22.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.ps1'
+[22.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.dsv'
+[22.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.sh'
+[22.633s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib'
+[22.633s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/bin'
+[22.633s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib/pkgconfig/robot_safety.pc'
+[22.634s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib/python3.10/site-packages'
+[22.634s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/bin'
+[22.635s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.ps1'
+[22.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_safety/share/robot_safety/package.dsv'
+[22.636s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.sh'
+[22.637s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.bash'
+[22.637s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.zsh'
+[22.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_safety/share/colcon-core/packages/robot_safety)
+[22.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_safety)
+[22.639s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety' for CMake module files
+[22.640s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety' for CMake config files
+[22.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_safety', 'cmake_prefix_path')
+[22.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.ps1'
+[22.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.dsv'
+[22.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_safety/share/robot_safety/hook/cmake_prefix_path.sh'
+[22.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety
+[22.682s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib'
+[22.682s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/bin'
+[22.682s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib/pkgconfig/robot_safety.pc'
+[22.682s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/lib/python3.10/site-packages'
+[22.683s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_safety/bin'
+[22.683s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.ps1'
+[22.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_safety/share/robot_safety/package.dsv'
+[22.685s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.sh'
+[22.685s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.bash'
+[22.686s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_safety/share/robot_safety/package.zsh'
+[22.687s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_safety/share/colcon-core/packages/robot_safety)
+[23.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[23.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity
+[23.481s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_identity)
+[23.482s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity' for CMake module files
+[23.483s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity' for CMake config files
+[23.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_identity', 'cmake_prefix_path')
+[23.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.ps1'
+[23.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity
+[23.485s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.dsv'
+[23.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.sh'
+[23.485s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib'
+[23.486s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/bin'
+[23.486s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib/pkgconfig/robot_identity.pc'
+[23.486s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib/python3.10/site-packages'
+[23.486s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/bin'
+[23.486s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.ps1'
+[23.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_identity/share/robot_identity/package.dsv'
+[23.487s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.sh'
+[23.487s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.bash'
+[23.488s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.zsh'
+[23.488s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_identity/share/colcon-core/packages/robot_identity)
+[23.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_identity)
+[23.489s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity' for CMake module files
+[23.489s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity' for CMake config files
+[23.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_identity', 'cmake_prefix_path')
+[23.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.ps1'
+[23.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.dsv'
+[23.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_identity/share/robot_identity/hook/cmake_prefix_path.sh'
+[23.490s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib'
+[23.490s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/bin'
+[23.490s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib/pkgconfig/robot_identity.pc'
+[23.490s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/lib/python3.10/site-packages'
+[23.491s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_identity/bin'
+[23.491s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.ps1'
+[23.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_identity/share/robot_identity/package.dsv'
+[23.492s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.sh'
+[23.492s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.bash'
+[23.492s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_identity/share/robot_identity/package.zsh'
+[23.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_identity/share/colcon-core/packages/robot_identity)
+[28.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_executor -- -j4 -l4
+[28.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_executor': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_executor
+[28.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_executor)
+[28.905s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor' for CMake module files
+[28.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_executor
+[28.905s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor' for CMake config files
+[28.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_executor', 'cmake_prefix_path')
+[28.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.ps1'
+[28.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.dsv'
+[28.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.sh'
+[28.907s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib'
+[28.907s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/bin'
+[28.907s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib/pkgconfig/robot_executor.pc'
+[28.907s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib/python3.10/site-packages'
+[28.907s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/bin'
+[28.908s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.ps1'
+[28.908s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_executor/share/robot_executor/package.dsv'
+[28.908s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.sh'
+[28.909s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.bash'
+[28.909s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.zsh'
+[28.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_executor/share/colcon-core/packages/robot_executor)
+[28.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_executor)
+[28.910s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor' for CMake module files
+[28.910s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor' for CMake config files
+[28.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_executor', 'cmake_prefix_path')
+[28.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.ps1'
+[28.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.dsv'
+[28.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_executor/share/robot_executor/hook/cmake_prefix_path.sh'
+[28.912s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib'
+[28.912s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/bin'
+[28.912s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib/pkgconfig/robot_executor.pc'
+[28.912s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/lib/python3.10/site-packages'
+[28.912s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_executor/bin'
+[28.912s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.ps1'
+[28.913s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_executor/share/robot_executor/package.dsv'
+[28.913s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.sh'
+[28.913s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.bash'
+[28.914s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_executor/share/robot_executor/package.zsh'
+[28.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_executor/share/colcon-core/packages/robot_executor)
+[28.914s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/ros_ws/src/robot_bringup' with build type 'ament_cmake'
+[28.915s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/ros_ws/src/robot_bringup'
+[28.915s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[28.915s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[28.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_bringup': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_bringup -- -j4 -l4
+[28.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_bringup' returned '0': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_bringup -- -j4 -l4
+[28.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/ros_ws/build/robot_bringup': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_bringup
+[28.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[28.983s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup' for CMake module files
+[28.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/ros_ws/build/robot_bringup' returned '0': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_perception:/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_identity:/ws/ros_ws/install/robot_executor:/ws/ros_ws/install/robot_voice:/ws/ros_ws/install/robot_safety:/ws/ros_ws/install/robot_nlu:/ws/ros_ws/install/robot_nav:/opt/ros/humble:/ws/ros_ws/install/robot_msgs:/ws/ros_ws/install/robot_manipulation:/ws/ros_ws/install/robot_base LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_perception/lib/python3.10/site-packages:/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_bringup
+[28.984s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup' for CMake config files
+[28.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[28.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[28.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[28.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[28.986s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/bin'
+[28.986s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[28.986s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/lib/python3.10/site-packages'
+[28.986s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/bin'
+[28.987s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[28.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[28.988s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[28.988s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[28.988s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[28.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[28.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[28.989s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup' for CMake module files
+[28.990s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup' for CMake config files
+[28.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[28.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[28.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[28.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/ros_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[28.991s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/bin'
+[28.992s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[28.992s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/lib/python3.10/site-packages'
+[28.992s] Level 1:colcon.colcon_core.environment:checking '/ws/ros_ws/install/robot_bringup/bin'
+[28.992s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[28.993s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[28.993s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[28.994s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[28.994s] INFO:colcon.colcon_core.shell:Creating package script '/ws/ros_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[28.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/ros_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[28.995s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.995s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.995s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.995s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[29.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.001s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.001s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[29.002s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/ros_ws/install/local_setup.ps1'
+[29.003s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/ros_ws/install/_local_setup_util_ps1.py'
+[29.004s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/ros_ws/install/setup.ps1'
+[29.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/ros_ws/install/local_setup.sh'
+[29.005s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/ros_ws/install/_local_setup_util_sh.py'
+[29.006s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/ros_ws/install/setup.sh'
+[29.007s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/ros_ws/install/local_setup.bash'
+[29.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/ros_ws/install/setup.bash'
+[29.008s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/ros_ws/install/local_setup.zsh'
+[29.009s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/ros_ws/install/setup.zsh'

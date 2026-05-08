@@ -1,0 +1,26 @@
+[0.011s] Invoking command in '/ws/ros_ws/build/robot_voice': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_voice -- -j4 -l4
+[0.084s] Consolidate compiler generated dependencies of target voice_bridge_node
+[0.109s] [ 50%] Building CXX object CMakeFiles/voice_bridge_node.dir/src/voice_bridge_node.cpp.o
+[11.476s] [100%] Linking CXX executable voice_bridge_node
+[12.098s] [100%] Built target voice_bridge_node
+[12.117s] Invoked command in '/ws/ros_ws/build/robot_voice' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_voice -- -j4 -l4
+[12.118s] Invoking command in '/ws/ros_ws/build/robot_voice': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_voice
+[12.133s] -- Install configuration: ""
+[12.134s] -- Installing: /ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node
+[12.141s] -- Set runtime path of "/ws/ros_ws/install/robot_voice/lib/robot_voice/voice_bridge_node" to ""
+[12.142s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/package_run_dependencies/robot_voice
+[12.143s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/parent_prefix_path/robot_voice
+[12.146s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.sh
+[12.146s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/ament_prefix_path.dsv
+[12.146s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.sh
+[12.146s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/environment/path.dsv
+[12.147s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.bash
+[12.147s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.sh
+[12.149s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.zsh
+[12.150s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/local_setup.dsv
+[12.150s] -- Installing: /ws/ros_ws/install/robot_voice/share/robot_voice/package.dsv
+[12.151s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/ament_index/resource_index/packages/robot_voice
+[12.152s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig.cmake
+[12.153s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/cmake/robot_voiceConfig-version.cmake
+[12.154s] -- Up-to-date: /ws/ros_ws/install/robot_voice/share/robot_voice/package.xml
+[12.155s] Invoked command in '/ws/ros_ws/build/robot_voice' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_voice

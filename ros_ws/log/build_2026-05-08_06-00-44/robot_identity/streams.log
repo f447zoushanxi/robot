@@ -1,0 +1,91 @@
+[0.011s] Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake /ws/ros_ws/src/robot_identity -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_identity
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.148s] -- The CXX compiler identification is GNU 11.4.0
+[0.159s] -- Detecting C compiler ABI info
+[0.247s] -- Detecting C compiler ABI info - done
+[0.257s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.260s] -- Detecting C compile features
+[0.261s] -- Detecting C compile features - done
+[0.265s] -- Detecting CXX compiler ABI info
+[0.499s] -- Detecting CXX compiler ABI info - done
+[0.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.508s] -- Detecting CXX compile features
+[0.510s] -- Detecting CXX compile features - done
+[0.513s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.673s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.806s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.857s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.863s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.879s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.917s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.976s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.982s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.098s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.121s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.165s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.175s] -- Looking for pthread.h
+[1.266s] -- Looking for pthread.h - found
+[1.269s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.401s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.404s] -- Found Threads: TRUE  
+[1.474s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[1.491s] -- Found robot_msgs: 0.0.1 (/ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake)
+[1.565s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.568s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.578s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.714s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.716s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.717s] -- Configured cppcheck include dirs: /ws/ros_ws/src/robot_identity/include
+[1.717s] -- Configured cppcheck exclude dirs and/or files: 
+[1.719s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.719s] -- Configured cpplint exclude dirs and/or files: 
+[1.720s] -- Added test 'lint_cmake' to check CMake code style
+[1.725s] -- Added test 'uncrustify' to check C / C++ code style
+[1.725s] -- Configured uncrustify additional arguments: 
+[1.726s] -- Added test 'xmllint' to check XML markup files
+[1.726s] -- Configuring done
+[1.756s] -- Generating done
+[1.765s] -- Build files have been written to: /ws/ros_ws/build/robot_identity
+[1.791s] Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake /ws/ros_ws/src/robot_identity -DCMAKE_INSTALL_PREFIX=/ws/ros_ws/install/robot_identity
+[1.793s] Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[1.912s] [ 10%] Building CXX object CMakeFiles/identity_enroll_policy.dir/src/enroll_policy.cpp.o
+[1.913s] [ 20%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[1.927s] [ 30%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[1.973s] [ 40%] Linking CXX static library libidentity_enroll_policy.a
+[2.015s] [ 40%] Built target identity_enroll_policy
+[2.044s] [ 50%] Building CXX object CMakeFiles/identity_node.dir/src/identity_node.cpp.o
+[3.426s] [ 60%] Linking CXX static library libgtest_main.a
+[3.491s] [ 60%] Built target gtest_main
+[6.569s] [ 70%] Linking CXX static library libgtest.a
+[6.730s] [ 70%] Built target gtest
+[6.790s] [ 80%] Building CXX object CMakeFiles/test_enroll_gating.dir/test/test_enroll_gating.cpp.o
+[8.485s] [ 90%] Linking CXX executable test_enroll_gating
+[8.783s] [ 90%] Built target test_enroll_gating
+[9.545s] [100%] Linking CXX executable identity_node
+[9.901s] [100%] Built target identity_node
+[9.913s] Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[9.914s] Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity
+[9.923s] -- Install configuration: ""
+[9.925s] -- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node
+[9.926s] -- Set runtime path of "/ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node" to ""
+[9.926s] -- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/libidentity_enroll_policy.a
+[9.926s] -- Installing: /ws/ros_ws/install/robot_identity/include
+[9.927s] -- Installing: /ws/ros_ws/install/robot_identity/include/robot_identity
+[9.928s] -- Installing: /ws/ros_ws/install/robot_identity/include/robot_identity/enroll_policy.hpp
+[9.928s] -- Installing: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/package_run_dependencies/robot_identity
+[9.928s] -- Installing: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/parent_prefix_path/robot_identity
+[9.928s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.sh
+[9.928s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.dsv
+[9.929s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.sh
+[9.930s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.dsv
+[9.930s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.bash
+[9.931s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.sh
+[9.931s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.zsh
+[9.932s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.dsv
+[9.933s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/package.dsv
+[9.933s] -- Installing: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/packages/robot_identity
+[9.934s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig.cmake
+[9.934s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig-version.cmake
+[9.935s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/package.xml
+[9.935s] Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity

@@ -1,0 +1,40 @@
+[0.018s] Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[0.091s] Consolidate compiler generated dependencies of target identity_enroll_policy
+[0.126s] [ 10%] Building CXX object CMakeFiles/identity_enroll_policy.dir/src/enroll_policy.cpp.o
+[0.131s] [ 30%] Built target gtest_main
+[0.138s] [ 50%] Built target gtest
+[0.160s] [ 60%] Linking CXX static library libidentity_enroll_policy.a
+[0.209s] [ 60%] Built target identity_enroll_policy
+[0.246s] Consolidate compiler generated dependencies of target test_enroll_gating
+[0.251s] Consolidate compiler generated dependencies of target identity_node
+[0.270s] [ 70%] Building CXX object CMakeFiles/test_enroll_gating.dir/test/test_enroll_gating.cpp.o
+[0.305s] [ 80%] Building CXX object CMakeFiles/identity_node.dir/src/identity_node.cpp.o
+[1.575s] [ 90%] Linking CXX executable test_enroll_gating
+[1.918s] [ 90%] Built target test_enroll_gating
+[7.167s] [100%] Linking CXX executable identity_node
+[7.409s] [100%] Built target identity_node
+[7.472s] Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_identity -- -j4 -l4
+[7.474s] Invoking command in '/ws/ros_ws/build/robot_identity': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity
+[7.482s] -- Install configuration: ""
+[7.482s] -- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node
+[7.484s] -- Set runtime path of "/ws/ros_ws/install/robot_identity/lib/robot_identity/identity_node" to ""
+[7.485s] -- Installing: /ws/ros_ws/install/robot_identity/lib/robot_identity/libidentity_enroll_policy.a
+[7.485s] -- Up-to-date: /ws/ros_ws/install/robot_identity/include
+[7.485s] -- Up-to-date: /ws/ros_ws/install/robot_identity/include/robot_identity
+[7.485s] -- Installing: /ws/ros_ws/install/robot_identity/include/robot_identity/enroll_policy.hpp
+[7.486s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/package_run_dependencies/robot_identity
+[7.486s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/parent_prefix_path/robot_identity
+[7.487s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.sh
+[7.487s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/ament_prefix_path.dsv
+[7.487s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.sh
+[7.488s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/environment/path.dsv
+[7.488s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.bash
+[7.488s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.sh
+[7.489s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.zsh
+[7.490s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/local_setup.dsv
+[7.490s] -- Installing: /ws/ros_ws/install/robot_identity/share/robot_identity/package.dsv
+[7.490s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/ament_index/resource_index/packages/robot_identity
+[7.491s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig.cmake
+[7.491s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/cmake/robot_identityConfig-version.cmake
+[7.491s] -- Up-to-date: /ws/ros_ws/install/robot_identity/share/robot_identity/package.xml
+[7.491s] Invoked command in '/ws/ros_ws/build/robot_identity' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_identity

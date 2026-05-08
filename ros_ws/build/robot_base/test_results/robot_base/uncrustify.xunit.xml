@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_base.uncrustify"
+  tests="6"
+  failures="0"
+  errors="0"
+  time="0.012"
+>
+  <testcase
+    name="include/robot_base/safety_utils.hpp"
+    classname="robot_base.uncrustify"/>
+  <testcase
+    name="include/robot_base/serial_interface.hpp"
+    classname="robot_base.uncrustify"/>
+  <testcase
+    name="src/base_driver_node.cpp"
+    classname="robot_base.uncrustify"/>
+  <testcase
+    name="src/safety_utils.cpp"
+    classname="robot_base.uncrustify"/>
+  <testcase
+    name="src/serial_interface_stub.cpp"
+    classname="robot_base.uncrustify"/>
+  <testcase
+    name="test/test_timeout_brake.cpp"
+    classname="robot_base.uncrustify"/>
+  <system-out>Checked files:
+* include/robot_base/safety_utils.hpp
+* include/robot_base/serial_interface.hpp
+* src/base_driver_node.cpp
+* src/safety_utils.cpp
+* src/serial_interface_stub.cpp
+* test/test_timeout_brake.cpp</system-out>
+</testsuite>

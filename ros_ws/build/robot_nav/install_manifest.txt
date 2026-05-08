@@ -1,0 +1,17 @@
+/ws/ros_ws/install/robot_nav/lib/robot_nav/nav_server_node
+/ws/ros_ws/install/robot_nav/include/robot_nav/location_manager.hpp
+/ws/ros_ws/install/robot_nav/share/ament_index/resource_index/package_run_dependencies/robot_nav
+/ws/ros_ws/install/robot_nav/share/ament_index/resource_index/parent_prefix_path/robot_nav
+/ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.sh
+/ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.dsv
+/ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.sh
+/ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.dsv
+/ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.bash
+/ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.sh
+/ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.zsh
+/ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.dsv
+/ws/ros_ws/install/robot_nav/share/robot_nav/package.dsv
+/ws/ros_ws/install/robot_nav/share/ament_index/resource_index/packages/robot_nav
+/ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig.cmake
+/ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig-version.cmake
+/ws/ros_ws/install/robot_nav/share/robot_nav/package.xml

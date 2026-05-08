@@ -1,0 +1,36 @@
+Consolidate compiler generated dependencies of target nlu_parser
+[ 30%] Built target gtest
+[ 10%] Building CXX object CMakeFiles/nlu_parser.dir/src/nlu_parser.cpp.o
+[ 50%] Built target gtest_main
+[ 60%] Linking CXX static library libnlu_parser.a
+[ 60%] Built target nlu_parser
+Consolidate compiler generated dependencies of target nlu_node
+[ 70%] Building CXX object CMakeFiles/nlu_node.dir/src/nlu_node.cpp.o
+Consolidate compiler generated dependencies of target test_nlu_parser
+[ 80%] Building CXX object CMakeFiles/test_nlu_parser.dir/test/test_nlu_parser.cpp.o
+[ 90%] Linking CXX executable test_nlu_parser
+[ 90%] Built target test_nlu_parser
+[100%] Linking CXX executable nlu_node
+[100%] Built target nlu_node
+-- Install configuration: ""
+-- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node
+-- Set runtime path of "/ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node" to ""
+-- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/libnlu_parser.a
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/include
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/include/robot_nlu
+-- Installing: /ws/ros_ws/install/robot_nlu/include/robot_nlu/nlu_parser.hpp
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/package_run_dependencies/robot_nlu
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/parent_prefix_path/robot_nlu
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.sh
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.sh
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.bash
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.sh
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.zsh
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.dsv
+-- Installing: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.dsv
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/packages/robot_nlu
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig.cmake
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig-version.cmake
+-- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.xml

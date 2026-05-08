@@ -1,0 +1,42 @@
+[0.020s] Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+[0.139s] Consolidate compiler generated dependencies of target nlu_parser
+[0.139s] Consolidate compiler generated dependencies of target gtest
+[0.140s] Consolidate compiler generated dependencies of target gtest_main
+[0.171s] [ 20%] Built target gtest
+[0.183s] [ 50%] Building CXX object CMakeFiles/nlu_parser.dir/src/nlu_parser.cpp.o
+[0.183s] [ 50%] Built target gtest_main
+[0.416s] [ 60%] Linking CXX static library libnlu_parser.a
+[0.457s] [ 60%] Built target nlu_parser
+[0.494s] Consolidate compiler generated dependencies of target nlu_node
+[0.503s] Consolidate compiler generated dependencies of target test_nlu_parser
+[0.531s] [ 70%] Building CXX object CMakeFiles/test_nlu_parser.dir/test/test_nlu_parser.cpp.o
+[0.542s] [ 80%] Building CXX object CMakeFiles/nlu_node.dir/src/nlu_node.cpp.o
+[2.407s] [ 90%] Linking CXX executable test_nlu_parser
+[2.569s] [ 90%] Built target test_nlu_parser
+[10.262s] [100%] Linking CXX executable nlu_node
+[10.696s] [100%] Built target nlu_node
+[10.712s] Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nlu -- -j4 -l4
+[10.717s] Invoking command in '/ws/ros_ws/build/robot_nlu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu
+[10.729s] -- Install configuration: ""
+[10.729s] -- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node
+[10.738s] -- Set runtime path of "/ws/ros_ws/install/robot_nlu/lib/robot_nlu/nlu_node" to ""
+[10.740s] -- Installing: /ws/ros_ws/install/robot_nlu/lib/robot_nlu/libnlu_parser.a
+[10.740s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/include
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/include/robot_nlu
+[10.741s] -- Installing: /ws/ros_ws/install/robot_nlu/include/robot_nlu/nlu_parser.hpp
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/package_run_dependencies/robot_nlu
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/parent_prefix_path/robot_nlu
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.sh
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/ament_prefix_path.dsv
+[10.741s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.sh
+[10.742s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/environment/path.dsv
+[10.742s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.bash
+[10.742s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.sh
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.zsh
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/local_setup.dsv
+[10.743s] -- Installing: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.dsv
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/ament_index/resource_index/packages/robot_nlu
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig.cmake
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/cmake/robot_nluConfig-version.cmake
+[10.743s] -- Up-to-date: /ws/ros_ws/install/robot_nlu/share/robot_nlu/package.xml
+[10.769s] Invoked command in '/ws/ros_ws/build/robot_nlu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nlu

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2026-05-08T06:07:53" name="AllTests">
+  <testsuite name="EnrollPolicy" tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2026-05-08T06:07:53">
+    <testcase name="FirstEnrollRequiresPhysicalConfirmWhenConfigured" status="run" result="completed" time="0" timestamp="2026-05-08T06:07:53" classname="robot_identity.EnrollPolicy" />
+    <testcase name="AllowWhenPhysicalConfirmNotRequiredByRequest" status="run" result="completed" time="0" timestamp="2026-05-08T06:07:53" classname="robot_identity.EnrollPolicy" />
+    <testcase name="AllowWhenOwnerAlreadyEnrolled" status="run" result="completed" time="0" timestamp="2026-05-08T06:07:53" classname="robot_identity.EnrollPolicy" />
+  </testsuite>
+</testsuites>

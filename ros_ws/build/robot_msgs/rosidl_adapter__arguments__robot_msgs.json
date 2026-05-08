@@ -1,0 +1,10 @@
+{
+  "package_name": "robot_msgs",
+  "non_idl_tuples": [
+    "/ws/ros_ws/src/robot_msgs:srv/DetectObject.srv",
+    "/ws/ros_ws/src/robot_msgs:srv/FindPerson.srv",
+    "/ws/ros_ws/src/robot_msgs:srv/EnrollOwner.srv",
+    "/ws/ros_ws/src/robot_msgs:action/PickBottle.action",
+    "/ws/ros_ws/src/robot_msgs:action/HandOver.action"
+  ]
+}

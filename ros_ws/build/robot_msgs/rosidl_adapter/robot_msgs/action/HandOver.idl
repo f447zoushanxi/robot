@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_msgs/action/HandOver.action
+// generated code does not contain a copyright notice
+
+
+module robot_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "目标身份（owner/guest）")
+    struct HandOver_Goal {
+      string target_identity;
+    };
+    @verbatim (language="comment", text=
+      "动作结果")
+    struct HandOver_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "阶段反馈")
+    struct HandOver_Feedback {
+      string stage;
+    };
+  };
+};

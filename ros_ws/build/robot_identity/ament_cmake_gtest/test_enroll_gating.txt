@@ -1,0 +1,23 @@
+-- run_test.py: invoking following command in '/ws/ros_ws/build/robot_identity':
+ - /ws/ros_ws/build/robot_identity/test_enroll_gating --gtest_output=xml:/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from EnrollPolicy
+[ RUN      ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured
+[       OK ] EnrollPolicy.FirstEnrollRequiresPhysicalConfirmWhenConfigured (0 ms)
+[ RUN      ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest
+[       OK ] EnrollPolicy.AllowWhenPhysicalConfirmNotRequiredByRequest (0 ms)
+[ RUN      ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled
+[       OK ] EnrollPolicy.AllowWhenOwnerAlreadyEnrolled (0 ms)
+[----------] 3 tests from EnrollPolicy (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'
+-- run_test.py: verify result file '/ws/ros_ws/build/robot_identity/test_results/robot_identity/test_enroll_gating.gtest.xml'

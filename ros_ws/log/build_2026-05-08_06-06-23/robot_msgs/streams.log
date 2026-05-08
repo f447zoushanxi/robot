@@ -1,0 +1,264 @@
+[0.020s] Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+[0.118s] [  1%] Built target robot_msgs__cpp
+[0.165s] [  3%] Built target robot_msgs__rs
+[0.178s] [  3%] Built target ament_cmake_python_copy_robot_msgs
+[0.184s] [ 14%] Built target robot_msgs__rosidl_generator_c
+[0.309s] [ 25%] Built target robot_msgs__rosidl_typesupport_fastrtps_cpp
+[0.339s] [ 35%] Built target robot_msgs__rosidl_typesupport_cpp
+[0.364s] [ 46%] Built target robot_msgs__rosidl_typesupport_introspection_cpp
+[0.437s] [ 57%] Built target robot_msgs__rosidl_typesupport_introspection_c
+[0.448s] [ 68%] Built target robot_msgs__rosidl_typesupport_fastrtps_c
+[0.465s] [ 79%] Built target robot_msgs__rosidl_typesupport_c
+[0.543s] [ 79%] Built target robot_msgs
+[0.636s] [ 81%] Built target robot_msgs__py
+[0.720s] [ 90%] Built target robot_msgs__rosidl_generator_py
+[0.798s] [ 93%] Built target robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.840s] [ 96%] Built target robot_msgs__rosidl_typesupport_introspection_c__pyext
+[0.841s] [100%] Built target robot_msgs__rosidl_typesupport_c__pyext
+[0.984s] running egg_info
+[0.991s] writing robot_msgs.egg-info/PKG-INFO
+[0.991s] writing dependency_links to robot_msgs.egg-info/dependency_links.txt
+[0.992s] writing top-level names to robot_msgs.egg-info/top_level.txt
+[1.004s] reading manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[1.004s] writing manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[1.139s] [100%] Built target ament_cmake_python_build_robot_msgs_egg
+[1.181s] Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --build /ws/ros_ws/build/robot_msgs -- -j4 -l4
+[1.215s] Invoking command in '/ws/ros_ws/build/robot_msgs': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs
+[1.240s] -- Install configuration: ""
+[1.240s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_msgs
+[1.245s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.245s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.245s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.245s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/find_person.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detect_object.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__functions.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__struct.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__struct.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__functions.c
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__functions.c
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__functions.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__struct.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__functions.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.h
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__functions.c
+[1.246s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/enroll_owner.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/hand_over.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/pick_bottle.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__functions.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__struct.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__functions.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__struct.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__functions.c
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.h
+[1.247s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.h
+[1.253s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__functions.c
+[1.253s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/library_path.sh
+[1.253s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/library_path.dsv
+[1.253s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so
+[1.255s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.255s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.255s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.255s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.255s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.256s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_introspection_c.h
+[1.256s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_introspection_c.h
+[1.256s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.c
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.c
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.c
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_introspection_c.h
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.257s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_introspection_c.h
+[1.261s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_introspection_c.h
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.c
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.c
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/enroll_owner.hpp
+[1.265s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detect_object.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/find_person.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__builder.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__struct.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__struct.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__traits.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__struct.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__builder.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__traits.hpp
+[1.266s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__builder.hpp
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__traits.hpp
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/pick_bottle.hpp
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__builder.hpp
+[1.270s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__struct.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__struct.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__traits.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__traits.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__builder.hpp
+[1.273s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/hand_over.hpp
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_fastrtps_cpp.hpp
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_fastrtps_cpp.hpp
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/dds_fastrtps
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_fastrtps_cpp.hpp
+[1.276s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_fastrtps_cpp.hpp
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_fastrtps_cpp.hpp
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/dds_fastrtps
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv
+[1.277s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail
+[1.279s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__rosidl_typesupport_introspection_cpp.hpp
+[1.279s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__rosidl_typesupport_introspection_cpp.hpp
+[1.279s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__rosidl_typesupport_introspection_cpp.hpp
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/enroll_owner__type_support.cpp
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/find_person__type_support.cpp
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/detect_object__type_support.cpp
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.283s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__rosidl_typesupport_introspection_cpp.hpp
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__rosidl_typesupport_introspection_cpp.hpp
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/pick_bottle__type_support.cpp
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/hand_over__type_support.cpp
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so
+[1.285s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.sh
+[1.286s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.dsv
+[1.286s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info
+[1.286s] -- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[1.286s] -- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.286s] -- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.286s] -- Installing: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[1.295s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs
+[1.295s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.301s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.301s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv
+[1.301s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_detect_object_s.c
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_detect_object.py
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_find_person_s.c
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_enroll_owner_s.c
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_find_person.py
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_enroll_owner.py
+[1.302s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/__init__.py
+[1.303s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.303s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.303s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c
+[1.303s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action
+[1.303s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_pick_bottle_s.c
+[1.304s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_pick_bottle.py
+[1.304s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_hand_over_s.c
+[1.304s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_hand_over.py
+[1.304s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/__init__.py
+[1.306s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/librobot_msgs__rosidl_generator_py.so
+[1.306s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py
+[1.306s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.405s] Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs'...
+[1.406s] Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action'...
+[1.406s] Listing '/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv'...
+[1.440s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.445s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.445s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.445s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so
+[1.445s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/rust_packages/robot_msgs
+[1.446s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust
+[1.446s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src
+[1.446s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/lib.rs
+[1.447s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv.rs
+[1.447s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv
+[1.450s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/srv/rmw.rs
+[1.450s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action
+[1.450s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action/rmw.rs
+[1.450s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/src/action.rs
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/build.rs
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/rust/Cargo.toml
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject.idl
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson.idl
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner.idl
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/PickBottle.idl
+[1.451s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/HandOver.idl
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject.srv
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject_Request.msg
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/DetectObject_Response.msg
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson.srv
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson_Request.msg
+[1.454s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/FindPerson_Response.msg
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner.srv
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner_Request.msg
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/srv/EnrollOwner_Response.msg
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/PickBottle.action
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/action/HandOver.action
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/package_run_dependencies/robot_msgs
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/parent_prefix_path/robot_msgs
+[1.455s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.sh
+[1.457s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.dsv
+[1.457s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/path.sh
+[1.457s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/environment/path.dsv
+[1.457s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.bash
+[1.462s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.sh
+[1.462s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.zsh
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/local_setup.dsv
+[1.463s] -- Installing: /ws/ros_ws/install/robot_msgs/share/robot_msgs/package.dsv
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/ament_index/resource_index/packages/robot_msgs
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport.cmake
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.463s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cppExport.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.464s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.465s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport.cmake
+[1.468s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.468s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport.cmake
+[1.471s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.471s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake-extras.cmake
+[1.471s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig-version.cmake
+[1.472s] -- Up-to-date: /ws/ros_ws/install/robot_msgs/share/robot_msgs/package.xml
+[1.486s] Invoked command in '/ws/ros_ws/build/robot_msgs' returned '0': /usr/bin/cmake --install /ws/ros_ws/build/robot_msgs

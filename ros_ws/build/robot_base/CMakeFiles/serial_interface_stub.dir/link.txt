@@ -1,0 +1,2 @@
+/usr/bin/ar qc libserial_interface_stub.a CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o
+/usr/bin/ranlib libserial_interface_stub.a

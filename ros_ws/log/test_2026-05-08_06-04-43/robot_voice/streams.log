@@ -1,0 +1,117 @@
+[0.030s] Invoking command in '/ws/ros_ws/build/robot_voice': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_voice:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_voice /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure
+[0.040s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_voice/CTestConfiguration.ini
+[0.041s] Parse Config file:/ws/ros_ws/build/robot_voice/CTestConfiguration.ini
+[0.042s]    Site: a0e3119139a3
+[0.042s]    Build name: (empty)
+[0.042s]  Add coverage exclude regular expressions.
+[0.042s] Create new tag: 20260508-0604 - Experimental
+[0.042s] UpdateCTestConfiguration  from :/ws/ros_ws/build/robot_voice/CTestConfiguration.ini
+[0.042s] Parse Config file:/ws/ros_ws/build/robot_voice/CTestConfiguration.ini
+[0.042s] Test project /ws/ros_ws/build/robot_voice
+[0.042s] Constructing a list of tests
+[0.042s] Done constructing a list of tests
+[0.042s] Updating test list for fixtures
+[0.042s] Added 0 tests to meet fixture requirements
+[0.042s] Checking test dependency graph...
+[0.042s] Checking test dependency graph end
+[0.042s] test 1
+[0.042s]     Start 1: copyright
+[0.042s] 
+[0.043s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml"
+[0.043s] 1: Test timeout computed to be: 200
+[0.102s] 1: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.102s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml
+[0.210s] 1: src/voice_bridge_node.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.211s] 1: 1 errors, checked 1 files
+[0.226s] 1: -- run_test.py: return code 1
+[0.227s] 1: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml'
+[0.234s] 1/6 Test #1: copyright ........................***Failed    0.19 sec
+[0.235s] -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.235s]  - /opt/ros/humble/bin/ament_copyright --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml
+[0.235s] src/voice_bridge_node.cpp: copyright=f447zoushanxi. (2026), license=<unknown>
+[0.235s] 1 errors, checked 1 files
+[0.235s] -- run_test.py: return code 1
+[0.236s] -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/copyright.xunit.xml'
+[0.236s] 
+[0.236s] test 2
+[0.237s]     Start 2: cppcheck
+[0.238s] 
+[0.238s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml"
+[0.238s] 2: Test timeout computed to be: 300
+[0.292s] 2: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.292s] 2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml
+[0.359s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.370s] 2: -- run_test.py: return code 0
+[0.373s] 2: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/cppcheck.xunit.xml'
+[0.381s] 2/6 Test #2: cppcheck .........................   Passed    0.14 sec
+[0.381s] test 3
+[0.381s]     Start 3: cpplint
+[0.381s] 
+[0.382s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml"
+[0.382s] 3: Test timeout computed to be: 120
+[0.438s] 3: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.438s] 3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml
+[0.541s] 3: Using '--root=/ws/ros_ws/src/robot_voice/src' argument
+[0.541s] 3: 
+[0.542s] 3: Done processing /ws/ros_ws/src/robot_voice/src/voice_bridge_node.cpp
+[0.544s] 3: 
+[0.544s] 3: No problems found
+[0.559s] 3: -- run_test.py: return code 0
+[0.560s] 3: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/cpplint.xunit.xml'
+[0.575s] 3/6 Test #3: cpplint ..........................   Passed    0.19 sec
+[0.575s] test 4
+[0.576s]     Start 4: lint_cmake
+[0.576s] 
+[0.576s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml"
+[0.576s] 4: Test timeout computed to be: 60
+[0.632s] 4: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.632s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml
+[0.700s] 4: 
+[0.700s] 4: No problems found
+[0.711s] 4: -- run_test.py: return code 0
+[0.711s] 4: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/lint_cmake.xunit.xml'
+[0.720s] 4/6 Test #4: lint_cmake .......................   Passed    0.15 sec
+[0.721s] test 5
+[0.721s]     Start 5: uncrustify
+[0.721s] 
+[0.721s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml"
+[0.722s] 5: Test timeout computed to be: 60
+[0.783s] 5: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[0.783s] 5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml
+[0.864s] 5: No code style divergence in file 'src/voice_bridge_node.cpp'
+[0.865s] 5: 
+[0.865s] 5: No problems found
+[0.876s] 5: -- run_test.py: return code 0
+[0.877s] 5: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/uncrustify.xunit.xml'
+[0.886s] 5/6 Test #5: uncrustify .......................   Passed    0.17 sec
+[0.889s] test 6
+[0.889s]     Start 6: xmllint
+[0.890s] 
+[0.890s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml" "--package-name" "robot_voice" "--output-file" "/ws/ros_ws/build/robot_voice/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml"
+[0.890s] 6: Test timeout computed to be: 60
+[1.156s] 6: -- run_test.py: invoking following command in '/ws/ros_ws/src/robot_voice':
+[1.156s] 6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml
+[1.156s] 6: File 'package.xml' is valid
+[1.156s] 6: 
+[1.156s] 6: No problems found
+[1.156s] 6: -- run_test.py: return code 0
+[1.156s] 6: -- run_test.py: verify result file '/ws/ros_ws/build/robot_voice/test_results/robot_voice/xmllint.xunit.xml'
+[1.156s] 6/6 Test #6: xmllint ..........................   Passed    0.16 sec
+[1.156s] 
+[1.156s] 83% tests passed, 1 tests failed out of 6
+[1.156s] 
+[1.156s] Label Time Summary:
+[1.156s] copyright     =   0.19 sec*proc (1 test)
+[1.156s] cppcheck      =   0.14 sec*proc (1 test)
+[1.156s] cpplint       =   0.19 sec*proc (1 test)
+[1.156s] lint_cmake    =   0.15 sec*proc (1 test)
+[1.156s] linter        =   1.00 sec*proc (6 tests)
+[1.157s] uncrustify    =   0.17 sec*proc (1 test)
+[1.157s] xmllint       =   0.16 sec*proc (1 test)
+[1.157s] 
+[1.157s] Total Test time (real) =   1.00 sec
+[1.157s] 
+[1.157s] The following tests FAILED:
+[1.157s] 	  1 - copyright (Failed)
+[1.161s] Errors while running CTest
+[1.161s] Invoked command in '/ws/ros_ws/build/robot_voice' returned '8': AMENT_PREFIX_PATH=/ws/ros_ws/install/robot_voice:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ws/ros_ws/install/robot_voice /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -VV --output-on-failure

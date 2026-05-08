@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/ws/ros_ws/build/robot_executor': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_executor -- -j4 -l4
+[0.103s] Consolidate compiler generated dependencies of target executor_node
+[0.128s] [ 50%] Building CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o
+[12.633s] [100%] Linking CXX executable executor_node
+[13.173s] [100%] Built target executor_node
+[13.186s] Invoked command in '/ws/ros_ws/build/robot_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --build /ws/ros_ws/build/robot_executor -- -j4 -l4
+[13.186s] Invoking command in '/ws/ros_ws/build/robot_executor': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_executor
+[13.195s] -- Install configuration: ""
+[13.195s] -- Installing: /ws/ros_ws/install/robot_executor/lib/robot_executor/executor_node
+[13.201s] -- Set runtime path of "/ws/ros_ws/install/robot_executor/lib/robot_executor/executor_node" to ""
+[13.201s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/package_run_dependencies/robot_executor
+[13.201s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/parent_prefix_path/robot_executor
+[13.201s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/ament_prefix_path.sh
+[13.201s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/ament_prefix_path.dsv
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/path.sh
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/environment/path.dsv
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.bash
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.sh
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.zsh
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/local_setup.dsv
+[13.202s] -- Installing: /ws/ros_ws/install/robot_executor/share/robot_executor/package.dsv
+[13.202s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/ament_index/resource_index/packages/robot_executor
+[13.203s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/cmake/robot_executorConfig.cmake
+[13.203s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/cmake/robot_executorConfig-version.cmake
+[13.203s] -- Up-to-date: /ws/ros_ws/install/robot_executor/share/robot_executor/package.xml
+[13.204s] Invoked command in '/ws/ros_ws/build/robot_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/ws/ros_ws/install/robot_msgs LD_LIBRARY_PATH=/ws/ros_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/ws/ros_ws/install/robot_msgs/lib/x86_64-linux-gnu/pkgconfig:/ws/ros_ws/install/robot_msgs/lib/pkgconfig PYTHONPATH=/ws/ros_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/ws/ros_ws/install/robot_msgs/share /usr/bin/cmake --install /ws/ros_ws/build/robot_executor

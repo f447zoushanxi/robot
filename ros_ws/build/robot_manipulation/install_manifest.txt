@@ -1,0 +1,16 @@
+/ws/ros_ws/install/robot_manipulation/lib/robot_manipulation/manipulation_node
+/ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/package_run_dependencies/robot_manipulation
+/ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/parent_prefix_path/robot_manipulation
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.sh
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/ament_prefix_path.dsv
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.sh
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/environment/path.dsv
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.bash
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.sh
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.zsh
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/local_setup.dsv
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.dsv
+/ws/ros_ws/install/robot_manipulation/share/ament_index/resource_index/packages/robot_manipulation
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig.cmake
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/cmake/robot_manipulationConfig-version.cmake
+/ws/ros_ws/install/robot_manipulation/share/robot_manipulation/package.xml

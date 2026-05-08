@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_msgs/srv/DetectObject.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module robot_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "目标对象名称，当前主要用于 bottle")
+    struct DetectObject_Request {
+      string object_name;
+
+      @verbatim (language="comment", text=
+        "服务调用超时（秒）")
+      float timeout_sec;
+    };
+    @verbatim (language="comment", text=
+      "是否找到目标")
+    struct DetectObject_Response {
+      boolean found;
+
+      @verbatim (language="comment", text=
+        "目标在 base_link 坐标系下的 3D 位置")
+      geometry_msgs::msg::Point position;
+
+      @verbatim (language="comment", text=
+        "检测置信度 [0,1]")
+      float confidence;
+
+      @verbatim (language="comment", text=
+        "输出坐标系名称")
+      string frame_id;
+
+      @verbatim (language="comment", text=
+        "额外调试信息")
+      string message;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_identity.cpplint"
+  tests="4"
+  failures="0"
+  errors="0"
+  time="0.053"
+>
+  <testcase
+    name="/ws/ros_ws/src/robot_identity/include/robot_identity/enroll_policy.hpp"
+    classname="robot_identity.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_identity/src/enroll_policy.cpp"
+    classname="robot_identity.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_identity/src/identity_node.cpp"
+    classname="robot_identity.cpplint"/>
+  <testcase
+    name="/ws/ros_ws/src/robot_identity/test/test_enroll_gating.cpp"
+    classname="robot_identity.cpplint"/>
+  <system-out>Checked files:
+* /ws/ros_ws/src/robot_identity/include/robot_identity/enroll_policy.hpp
+* /ws/ros_ws/src/robot_identity/src/enroll_policy.cpp
+* /ws/ros_ws/src/robot_identity/src/identity_node.cpp
+* /ws/ros_ws/src/robot_identity/test/test_enroll_gating.cpp</system-out>
+</testsuite>

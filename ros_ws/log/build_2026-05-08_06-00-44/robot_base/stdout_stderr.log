@@ -1,0 +1,90 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /ws/ros_ws/src/robot_base/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ws/ros_ws/build/robot_base
+[  8%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 16%] Building CXX object CMakeFiles/serial_interface_stub.dir/src/serial_interface_stub.cpp.o
+[ 25%] Building CXX object CMakeFiles/base_safety_utils.dir/src/safety_utils.cpp.o
+[ 33%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 41%] Linking CXX static library libserial_interface_stub.a
+[ 41%] Built target serial_interface_stub
+[ 50%] Linking CXX static library libbase_safety_utils.a
+[ 50%] Built target base_safety_utils
+[ 58%] Building CXX object CMakeFiles/base_driver_node.dir/src/base_driver_node.cpp.o
+[ 66%] Linking CXX static library libgtest_main.a
+[ 66%] Built target gtest_main
+[ 75%] Linking CXX static library libgtest.a
+[ 75%] Built target gtest
+[ 83%] Building CXX object CMakeFiles/test_timeout_brake.dir/test/test_timeout_brake.cpp.o
+[ 91%] Linking CXX executable test_timeout_brake
+[ 91%] Built target test_timeout_brake
+[100%] Linking CXX executable base_driver_node
+[100%] Built target base_driver_node
+-- Install configuration: ""
+-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node
+-- Set runtime path of "/ws/ros_ws/install/robot_base/lib/robot_base/base_driver_node" to ""
+-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libserial_interface_stub.a
+-- Installing: /ws/ros_ws/install/robot_base/lib/robot_base/libbase_safety_utils.a
+-- Installing: /ws/ros_ws/install/robot_base/include
+-- Installing: /ws/ros_ws/install/robot_base/include/robot_base
+-- Installing: /ws/ros_ws/install/robot_base/include/robot_base/safety_utils.hpp
+-- Installing: /ws/ros_ws/install/robot_base/include/robot_base/serial_interface.hpp
+-- Installing: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/package_run_dependencies/robot_base
+-- Installing: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/parent_prefix_path/robot_base
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.sh
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/environment/ament_prefix_path.dsv
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.sh
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/environment/path.dsv
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.bash
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.sh
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.zsh
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/local_setup.dsv
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.dsv
+-- Installing: /ws/ros_ws/install/robot_base/share/ament_index/resource_index/packages/robot_base
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig.cmake
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/cmake/robot_baseConfig-version.cmake
+-- Installing: /ws/ros_ws/install/robot_base/share/robot_base/package.xml

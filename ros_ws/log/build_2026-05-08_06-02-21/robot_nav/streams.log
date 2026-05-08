@@ -1,0 +1,39 @@
+[0.010s] Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+[0.076s] Consolidate compiler generated dependencies of target gtest_main
+[0.094s] Consolidate compiler generated dependencies of target gtest
+[0.099s] Consolidate compiler generated dependencies of target nav_server_node
+[0.115s] [ 20%] Built target gtest_main
+[0.134s] [ 40%] Built target gtest
+[0.145s] [ 50%] Building CXX object CMakeFiles/nav_server_node.dir/src/nav_server_node.cpp.o
+[0.145s] [ 60%] Building CXX object CMakeFiles/nav_server_node.dir/src/location_manager.cpp.o
+[0.183s] Consolidate compiler generated dependencies of target test_location_manager
+[0.230s] [ 70%] Building CXX object CMakeFiles/test_location_manager.dir/src/location_manager.cpp.o
+[0.238s] [ 80%] Building CXX object CMakeFiles/test_location_manager.dir/test/test_location_manager.cpp.o
+[2.599s] [ 90%] Linking CXX executable test_location_manager
+[2.990s] [ 90%] Built target test_location_manager
+[5.485s] [100%] Linking CXX executable nav_server_node
+[5.619s] [100%] Built target nav_server_node
+[5.648s] Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_nav -- -j4 -l4
+[5.648s] Invoking command in '/ws/ros_ws/build/robot_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav
+[5.657s] -- Install configuration: ""
+[5.658s] -- Installing: /ws/ros_ws/install/robot_nav/lib/robot_nav/nav_server_node
+[5.663s] -- Set runtime path of "/ws/ros_ws/install/robot_nav/lib/robot_nav/nav_server_node" to ""
+[5.664s] -- Up-to-date: /ws/ros_ws/install/robot_nav/include
+[5.665s] -- Up-to-date: /ws/ros_ws/install/robot_nav/include/robot_nav
+[5.666s] -- Installing: /ws/ros_ws/install/robot_nav/include/robot_nav/location_manager.hpp
+[5.666s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/package_run_dependencies/robot_nav
+[5.667s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/parent_prefix_path/robot_nav
+[5.668s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.sh
+[5.668s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/ament_prefix_path.dsv
+[5.669s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.sh
+[5.669s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/environment/path.dsv
+[5.670s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.bash
+[5.671s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.sh
+[5.671s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.zsh
+[5.672s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/local_setup.dsv
+[5.673s] -- Installing: /ws/ros_ws/install/robot_nav/share/robot_nav/package.dsv
+[5.673s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/ament_index/resource_index/packages/robot_nav
+[5.673s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig.cmake
+[5.674s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/cmake/robot_navConfig-version.cmake
+[5.674s] -- Up-to-date: /ws/ros_ws/install/robot_nav/share/robot_nav/package.xml
+[5.747s] Invoked command in '/ws/ros_ws/build/robot_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_nav

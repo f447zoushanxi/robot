@@ -1,0 +1,26 @@
+[0.013s] Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+[0.077s] Consolidate compiler generated dependencies of target safety_node
+[0.101s] [ 50%] Building CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o
+[14.222s] [100%] Linking CXX executable safety_node
+[14.822s] [100%] Built target safety_node
+[14.836s] Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws/ros_ws/build/robot_safety -- -j4 -l4
+[14.838s] Invoking command in '/ws/ros_ws/build/robot_safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety
+[14.851s] -- Install configuration: ""
+[14.851s] -- Installing: /ws/ros_ws/install/robot_safety/lib/robot_safety/safety_node
+[14.860s] -- Set runtime path of "/ws/ros_ws/install/robot_safety/lib/robot_safety/safety_node" to ""
+[14.861s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/package_run_dependencies/robot_safety
+[14.863s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/parent_prefix_path/robot_safety
+[14.864s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.sh
+[14.865s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/ament_prefix_path.dsv
+[14.866s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.sh
+[14.866s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/environment/path.dsv
+[14.866s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.bash
+[14.867s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.sh
+[14.868s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.zsh
+[14.869s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/local_setup.dsv
+[14.870s] -- Installing: /ws/ros_ws/install/robot_safety/share/robot_safety/package.dsv
+[14.872s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/ament_index/resource_index/packages/robot_safety
+[14.876s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig.cmake
+[14.877s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/cmake/robot_safetyConfig-version.cmake
+[14.915s] -- Up-to-date: /ws/ros_ws/install/robot_safety/share/robot_safety/package.xml
+[14.916s] Invoked command in '/ws/ros_ws/build/robot_safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws/ros_ws/build/robot_safety

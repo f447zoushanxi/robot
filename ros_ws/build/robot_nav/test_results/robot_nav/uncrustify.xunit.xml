@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_nav.uncrustify"
+  tests="4"
+  failures="0"
+  errors="0"
+  time="0.011"
+>
+  <testcase
+    name="include/robot_nav/location_manager.hpp"
+    classname="robot_nav.uncrustify"/>
+  <testcase
+    name="src/location_manager.cpp"
+    classname="robot_nav.uncrustify"/>
+  <testcase
+    name="src/nav_server_node.cpp"
+    classname="robot_nav.uncrustify"/>
+  <testcase
+    name="test/test_location_manager.cpp"
+    classname="robot_nav.uncrustify"/>
+  <system-out>Checked files:
+* include/robot_nav/location_manager.hpp
+* src/location_manager.cpp
+* src/nav_server_node.cpp
+* test/test_location_manager.cpp</system-out>
+</testsuite>
