@@ -1,4 +1,5 @@
 // Copyright (c) 2026.
+// Copyright 2026 f447zoushanxi
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,8 +23,8 @@ namespace robot_base
 class StubSerialInterface : public SerialInterface
 {
 public:
-  bool open(const std::string &, int) override { return true; }
-  bool write_command(const VelocityCommand &) override { return true; }
+  bool open(const std::string &, int) override {return true;}
+  bool write_command(const VelocityCommand &) override {return true;}
   std::optional<BaseFeedback> read_feedback() override
   {
     return BaseFeedback{};
