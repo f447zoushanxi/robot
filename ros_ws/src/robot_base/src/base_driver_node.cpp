@@ -6,6 +6,7 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/bool.hpp"
+#include "robot_base/safety_utils.hpp"
 
 using namespace std::chrono_literals;
 
@@ -41,12 +42,7 @@ private:
     const auto now = this->now();
     const bool timeout = (now - last_cmd_time_).nanoseconds() > static_cast<int64_t>(timeout_ms_) * 1000000LL;
 
-    geometry_msgs::msg::Twist safe_cmd = last_cmd_;
-    if (timeout) {
-      // 核心安全逻辑：超时刹车。
-      safe_cmd.linear.x = 0.0;
-      safe_cmd.angular.z = 0.0;
-    }
+    const geometry_msgs::msg::Twist safe_cmd = robot_base::apply_timeout_brake(last_cmd_, timeout);
 
     nav_msgs::msg::Odometry odom;
     odom.header.stamp = now;

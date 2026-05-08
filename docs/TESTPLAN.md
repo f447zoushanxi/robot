@@ -52,6 +52,8 @@
 cd ros_ws
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
+colcon test --event-handlers console_direct+
+colcon test-result --verbose
 ```
 
 ## 6. Python 节点启动验证
@@ -62,3 +64,27 @@ source /opt/ros/humble/setup.bash
 source install/setup.bash
 python -m robot_perception.perception_node
 ```
+
+## 7. 自动化测试（CI 本地复现）
+
+```bash
+cd ros_ws
+source /opt/ros/humble/setup.bash
+colcon build --event-handlers console_direct+
+colcon test --event-handlers console_direct+
+colcon test-result --verbose
+python3 -m py_compile src/robot_perception/robot_perception/perception_node.py
+```
+
+- 单元测试覆盖：
+  - `robot_nlu` 规则解析
+  - `robot_nav` locations.yaml 解析
+  - `robot_base` 超时刹车逻辑
+  - `robot_identity` enroll gating
+- 集成测试覆盖：
+  - `robot_bringup` 的 `dev_mode.launch.py` 启动与基础链路（`/voice/raw_text -> /nlu/command_json -> /robot/state`）
+
+## 8. 烟雾测试脚本入口
+
+- 硬件烟雾测试：`tools/hw_smoke_tests/run_hw_smoke.sh`
+- 仿真/无硬件烟雾测试：`tools/sim_tests/run_sim_smoke.sh`

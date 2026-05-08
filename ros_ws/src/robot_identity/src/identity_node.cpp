@@ -2,6 +2,7 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
+#include "robot_identity/enroll_policy.hpp"
 #include "robot_msgs/srv/enroll_owner.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_srvs/srv/trigger.hpp"
@@ -20,7 +21,7 @@ public:
       "/identity/enroll_owner",
       [this](const std::shared_ptr<robot_msgs::srv::EnrollOwner::Request> req,
       std::shared_ptr<robot_msgs::srv::EnrollOwner::Response> resp) {
-        if (!owner_enrolled_ && req->require_physical_confirm && require_button_) {
+        if (!robot_identity::allow_enroll(owner_enrolled_, require_button_, req->require_physical_confirm)) {
           // 真实项目：读取 GPIO/MCU 按钮信号，窗口内按下才放行。
           resp->accepted = false;
           resp->message = "Waiting physical button confirmation window.";
