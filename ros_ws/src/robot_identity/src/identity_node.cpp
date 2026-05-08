@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <memory>
 #include <string>
 
@@ -10,7 +14,8 @@
 class IdentityNode : public rclcpp::Node
 {
 public:
-  IdentityNode() : Node("identity_node")
+  IdentityNode()
+  : Node("identity_node")
   {
     owner_enrolled_ = declare_parameter<bool>("owner_enrolled", false);
     require_button_ = declare_parameter<bool>("require_button_for_first_enroll", true);
@@ -19,8 +24,10 @@ public:
 
     enroll_srv_ = create_service<robot_msgs::srv::EnrollOwner>(
       "/identity/enroll_owner",
-      [this](const std::shared_ptr<robot_msgs::srv::EnrollOwner::Request> req,
-      std::shared_ptr<robot_msgs::srv::EnrollOwner::Response> resp) {
+      [this](
+        const std::shared_ptr<robot_msgs::srv::EnrollOwner::Request> req,
+        std::shared_ptr<robot_msgs::srv::EnrollOwner::Response> resp)
+      {
         if (!robot_identity::allow_enroll(owner_enrolled_, require_button_, req->require_physical_confirm)) {
           // 真实项目：读取 GPIO/MCU 按钮信号，窗口内按下才放行。
           resp->accepted = false;
@@ -36,8 +43,10 @@ public:
 
     recognize_srv_ = create_service<std_srvs::srv::Trigger>(
       "/identity/recognize_owner",
-      [this](const std::shared_ptr<std_srvs::srv::Trigger::Request>,
-      std::shared_ptr<std_srvs::srv::Trigger::Response> resp) {
+      [this](
+        const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+        std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
+      {
         // 真实项目：融合 face/voice embedding 匹配结果。
         const std::string role = owner_enrolled_ ? "owner" : "unknown";
         std_msgs::msg::String out;
