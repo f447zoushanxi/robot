@@ -12,9 +12,13 @@ jobs:
       contents: read
     container:
       image: ros:humble-ros-base
+
+    # NOTE:
+    # - GitHub Actions executes `run:` steps with `/bin/sh` by default (even in containers).
+    # - This workflow needs Bash because we source ROS 2 environment via `setup.bash`.
     defaults:
       run:
-        shell: bash
+        shell: bash -leo pipefail {0}
 
     steps:
       - name: Checkout
@@ -22,8 +26,10 @@ jobs:
 
       - name: Install build tools
         run: |
+          set -eux
           apt-get update
           apt-get install -y \
+            bash \
             python3-colcon-common-extensions \
             python3-pip \
             ros-humble-ament-cmake-gtest \
@@ -36,16 +42,19 @@ jobs:
       - name: Build workspace
         working-directory: ros_ws
         run: |
+          set -eux
           source /opt/ros/humble/setup.bash
           colcon build --event-handlers console_direct+
 
       - name: Test workspace
         working-directory: ros_ws
         run: |
+          set -eux
           source /opt/ros/humble/setup.bash
           colcon test --event-handlers console_direct+
           colcon test-result --verbose
 
       - name: Python compile checks
         run: |
+          set -eux
           python3 -m py_compile ros_ws/src/robot_perception/robot_perception/perception_node.py
