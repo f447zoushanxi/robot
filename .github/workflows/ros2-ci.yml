@@ -13,10 +13,6 @@ jobs:
     container:
       image: ros:humble-ros-base
 
-    # NOTE:
-    # - We need Bash because we source ROS 2 environment via `setup.bash`.
-    # - Do NOT use `-u` (nounset) in CI shell options, because ROS setup scripts
-    #   (setup.bash) intentionally reference optional env vars.
     defaults:
       run:
         shell: bash -leo pipefail {0}
@@ -38,13 +34,13 @@ jobs:
             ros-humble-ament-lint-common \
             ros-humble-launch-testing \
             ros-humble-launch-testing-ament-cmake \
+            ros-humble-nav2-msgs \
             libyaml-cpp-dev
 
       - name: Build workspace
         working-directory: ros_ws
         run: |
           set -ex
-          # setup.bash is not nounset-safe, so make sure `set -u` is not enabled.
           set +u
           source /opt/ros/humble/setup.bash
           colcon build --event-handlers console_direct+
