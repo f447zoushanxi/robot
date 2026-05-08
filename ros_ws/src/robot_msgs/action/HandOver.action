@@ -1,0 +1,9 @@
+# 目标身份（owner/guest）
+string target_identity
+---
+# 动作结果
+bool success
+string message
+---
+# 阶段反馈
+string stage

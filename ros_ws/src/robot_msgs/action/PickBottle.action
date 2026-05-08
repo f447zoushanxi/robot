@@ -1,0 +1,9 @@
+# 目标对象名称，默认 bottle
+string object_name
+---
+# 动作结果
+bool success
+string message
+---
+# 阶段反馈（search/approach/grasp...）
+string stage

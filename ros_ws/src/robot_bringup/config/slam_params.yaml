@@ -1,0 +1,7 @@
+# slam_toolbox 参数占位模板
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: false
+    mode: mapping
+    map_update_interval: 2.0
+    max_laser_range: 12.0

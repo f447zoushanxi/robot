@@ -1,0 +1,61 @@
+name: ROS2 Colcon CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    container:
+      image: ros:humble-ros-base
+
+    defaults:
+      run:
+        shell: bash -leo pipefail {0}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          set -eux
+          apt-get update
+          apt-get install -y \
+            bash \
+            python3-colcon-common-extensions \
+            python3-pip \
+            ros-humble-ament-cmake-gtest \
+            ros-humble-ament-lint-auto \
+            ros-humble-ament-lint-common \
+            ros-humble-launch-testing \
+            ros-humble-launch-testing-ament-cmake \
+            ros-humble-nav2-msgs \
+            libyaml-cpp-dev
+
+      - name: Build workspace
+        working-directory: ros_ws
+        run: |
+          set -ex
+          set +u
+          source /opt/ros/humble/setup.bash
+          colcon build --event-handlers console_direct+
+
+      - name: Test workspace
+        working-directory: ros_ws
+        run: |
+          set -ex
+          set +u
+          source /opt/ros/humble/setup.bash
+          # Verbose output speeds up iteration when tests fail.
+          colcon test --event-handlers console_direct+ --ctest-args -VV --output-on-failure
+          colcon test-result --verbose
+
+      - name: Python compile checks
+        run: |
+          set -eux
+          python3 -m py_compile ros_ws/src/robot_perception/robot_perception/perception_node.py

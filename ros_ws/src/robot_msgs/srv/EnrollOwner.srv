@@ -1,0 +1,11 @@
+# 是否要求物理确认（首次绑定强烈建议 true）
+bool require_physical_confirm
+# 物理确认窗口时长（秒）
+float32 window_sec
+---
+# 是否允许进入录入流程
+bool accepted
+# owner id（成功时返回）
+string owner_id
+# 结果说明
+string message
