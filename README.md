@@ -85,6 +85,7 @@ ros2 launch robot_bringup nav_mode.launch.py
 ## 8. 测试计划入口
 
 详细方法见：
+- `docs/BEGINNER_GUIDE.md`
 - `docs/TESTPLAN.md`
 - `docs/SEQUENCES.md`
 - `docs/INTERFACES.md`
