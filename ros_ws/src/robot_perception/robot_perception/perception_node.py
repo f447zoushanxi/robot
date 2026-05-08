@@ -24,6 +24,9 @@ class PerceptionNode(Node):
     1) 订阅 RealSense 彩色图、对齐深度图、相机内参。
     2) 提供 detect_bottle/find_person 服务。
     3) 预留 ONNX Runtime 推理入口（当前为 stub）。
+
+    注意：本节点要能在 launch_testing 的测试环境中“干净退出”，
+    所以 shutdown 逻辑需要容错（重复 shutdown 不应导致进程崩溃）。
     """
 
     def __init__(self) -> None:
@@ -58,14 +61,12 @@ class PerceptionNode(Node):
 
     def _handle_detect_bottle(self, request: DetectObject.Request, response: DetectObject.Response):
         # TODO: 用 ONNX Runtime 推理结果替换该占位中心点 (u, v)。
-        # 1) ONNX 检测占位：真实项目应返回像素框中心 (u, v)。
         u, v = 320, 240
 
-        # TODO: 从 self.depth_msg 的 (u,v) 邻域提取深度窗口并取中值，替换示例数组。
-        # 2) 深度中值滤波（模板）：对 (u,v) 周边窗口取中值，抑制噪声。
+        # TODO: 从 self.depth_msg 的 (u,v) 邻域提取深度窗口并取中值。
         depth_m = self._median_depth_stub([0.72, 0.73, 0.70, 0.71, 0.74])
 
-        # 3) 像素反投影到相机坐标系，再 tf2 变换到 base_link（此处先给结构）。
+        # 像素反投影到相机坐标系，再 tf2 变换到 base_link（此处先给结构）。
         x, y, z = self._back_project_pixel_to_3d(u, v, depth_m)
 
         response.found = True
@@ -105,6 +106,25 @@ class PerceptionNode(Node):
         return x, y, z
 
 
+def _safe_shutdown() -> None:
+    """Shutdown rclpy safely.
+
+    In launch_testing, the test framework may already call shutdown.
+    A second shutdown would raise RCLError, which would make the node
+    exit with non-zero code and fail the bringup test.
+    """
+
+    if rclpy is None:
+        return
+
+    try:
+        if rclpy.ok():
+            rclpy.shutdown()
+    except Exception:
+        # Never raise during shutdown path.
+        pass
+
+
 def main(args=None) -> int:
     if rclpy is None:
         print('rclpy is not available. Please source ROS 2 Humble environment first.')
@@ -117,8 +137,12 @@ def main(args=None) -> int:
     except KeyboardInterrupt:
         pass
     finally:
-        node.destroy_node()
-        rclpy.shutdown()
+        try:
+            node.destroy_node()
+        except Exception:
+            pass
+        _safe_shutdown()
+
     return 0
 
 
