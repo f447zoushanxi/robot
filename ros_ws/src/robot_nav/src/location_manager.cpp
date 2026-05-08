@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include "robot_nav/location_manager.hpp"
 
 #include <yaml-cpp/yaml.h>

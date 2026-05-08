@@ -1,3 +1,7 @@
+# Copyright (c) 2026.
+#
+# SPDX-License-Identifier: Apache-2.0
+
 from setuptools import setup
 
 package_name = 'robot_perception'

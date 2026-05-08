@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include "robot_base/serial_interface.hpp"
 
 namespace robot_base

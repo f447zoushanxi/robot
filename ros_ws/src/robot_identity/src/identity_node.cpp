@@ -28,7 +28,9 @@ public:
         const std::shared_ptr<robot_msgs::srv::EnrollOwner::Request> req,
         std::shared_ptr<robot_msgs::srv::EnrollOwner::Response> resp)
       {
-        if (!robot_identity::allow_enroll(owner_enrolled_, require_button_, req->require_physical_confirm)) {
+        if (!robot_identity::allow_enroll(
+            owner_enrolled_, require_button_, req->require_physical_confirm))
+        {
           // 真实项目：读取 GPIO/MCU 按钮信号，窗口内按下才放行。
           resp->accepted = false;
           resp->message = "Waiting physical button confirmation window.";

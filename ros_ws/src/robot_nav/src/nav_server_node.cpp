@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <memory>
 #include <string>
 
@@ -18,8 +22,10 @@ public:
 
     go_handover_srv_ = create_service<std_srvs::srv::Trigger>(
       "/nav/go_handover_spot",
-      [this](const std::shared_ptr<std_srvs::srv::Trigger::Request>,
-      std::shared_ptr<std_srvs::srv::Trigger::Response> resp) {
+      [this](
+        const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+        std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
+      {
         if (!loaded_) {
           resp->success = false;
           resp->message = "locations.yaml not loaded";
