@@ -1,15 +1,19 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <chrono>
 #include <functional>
 #include <memory>
 #include <string>
 
+#include "geometry_msgs/msg/twist.hpp"
 #include "nav2_msgs/action/navigate_to_pose.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 #include "robot_msgs/srv/detect_object.hpp"
 #include "robot_msgs/srv/find_person.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "geometry_msgs/msg/twist.hpp"
 #include "std_srvs/srv/trigger.hpp"
 
 using namespace std::chrono_literals;
@@ -32,7 +36,8 @@ public:
     FAILED
   };
 
-  ExecutorNode() : Node("executor_node")
+  ExecutorNode()
+  : Node("executor_node")
   {
     command_sub_ = create_subscription<std_msgs::msg::String>(
       "/nlu/command_json", 10,
@@ -60,7 +65,9 @@ public:
 private:
   void tick()
   {
-    if (current_state_ != State::IDLE && current_state_ != State::DONE && current_state_ != State::FAILED) {
+    if (current_state_ != State::IDLE && current_state_ != State::DONE &&
+      current_state_ != State::FAILED)
+    {
       ++state_ticks_;
     } else {
       state_ticks_ = 0;
