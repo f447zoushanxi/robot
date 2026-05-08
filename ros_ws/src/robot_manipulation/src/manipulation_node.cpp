@@ -1,3 +1,4 @@
+// Copyright (c) 2026.
 // Copyright 2026 f447zoushanxi
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,9 +35,7 @@ public:
         std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
       {
         resp->success = true;
-        resp->message = sim_mode_ ?
-        "pick_bottle simulated" :
-        "pick_bottle sent to arm driver";
+        resp->message = sim_mode_ ? "pick_bottle simulated" : "pick_bottle sent to arm driver";
       });
 
     handover_srv_ = create_service<std_srvs::srv::Trigger>(
@@ -46,9 +45,7 @@ public:
         std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
       {
         resp->success = true;
-        resp->message = sim_mode_ ?
-        "hand_over simulated" :
-        "hand_over sent to arm driver";
+        resp->message = sim_mode_ ? "hand_over simulated" : "hand_over sent to arm driver";
       });
   }
 
