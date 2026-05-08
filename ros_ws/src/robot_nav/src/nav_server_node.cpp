@@ -1,5 +1,17 @@
 // Copyright (c) 2026.
 //
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
 // SPDX-License-Identifier: Apache-2.0
 
 #include <memory>
@@ -12,7 +24,8 @@
 class NavServerNode : public rclcpp::Node
 {
 public:
-  NavServerNode() : Node("nav_server_node")
+  NavServerNode()
+  : Node("nav_server_node")
   {
     handover_spot_ = declare_parameter<std::string>("handover_spot", "餐桌旁");
     locations_file_ = declare_parameter<std::string>("locations_file", "");
@@ -39,7 +52,7 @@ public:
         const auto loc = manager_.get(handover_spot_);
         resp->success = true;
         resp->message = "Stub nav accepted -> " + loc.name + " (" +
-          std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
+        std::to_string(loc.x) + "," + std::to_string(loc.y) + ")";
       });
 
     RCLCPP_INFO(
