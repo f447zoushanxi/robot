@@ -51,7 +51,8 @@ jobs:
           set -ex
           set +u
           source /opt/ros/humble/setup.bash
-          colcon test --event-handlers console_direct+
+          # Verbose output speeds up iteration when tests fail.
+          colcon test --event-handlers console_direct+ --ctest-args -VV --output-on-failure
           colcon test-result --verbose
 
       - name: Python compile checks
