@@ -14,8 +14,9 @@ jobs:
       image: ros:humble-ros-base
 
     # NOTE:
-    # - GitHub Actions executes `run:` steps with `/bin/sh` by default (even in containers).
-    # - This workflow needs Bash because we source ROS 2 environment via `setup.bash`.
+    # - We need Bash because we source ROS 2 environment via `setup.bash`.
+    # - Do NOT use `-u` (nounset) in CI shell options, because ROS setup scripts
+    #   (setup.bash) intentionally reference optional env vars.
     defaults:
       run:
         shell: bash -leo pipefail {0}
@@ -42,14 +43,17 @@ jobs:
       - name: Build workspace
         working-directory: ros_ws
         run: |
-          set -eux
+          set -ex
+          # setup.bash is not nounset-safe, so make sure `set -u` is not enabled.
+          set +u
           source /opt/ros/humble/setup.bash
           colcon build --event-handlers console_direct+
 
       - name: Test workspace
         working-directory: ros_ws
         run: |
-          set -eux
+          set -ex
+          set +u
           source /opt/ros/humble/setup.bash
           colcon test --event-handlers console_direct+
           colcon test-result --verbose
