@@ -1,4 +1,17 @@
 // Copyright (c) 2026.
+// Copyright 2026 f447zoushanxi
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 //
 // SPDX-License-Identifier: Apache-2.0
 
@@ -81,7 +94,7 @@ private:
         set_state(State::SEARCH_BOTTLE);
         break;
       case State::SEARCH_BOTTLE:
-        // TODO: 调 perception service。当前骨架直接推进流程。
+        // TODO(robot): 调 perception service。当前骨架直接推进流程。
         set_state(State::APPROACH_BOTTLE);
         break;
       case State::APPROACH_BOTTLE:
@@ -91,7 +104,7 @@ private:
         set_state(State::NAV_TO_USER_ROOM);
         break;
       case State::NAV_TO_USER_ROOM:
-        // TODO: 使用 Nav2 action client 发送目标点并等待结果。
+        // TODO(robot): 使用 Nav2 action client 发送目标点并等待结果。
         set_state(State::FIND_PERSON_LOCAL);
         break;
       case State::FIND_PERSON_LOCAL:
