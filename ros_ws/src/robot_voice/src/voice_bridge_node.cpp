@@ -1,3 +1,7 @@
+// Copyright (c) 2026.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
@@ -6,7 +10,8 @@
 class VoiceBridgeNode : public rclcpp::Node
 {
 public:
-  VoiceBridgeNode() : Node("voice_bridge_node")
+  VoiceBridgeNode()
+  : Node("voice_bridge_node")
   {
     asr_out_pub_ = create_publisher<std_msgs::msg::String>("/voice/asr_text", 10);
 
