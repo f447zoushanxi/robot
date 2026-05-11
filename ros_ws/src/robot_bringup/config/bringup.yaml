@@ -1,13 +1,24 @@
+# =============================================================================
+# 配置文件：bringup.yaml — 各节点的默认参数
+# =============================================================================
+# 这个文件列出了开发模式下各节点的默认参数。
+# 可以通过 launch 文件里的 parameters 参数覆盖这些值。
+# =============================================================================
+
+# 底盘驱动节点（robot_base）
 robot_base:
   ros__parameters:
-    use_stub: true
-    cmd_timeout_ms: 200
+    use_stub: true        # true = 不需要真实底盘硬件（串口占位），false = 接真实底盘
+    cmd_timeout_ms: 200   # 超过 200ms 没收到速度指令，自动刹车（安全保护）
 
+# 机械臂节点（robot_manipulation）
 robot_manipulation:
   ros__parameters:
-    sim_mode: true
+    sim_mode: true        # true = 不需要真实机械臂，所有动作直接返回成功
 
+# 身份识别节点（robot_identity）
 robot_identity:
   ros__parameters:
-    owner_enrolled: false
-    require_button_for_first_enroll: true
+    owner_enrolled: false                 # false = 机器人还没绑定 owner，需要先绑定
+    require_button_for_first_enroll: true # true = 首次绑定必须按物理确认按钮（防误绑定）
+

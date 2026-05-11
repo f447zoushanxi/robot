@@ -64,3 +64,9 @@ jobs:
           python3 -m py_compile ros_ws/src/robot_perception/robot_perception/perception_node.py
           python3 -m py_compile ros_ws/src/robot_sim/robot_sim/fake_scan_node.py
           python3 -m py_compile ros_ws/src/robot_bringup/launch/dev_sim.launch.py
+          python3 -m py_compile tools/validate_rviz_config.py
+
+      - name: Validate RViz config (non-GUI)
+        run: |
+          set -eux
+          python3 tools/validate_rviz_config.py
