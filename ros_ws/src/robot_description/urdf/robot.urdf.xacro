@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--
+  Minimal robot URDF for pure-software simulation.
+  TF tree:
+    base_footprint -> base_link -> lidar_link
+                               -> camera_link
+  All joints are fixed (static transforms).
+  The dynamic transform odom -> base_footprint is published separately
+  by the fake_scan_node (or real odometry in hardware mode).
+-->
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- base_footprint: projection of the robot center onto the floor -->
+  <link name="base_footprint"/>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <!-- chassis center is 0.1 m above the floor -->
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- base_link: main chassis body (0.5 x 0.4 x 0.2 m box) -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.5 0.4 0.2"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.4 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10.0"/>
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <!-- lidar_link: 2-D LiDAR mounted on top of chassis -->
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+  </joint>
+
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- camera_link: depth camera at the front of the chassis -->
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.25 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.04 0.09 0.04"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 0.8 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+</robot>

@@ -33,21 +33,40 @@
   - ASR/TTS：外部进程桥接到 ROS topics
   - NLU 兜底：Ollama（Qwen2.5）输出 JSON
 
-## 3. 快速开始
+## 3. 快速开始（纯软件仿真，无需硬件）
 
 ```bash
 cd ros_ws
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
 source install/setup.bash
+
+# 启动仿真（不打开 RViz）
+ros2 launch robot_bringup dev_sim.launch.py
+
+# 或者带 RViz 界面（推荐初学者）
+ros2 launch robot_bringup dev_sim.launch.py rviz:=true
 ```
 
-### 开发模式（仅基础节点）
+发送假语音命令（另开一个终端）：
+
+```bash
+source /opt/ros/humble/setup.bash && source ros_ws/install/setup.bash
+ros2 topic pub /voice/raw_text std_msgs/msg/String "{data: '请给我递水'}" -1
+```
+
+📸 **渲染图生成方式**：见 [docs/RENDERING.md](docs/RENDERING.md)
+
+📖 **完整入门指南**：见 [docs/README.md](docs/README.md)
+
+### 有硬件时的启动方式
+
+#### 开发模式（仅基础节点）
 ```bash
 ros2 launch robot_bringup dev_mode.launch.py
 ```
 
-### 导航/定位模式
+#### 导航/定位模式
 ```bash
 ros2 launch robot_bringup nav_mode.launch.py
 ```
@@ -85,11 +104,16 @@ ros2 launch robot_bringup nav_mode.launch.py
 ## 8. 测试计划入口
 
 详细方法见：
-- `docs/BEGINNER_GUIDE.md`
-- `docs/TESTPLAN.md`
-- `docs/SEQUENCES.md`
-- `docs/INTERFACES.md`
-- `docs/ARCHITECTURE.md`
+- `docs/README.md`（文档导航总入口）
+- `docs/SIMULATION.md`（纯软件仿真，无需硬件）
+- `docs/RENDERING.md`（如何生成 RViz 渲染截图）
+- `docs/NAVIGATION.md`（导航 B1+B2 验证）
+- `docs/VOICE_NLU_EXECUTOR.md`（端到端语音闭环测试）
+- `docs/BEGINNER_GUIDE.md`（初学者入门）
+- `docs/TESTPLAN.md`（测试计划）
+- `docs/SEQUENCES.md`（流程时序图）
+- `docs/INTERFACES.md`（接口说明）
+- `docs/ARCHITECTURE.md`（架构说明）
 
 ## 9. 无硬件模式
 

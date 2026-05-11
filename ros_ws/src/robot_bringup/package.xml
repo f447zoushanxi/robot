@@ -20,6 +20,10 @@
   <exec_depend>robot_identity</exec_depend>
   <exec_depend>robot_manipulation</exec_depend>
   <exec_depend>robot_voice</exec_depend>
+  <exec_depend>robot_description</exec_depend>
+  <exec_depend>robot_sim</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
 
   <test_depend>launch_testing</test_depend>
   <test_depend>launch_testing_ament_cmake</test_depend>
@@ -28,6 +32,8 @@
   <test_depend>robot_msgs</test_depend>
   <test_depend>std_msgs</test_depend>
   <test_depend>std_srvs</test_depend>
+  <test_depend>nav_msgs</test_depend>
+  <test_depend>sensor_msgs</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
