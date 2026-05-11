@@ -44,6 +44,7 @@ ros2 topic pub /voice/raw_text std_msgs/msg/String "{data: '请给我递水'}" -
 | [INTERFACES.md](INTERFACES.md) | ROS2 topic / service / action interface reference |
 | [SEQUENCES.md](SEQUENCES.md) | Message sequence diagrams for key workflows |
 | [TESTPLAN.md](TESTPLAN.md) | Test strategy and how to run tests |
+| [INTEGRATION_TESTS.md](INTEGRATION_TESTS.md) | Beginner-friendly guide for the new CI integration tests |
 | [BEGINNER_GUIDE.md](BEGINNER_GUIDE.md) | Step-by-step guide for newcomers |
 
 ---

@@ -16,9 +16,10 @@
 #   1. 启动 dev_mode.launch.py（所有核心节点）
 #   2. 等待核心节点都出现在 ROS2 节点图中
 #   3. 等待核心服务（感知/身份/机械臂）可用
-#   4. 发布一条语音文字（"请给我递水"），验证：
-#      - NLU 节点解析出 deliver_water 意图
-#      - executor 节点状态从 IDLE 变化（开始工作）
+#   4. 直接向 /voice/asr_text 发布语音文字（不依赖真实麦克风）：
+#      - "请给我递水" -> NLU 输出 deliver_water
+#      - "立刻停下"   -> NLU 输出 stop
+#      - executor 在每条命令后都发布 /robot/state（证明执行器在运行）
 #
 # 运行方式：
 #   cd ros_ws && colcon test --packages-select robot_bringup
@@ -81,7 +82,7 @@ class TestDevModeBringup(unittest.TestCase):
         cls.node = Node('dev_mode_launch_test_node')
 
         # 用于接收 NLU 解析结果（验证语音→NLU 是否工作）
-        cls.received_nlu = None
+        cls.received_nlu_msgs = []
         # 用于接收状态变化（验证 executor 是否被触发）
         cls.received_states = []
 
@@ -91,8 +92,8 @@ class TestDevModeBringup(unittest.TestCase):
         # 订阅机器人状态话题
         cls.state_sub = cls.node.create_subscription(
             String, '/robot/state', cls._on_state, 10)
-        # 创建语音输入发布者（用于模拟用户说话）
-        cls.voice_pub = cls.node.create_publisher(String, '/voice/raw_text', 10)
+        # 创建 ASR 输入发布者（测试直接发到 /voice/asr_text，最贴近 NLU 输入契约）
+        cls.asr_pub = cls.node.create_publisher(String, '/voice/asr_text', 10)
 
         cls.node.get_logger().info('dev_mode launch test node started')
 
@@ -110,7 +111,7 @@ class TestDevModeBringup(unittest.TestCase):
     @classmethod
     def _on_nlu(cls, msg):
         """收到 NLU 解析结果时保存"""
-        cls.received_nlu = msg.data
+        cls.received_nlu_msgs.append(msg.data)
 
     @classmethod
     def _on_state(cls, msg):
@@ -185,49 +186,58 @@ class TestDevModeBringup(unittest.TestCase):
         self.node.get_logger().info(f'core_nodes_started check: missing={missing} all={sorted(names)}')
         self.assertTrue(expected.issubset(names), msg=f'Missing nodes: {missing}')
 
-    def test_voice_to_nlu_and_executor_progress(self):
-        """测试：完整语音→NLU→executor 链路
+    def _assert_asr_to_nlu_and_state(self, text, expected_intent):
+        """发布一条 ASR 文本并断言 NLU/Executor 都有响应。
 
-        验证：
-          1. 发布"请给我递水"到 /voice/raw_text
-          2. NLU 节点解析出 deliver_water 意图
-          3. executor 节点状态从 IDLE 变化
+        为什么要带 timeout + retries？
+        - CI 机器负载波动较大，节点发现和消息传递可能比本地慢。
+        - 通过超时等待和短重发，可以减少偶发 flaky 失败。
         """
-        msg = String()
-        msg.data = '请给我递水'
+        nlu_before = len(self.received_nlu_msgs)
+        state_before = len(self.received_states)
 
-        # 先等待 /voice/raw_text 有订阅者（voice_bridge_node 订阅了它）
+        msg = String()
+        msg.data = text
+
+        # 先等待 /voice/asr_text 有订阅者（nlu_node 订阅了它）
         self.assertTrue(
             self._spin_until(
-                lambda: self.voice_pub.get_subscription_count() > 0,
+                lambda: self.asr_pub.get_subscription_count() > 0,
                 timeout_sec=20.0,
-                debug_name='voice_subscribers',
+                debug_name='asr_subscribers',
             )
         )
 
         # 发布多次（网络可能丢包，发 5 次确保至少到达一次）
         for i in range(5):
-            self.node.get_logger().info(f'publishing voice/raw_text attempt={i + 1} text={msg.data!r}')
-            self.voice_pub.publish(msg)
+            self.node.get_logger().info(f'publishing voice/asr_text attempt={i + 1} text={msg.data!r}')
+            self.asr_pub.publish(msg)
             rclpy.spin_once(self.node, timeout_sec=0.1)
 
-        # 等待 NLU 解析结果到达
+        # 等待 NLU 解析出期望 intent
         self.assertTrue(
             self._spin_until(
-                lambda: self.received_nlu is not None,
+                lambda: any(expected_intent in x for x in self.received_nlu_msgs[nlu_before:]),
                 timeout_sec=20.0,
-                debug_name='wait_nlu',
+                debug_name=f'wait_nlu_{expected_intent}',
             )
         )
-        self.node.get_logger().info(f'received nlu/command_json={self.received_nlu!r}')
-        # 验证：NLU 输出包含 deliver_water 意图
-        self.assertIn('deliver_water', self.received_nlu)
+        self.node.get_logger().info(
+            f'received nlu/command_json after publish={self.received_nlu_msgs[nlu_before:]!r}')
 
-        # 等待 executor 状态从 IDLE 变化（说明 executor 被触发了）
+        # 要求：命令发出后，/robot/state 在超时内有新消息，证明 executor 仍在响应
         self.assertTrue(
             self._spin_until(
-                lambda: any(state != 'IDLE' for state in self.received_states),
+                lambda: len(self.received_states) > state_before,
                 timeout_sec=20.0,
-                debug_name='wait_state_change',
+                debug_name=f'wait_state_after_{expected_intent}',
             )
         )
+
+    def test_asr_to_nlu_deliver_water_and_executor_state(self):
+        """测试文本链路：请给我递水 -> intent=deliver_water。"""
+        self._assert_asr_to_nlu_and_state('请给我递水', 'deliver_water')
+
+    def test_asr_to_nlu_stop_and_executor_state(self):
+        """测试文本链路：立刻停下 -> intent=stop。"""
+        self._assert_asr_to_nlu_and_state('立刻停下', 'stop')

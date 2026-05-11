@@ -90,6 +90,16 @@ public:
     command_sub_ = create_subscription<std_msgs::msg::String>(
       "/nlu/command_json", 10,
       [this](const std_msgs::msg::String::SharedPtr msg) {
+        // "停"指令：立刻进入空闲状态并发布一次状态确认。
+        // 说明：即使当前已经是 IDLE，也主动发布状态，便于集成测试和监控确认执行器在线。
+        if (msg->data.find("\"intent\":\"stop\"") != std::string::npos) {
+          retry_count_ = 0;
+          state_ticks_ = 0;
+          set_state(State::IDLE);
+          publish_state();
+          return;
+        }
+
         // 判断是否是"递水"指令（简单字符串搜索）
         if (msg->data.find("deliver_water") != std::string::npos) {
           // 收到递水指令：进入"询问用户位置"状态，重置重试计数
