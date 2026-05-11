@@ -69,13 +69,13 @@ public:
   enum class State
   {
     IDLE,              // 空闲，等待指令
-    ASK_USER_LOCATION, // 询问用户在哪个房间（可触发语音追问）
+    ASK_USER_LOCATION,  // 询问用户在哪个房间（可触发语音追问）
     SEARCH_BOTTLE,     // 用感知节点搜索水瓶
     APPROACH_BOTTLE,   // 导航到水瓶旁边
     PICK_BOTTLE,       // 让机械臂抓取水瓶
     NAV_TO_USER_ROOM,  // 导航到用户所在房间
-    FIND_PERSON_LOCAL, // 在房间内局部搜索用户
-    SEARCH_OWNER_GLOBAL, // 局部找人失败，全屋搜索
+    FIND_PERSON_LOCAL,  // 在房间内局部搜索用户
+    SEARCH_OWNER_GLOBAL,  // 局部找人失败，全屋搜索
     HAND_OVER,         // 递给用户
     DONE,              // 任务完成
     FAILED             // 任务失败（超过重试次数）
