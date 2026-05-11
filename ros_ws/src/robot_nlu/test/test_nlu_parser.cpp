@@ -23,6 +23,7 @@
 // 测试用例：
 //   1. ParseDeliverWaterIntent：输入"请给我递水"，输出应包含 deliver_water 意图
 //   2. ParseStopIntent        ：输入"立刻停下"，输出应包含 stop 意图
+//   3. ParseUnknownIntent     ：输入无法识别文本，输出应包含 unknown 意图
 // =============================================================================
 
 #include <gtest/gtest.h>
@@ -50,4 +51,12 @@ TEST(NluParser, ParseStopIntent)
 
   // 验证：返回的 JSON 包含 stop 意图
   EXPECT_NE(json.find("\"intent\":\"stop\""), std::string::npos);
+}
+
+// 测试用例 3：解析未知指令
+// 验证：无关键词文本应走兜底逻辑，返回 unknown 意图
+TEST(NluParser, ParseUnknownIntent)
+{
+  const auto json = robot_nlu::parse_to_json("今天天气真好");
+  EXPECT_NE(json.find("\"intent\":\"unknown\""), std::string::npos);
 }
