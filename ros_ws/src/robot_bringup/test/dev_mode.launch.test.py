@@ -186,7 +186,7 @@ class TestDevModeBringup(unittest.TestCase):
         self.node.get_logger().info(f'core_nodes_started check: missing={missing} all={sorted(names)}')
         self.assertTrue(expected.issubset(names), msg=f'Missing nodes: {missing}')
 
-    def _assert_asr_to_nlu_and_state(self, text, expected_intent):
+    def _assert_asr_triggers_intent_and_state_update(self, text, expected_intent):
         """发布一条 ASR 文本并断言 NLU/Executor 都有响应。
 
         为什么要带 timeout + retries？
@@ -236,8 +236,8 @@ class TestDevModeBringup(unittest.TestCase):
 
     def test_asr_to_nlu_deliver_water_and_executor_state(self):
         """测试文本链路：请给我递水 -> intent=deliver_water。"""
-        self._assert_asr_to_nlu_and_state('请给我递水', 'deliver_water')
+        self._assert_asr_triggers_intent_and_state_update('请给我递水', 'deliver_water')
 
     def test_asr_to_nlu_stop_and_executor_state(self):
         """测试文本链路：立刻停下 -> intent=stop。"""
-        self._assert_asr_to_nlu_and_state('立刻停下', 'stop')
+        self._assert_asr_triggers_intent_and_state_update('立刻停下', 'stop')
