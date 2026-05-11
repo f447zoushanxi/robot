@@ -40,12 +40,15 @@ ros2 topic pub /voice/raw_text std_msgs/msg/String "{data: '请给我递水'}" -
 |-------|-------------|
 | [SIMULATION.md](SIMULATION.md) | Pure-software workflow, commands, package map, troubleshooting |
 | [RENDERING.md](RENDERING.md) | How to generate the RViz robot model screenshot ("render") |
+| [NAVIGATION.md](NAVIGATION.md) | B1+B2: verify TF/odom, set initial pose, send 2D Nav Goal |
+| [VOICE_NLU_EXECUTOR.md](VOICE_NLU_EXECUTOR.md) | End-to-end voice→NLU→executor loop without hardware |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Overall system architecture and package descriptions |
 | [INTERFACES.md](INTERFACES.md) | ROS2 topic / service / action interface reference |
 | [SEQUENCES.md](SEQUENCES.md) | Message sequence diagrams for key workflows |
 | [TESTPLAN.md](TESTPLAN.md) | Test strategy and how to run tests |
 | [INTEGRATION_TESTS.md](INTEGRATION_TESTS.md) | Beginner-friendly guide for the new CI integration tests |
 | [BEGINNER_GUIDE.md](BEGINNER_GUIDE.md) | Step-by-step guide for newcomers |
+| [assets/README.md](assets/README.md) | Screenshot placeholder and rendering instructions |
 
 ---
 

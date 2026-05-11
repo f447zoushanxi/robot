@@ -1,16 +1,34 @@
-# Nav2 参数占位模板，后续按实车调参。
+# =============================================================================
+# 配置文件：nav2_params.yaml — Nav2 导航参数占位模板
+# =============================================================================
+# 这个文件是 Nav2（ROS2 导航栈）的参数模板，后续按实车调参。
+#
+# 什么是 Nav2？
+#   Nav2 是 ROS2 官方的导航框架，包含：
+#   - controller_server ：控制机器人沿路径运动（速度控制）
+#   - planner_server    ：规划从当前位置到目标位置的路径
+#   - bt_navigator      ：行为树导航器，协调规划和控制
+#
+# 当前状态：
+#   这些参数是占位值，项目目前使用 nav_server_node 的骨架实现，
+#   不需要完整的 Nav2 栈。
+#
+# 如果要接入完整 Nav2，参考 NAVIGATION.md 末尾的说明。
+# =============================================================================
+
 controller_server:
   ros__parameters:
     use_sim_time: false
-    min_x_velocity_threshold: 0.001
-    max_vel_x: 0.35
-    max_vel_theta: 1.0
+    min_x_velocity_threshold: 0.001  # 低于此速度视为停止（m/s）
+    max_vel_x: 0.35                   # 最大前进速度（m/s）
+    max_vel_theta: 1.0                # 最大旋转速度（rad/s）
 
 planner_server:
   ros__parameters:
     use_sim_time: false
-    expected_planner_frequency: 5.0
+    expected_planner_frequency: 5.0  # 路径规划频率（Hz）
 
 bt_navigator:
   ros__parameters:
     use_sim_time: false
+
