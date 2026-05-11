@@ -3,12 +3,13 @@ project(robot_bringup)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY launch config
+install(DIRECTORY launch config rviz
   DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(launch_testing_ament_cmake REQUIRED)
   add_launch_test(test/dev_mode.launch.test.py TIMEOUT 120)
+  add_launch_test(test/dev_sim.launch.test.py TIMEOUT 120)
 endif()
 
 ament_package()

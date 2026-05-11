@@ -35,6 +35,9 @@ jobs:
             ros-humble-launch-testing \
             ros-humble-launch-testing-ament-cmake \
             ros-humble-nav2-msgs \
+            ros-humble-robot-state-publisher \
+            ros-humble-tf2-ros \
+            ros-humble-xacro \
             libyaml-cpp-dev
 
       - name: Build workspace
@@ -59,3 +62,5 @@ jobs:
         run: |
           set -eux
           python3 -m py_compile ros_ws/src/robot_perception/robot_perception/perception_node.py
+          python3 -m py_compile ros_ws/src/robot_sim/robot_sim/fake_scan_node.py
+          python3 -m py_compile ros_ws/src/robot_bringup/launch/dev_sim.launch.py
