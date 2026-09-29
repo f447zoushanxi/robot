@@ -1,0 +1,11 @@
+# Models list for robot_perception
+# Format per line: name|filename|url
+# Replace the URLs with actual download links for chosen free models.
+# Examples (placeholders — replace with real URLs):
+# deepseek_free|deepseek.onnx|https://example.com/deepseek.onnx
+# alibaba_free|alibaba.onnx|https://example.com/alibaba.onnx
+# us_free|us.onnx|https://example.com/us.onnx
+
+deepseek_free|deepseek.onnx|__REPLACE_DEEPSEEK_ONNX_URL__
+alibaba_free|alibaba.onnx|__REPLACE_ALIBABA_ONNX_URL__
+us_free|us.onnx|__REPLACE_US_ONNX_URL__
