@@ -1,0 +1,13 @@
+# Models list for robot_perception
+# Format per line: name|filename|url
+# URL supports:
+#   - direct HTTP(S) URL
+#   - Hugging Face repo shorthand: hf:owner/repo or hf:owner/repo:sub/path/model.onnx
+# Examples:
+# deepseek_free|deepseek.onnx|hf:onnxruntime/DeepSeek-R1-Distill-ONNX
+# yolov8n_us|yolov8n.onnx|https://huggingface.co/Kalray/yolov8/resolve/main/yolov8n.onnx
+# onnx_zoo_ssd|ssd300.onnx|https://github.com/onnx/models/raw/main/vision/object_detection_segmentation/ssd/model/ssd300-12.onnx
+
+deepseek_free|deepseek.onnx|hf:onnxruntime/DeepSeek-R1-Distill-ONNX
+yolov8_us|yolov8n.onnx|https://huggingface.co/Kalray/yolov8/resolve/main/yolov8n.onnx
+onnx_zoo_ssd|ssd300.onnx|https://github.com/onnx/models/raw/main/vision/object_detection_segmentation/ssd/model/ssd300-12.onnx
