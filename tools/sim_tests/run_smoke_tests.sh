@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# headless smoke test script for local development and CI
-# Usage: tools/sim_tests/run_smoke_tests.sh
+# tools/sim_tests/run_smoke_tests.sh
+# Updated: also check executor status service
 set -euo pipefail
 
 REPO_ROOT=$(git rev-parse --show-toplevel)
@@ -22,8 +22,10 @@ sleep 6
 ros2 topic pub /voice/raw_text std_msgs/msg/String "{data: '请给我递水'}" -1 &
 
 # run a short test: call a perception service if available
-# note: in pure stub mode this may return immediately
 ros2 service call /perception/find_person robot_msgs/srv/FindPerson "{hint_name: 'owner'}" || true
+
+# also call executor status
+ros2 service call /executor/get_status std_srvs/srv/Trigger || true
 
 # cleanup
 kill $LAUNCH_PID || true

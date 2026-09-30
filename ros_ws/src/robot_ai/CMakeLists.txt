@@ -11,6 +11,13 @@ find_package(rclcpp_lifecycle REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(robot_ai_interfaces REQUIRED)
 
+# Optional: enable ONNXRUNTIME integration if user has it available
+option(ENABLE_ONNXRUNTIME "Enable C++ ONNXRuntime inference support" OFF)
+if(ENABLE_ONNXRUNTIME)
+  add_compile_definitions(USE_ONNXRUNTIME)
+  message(STATUS "Building with ONNXRuntime support enabled (USE_ONNXRUNTIME)")
+endif()
+
 include_directories(include)
 
 add_executable(lifecycle_node src/lifecycle_node.cpp src/onnx_wrapper.cpp)

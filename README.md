@@ -1,1 +1,1 @@
-feat: add training, data, bench, sim_data scaffolds, integration test and docs
+chore: add C++ onnx compile-time option, executor stub, docs and updated smoke test
