@@ -1,23 +1,11 @@
-<?xml version="1.0"?>
-<package format="3">
-  <name>robot_identity</name>
-  <version>0.0.1</version>
-  <description>Identity and permission gating skeleton</description>
-  <maintainer email="dev@example.com">robot-dev</maintainer>
-  <license>Apache-2.0</license>
+name: robot_identity
+version: 0.0.1
+description: Simple identity verification stub (topic/service based)
+maintainer: robot-dev <>
+license: Apache-2.0
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
+buildtool_depend: ament_python
 
-  <depend>rclcpp</depend>
-  <depend>std_msgs</depend>
-  <depend>std_srvs</depend>
-  <depend>robot_msgs</depend>
-
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
-  <test_depend>ament_cmake_gtest</test_depend>
-
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+exec_depend: rclpy
+exec_depend: std_msgs
+exec_depend: std_srvs
