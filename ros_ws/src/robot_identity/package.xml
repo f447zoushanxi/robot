@@ -1,11 +1,16 @@
-name: robot_identity
-version: 0.0.1
-description: Simple identity verification stub (topic/service based)
-maintainer: robot-dev <>
-license: Apache-2.0
+<?xml version="1.0"?>
+<package format="3">
+  <name>robot_identity</name>
+  <version>0.0.1</version>
+  <description>Simple identity verification stub (topic/service based)</description>
+  <maintainer email="dev@example.com">robot-dev</maintainer>
+  <license>Apache-2.0</license>
 
-buildtool_depend: ament_python
+  <buildtool_depend>ament_python</buildtool_depend>
 
-exec_depend: rclpy
-exec_depend: std_msgs
-exec_depend: std_srvs
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+
+  <export />
+</package>
