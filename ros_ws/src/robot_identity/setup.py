@@ -17,6 +17,7 @@ setup(
     maintainer_email='dev@example.com',
     description='Identity verification stub for integration testing',
     license='Apache-2.0',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'identity_node = robot_identity.identity_node:main',
