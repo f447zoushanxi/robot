@@ -15,8 +15,9 @@ setup(
     zip_safe=False,
     maintainer='robot-dev',
     maintainer_email='dev@example.com',
-    description='Minimal executor stub for integration tests',
+    description='Simple executor stub to integrate perception results into a task flow.',
     license='Apache-2.0',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'executor_node = robot_executor.executor_node:main',
